@@ -26,6 +26,13 @@
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "three": "0.145.0",
+    "@react-three/drei": "9.32.4",
+    "@react-three/fiber": "8.8.7",
+    "@react-three/postprocessing": "2.6.2"
+  },
+  "devDependencies": {
+    "@types/three": "0.144.0"
   }
 }
