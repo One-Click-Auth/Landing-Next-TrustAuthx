@@ -208,8 +208,8 @@ function Timeline() {
 
           {/* placing next to each other */}
 
-          <div className=" flex  flex-1 flex-col items-center justify-between xl:flex-row 2xl:ml-10 ">
-            <div className="mt-[325px] flex flex-col justify-between gap-[550px] 2xl:gap-0">
+          <div className=" flex  flex-1 flex-col  justify-between xl:flex-row 2xl:ml-10 ">
+            <div className="mt-[325px] flex flex-col  gap-[550px] ">
               <Information
                 whiteText
                 preHeader="Maximize Speed"
