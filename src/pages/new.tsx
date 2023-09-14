@@ -1,6 +1,7 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from ".";
 import AnimatedGradient from "../components/gradients/AnimatedGradient";
+import ArrowIcon from '../components/ArrowIcon'
 
 function New() {
   return (
@@ -192,9 +193,9 @@ function AbsolutePart() {
   );
 }
 
-function CanvasPart() {
+export const CanvasPart = () => {
   return (
-    <div className="-z-20 w-[97vw] rounded-3xl bg-black py-24   text-gray-200 lg:rounded-[90px]">
+    <div className="-z-20 w-[97vw] m-auto mt-5 rounded-3xl bg-black py-24   text-gray-200 lg:rounded-[90px]">
       <div className="flex flex-col  items-center px-4">
         <div className="ml-36 flex max-h-[738px]  w-full max-w-[1240px] flex-col  flex-wrap gap-14  rounded-3xl px-4">
           <div className=" text-4xl font-semibold">
@@ -237,7 +238,7 @@ function Pointy() {
       viewBox="0 0 33 88"
       fill="none"
     >
-      <g clipPath ="url(#clip0_129_1381)">
+      <g clip-path="url(#clip0_129_1381)">
         <g filter="url(#filter0_d_129_1381)">
           <path
             d="M7.85579 13.9536C6.70079 13.5926 5.61579 14.6776 5.97679 15.8326L12.1958 35.7336C12.5318 36.8096 13.8908 37.1436 14.6878 36.3466L28.3698 22.6646C29.1668 21.8676 28.8328 20.5086 27.7568 20.1726L7.85579 13.9536Z"
@@ -257,9 +258,9 @@ function Pointy() {
           width="50.9023"
           height="52.9033"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
+          color-interpolation-filters="sRGB"
         >
-          <feFlood floodOpacity ="0" result="BackgroundImageFix" />
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -355,26 +356,6 @@ function GradientAISvg() {
         </defs>
       </svg>
     </div>
-  );
-}
-
-export function ArrowIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="4"
-      height="8"
-      viewBox="0 0 4 8"
-      fill="none"
-    >
-      <path
-        d="M0.847656 6.62402L3.20716 4.26452C3.24208 4.22969 3.26979 4.18831 3.28869 4.14275C3.30759 4.09719 3.31733 4.04835 3.31733 3.99902C3.31733 3.9497 3.30759 3.90086 3.28869 3.8553C3.26979 3.80974 3.24208 3.76836 3.20716 3.73352L0.847656 1.37402"
-        stroke="#F35815"
-        strokeWidth="1.125"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   );
 }
 
