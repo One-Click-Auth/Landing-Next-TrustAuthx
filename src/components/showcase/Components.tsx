@@ -132,8 +132,8 @@ export function PercentageSVGFirst({
         <path
           d="M193.998 102.681C193.998 85.8679 189.147 69.4095 180.022 55.2669C170.897 41.1243 157.884 29.8938 142.533 22.9137C127.182 15.9335 110.14 13.4981 93.4388 15.8976C76.7374 18.2971 61.0806 25.4304 48.3341 36.4474C35.5875 47.4643 26.2888 61.9005 21.5458 78.0355C16.8029 94.1705 16.8158 111.324 21.583 127.452C26.3501 143.58 35.6706 158.002 48.4337 169"
           stroke="white"
-          stroke-width="13"
-          stroke-linecap="round"
+          strokeWidth ="13"
+          strokeLinecap ="round"
         />
       </svg>
 
@@ -166,20 +166,20 @@ export function PercentageSVGSecond({
         viewBox="0 0 212 213"
         fill="none"
       >
-        <g clip-path="url(#clip0_156_3915)">
+        <g clipPath ="url(#clip0_156_3915)">
           <path
             d="M195.38 110.842C197.967 61.4812 160.047 19.3691 110.684 16.782C61.3205 14.195 19.2064 52.1128 16.6195 101.474C14.0326 150.835 51.9525 192.947 101.316 195.534C150.679 198.121 192.793 160.203 195.38 110.842Z"
             stroke="white"
-            stroke-opacity="0.4"
-            stroke-width="13"
-            stroke-dasharray="562.34 562.34"
+            strokeOpacity ="0.4"
+            strokeWidth ="13"
+            strokeDasharray ="562.34 562.34"
           />
           <path
             d="M195.38 110.842C197.967 61.4812 160.047 19.3691 110.684 16.782C61.3205 14.195 19.2064 52.1128 16.6195 101.474C14.0326 150.835 51.9525 192.947 101.316 195.534C150.679 198.121 192.793 160.203 195.38 110.842Z"
             stroke="white"
-            stroke-width="13"
-            stroke-linecap="round"
-            stroke-dasharray="562.34 562.34"
+            strokeWidth ="13"
+            strokeLinecap ="round"
+            strokeDasharray ="562.34 562.34"
           />
         </g>
         <defs>
@@ -223,10 +223,10 @@ export function StartWithAiSparkles() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(9.45829 1.59598) rotate(91.8183) scale(17.0335)"
         >
-          <stop stop-color="#9EFF00" />
-          <stop offset="0.319445" stop-color="#26B4E1" />
-          <stop offset="0.621528" stop-color="#AE75DB" />
-          <stop offset="0.939236" stop-color="#FF9228" />
+          <stop stopColor ="#9EFF00" />
+          <stop offset="0.319445" stopColor ="#26B4E1" />
+          <stop offset="0.621528" stopColor ="#AE75DB" />
+          <stop offset="0.939236" stopColor ="#FF9228" />
         </radialGradient>
       </defs>
     </svg>
