@@ -9,10 +9,11 @@ import {
   RedirectButton,
   ShowcaseSocialConnectionCard,
 } from "./showcase/Components";
+import CodeTabs from "./showcase/CodeTabs";
 
 function Showcase() {
   return (
-    <div className="flex flex-col items-center justify-center p-6 sm:p-12">
+    <div className="flex flex-col  items-center justify-center p-6 sm:p-12">
       <div className="space-between flex max-w-[1110px] flex-col items-center gap-12 lg:flex-row xl:gap-48">
         <div className="flex flex-col gap-6 ">
           <p className="text-5xl sm:text-[80px] ">
@@ -189,24 +190,28 @@ function Showcase() {
               </div>
             }
             description={
-              <div className=" w-72 text-base font-normal leading-snug text-white">
+              <div className="w-[292px] mt-2 h-[38px] text-white text-base font-normal  leading-snug">
                 Complete user Token Management solution all in caching servers.
               </div>
             }
             className="  showcase-5 col-span-full w-full lg:col-span-6  "
           >
-            <div className="showcase-3-width relative -mx-10    flex h-[340px] w-full items-center justify-center bg-transparent ">
-              <div className="h">
-                <span className="text-[32px] font-medium leading-7 text-white">
-                  Never
-                </span>
-                <span className="text-[32px] font-light leading-7 text-white">
-                  {" "}
-                  more than a{" "}
-                </span>
-                <span className="text-[32px] font-medium leading-7 text-white">
-                  Class
-                </span>
+            <div className="showcase-3-width relative gap-3 -mx-10    flex flex-col h-[360px] w-full items-center justify-center bg-transparent ">
+              <div className="bottom-0 absolute right-0">
+                <div className="">
+                  <span className="text-[32px] font-medium leading-7 text-white">
+                    Never
+                  </span>
+                  <span className="text-[32px] font-light leading-7 text-white">
+                    {" "}
+                    more than a{" "}
+                  </span>
+                  <span className="text-[32px] font-medium leading-7 text-white">
+                    Class
+                  </span>
+                </div>
+
+                <CodeTabs />
               </div>
             </div>
 
