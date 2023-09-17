@@ -36,16 +36,15 @@
     user-select: none;
     background: unset;
     border: unset;
-    &.left {
-      transform: translateX(-120%) translatey(-50%);
-    }
-
-    &.right {
-      right: 0;
-      transform: translateX(120%) translatey(-50%);
-    }
   }
 
+  .left-nav-carousel {
+    transform: translateX(-120%) translatey(-50%);
+  }
+  .right-nav-carousel {
+    right: 0;
+    transform: translateX(120%) translatey(-50%);
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;

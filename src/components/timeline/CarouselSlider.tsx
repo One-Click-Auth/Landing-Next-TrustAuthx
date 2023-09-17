@@ -11,7 +11,10 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
   return (
     <div className="carousel">
       {active > 0 && (
-        <button className="nav left" onClick={() => setActive((i) => i - 1)}>
+        <button
+          className="nav left-nav-carousel"
+          onClick={() => setActive((i) => i - 1)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="53"
@@ -36,7 +39,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
             "--offset": (active - i) / 5,
             "--direction": Math.sign(active - i),
             "--abs-offset": Math.abs(active - i) / 3,
-            "pointerEvents": active === i ? "auto" : "none",
+            pointerEvents: active === i ? "auto" : "none",
             opacity: Math.abs(active - i) >= MAX_VISIBILITY ? "0" : "1",
             display: Math.abs(active - i) > MAX_VISIBILITY ? "none" : "block",
           }}
@@ -45,7 +48,10 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
         </div>
       ))}
       {active < count - 1 && (
-        <button className="nav right" onClick={() => setActive((i) => i + 1)}>
+        <button
+          className="nav right-nav-carousel"
+          onClick={() => setActive((i) => i + 1)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="53"
