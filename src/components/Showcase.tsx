@@ -196,8 +196,8 @@ function Showcase() {
             }
             className="  showcase-5 col-span-full w-full lg:col-span-6  "
           >
-            <div className="showcase-3-width relative gap-3 -mx-10    flex flex-col h-[360px] w-full items-center justify-center z-10">
-              <div className="bottom-0 absolute right-0">
+            <div className="showcase-3-width z-10 relative gap-3 -mx-10    flex flex-col h-[360px] w-full items-center justify-center bg-transparent ">
+              <div className="bottom-0 absolute -right-1">
                 <div className="">
                   <span className="text-[32px] font-medium leading-7 text-white">
                     Never
