@@ -111,7 +111,6 @@ function New() {
         <AbsolutePart />
       </div>
       <CanvasPart />
-      <Footer />
     </div>
   );
 }
