@@ -108,12 +108,12 @@ const CodeTabs: React.FC<CodeTabsProps> = () => {
             }
           </div>
         );
-
+    }
+  };
 
   return (
     <div className=" ">
       <div className="flex pt-2 border-b pr-24 border-b-[#30363D] rounded-t-xl px-2 bg-[#161B23] space-x-2">
-
         <button
           className={`px-4 text-[14px]  flex items-center  gap-7 pr-10   py-2 rounded ${
             activeTab === "python"
@@ -149,7 +149,6 @@ const CodeTabs: React.FC<CodeTabsProps> = () => {
       </div>
 
       <div className=" bg-[#0D1117] p-4 pb-2">{getCode()}</div>
- 
     </div>
   );
 };
