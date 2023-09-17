@@ -50,7 +50,7 @@ const CodeTabs: React.FC<CodeTabsProps> = () => {
               <div className="ml-10">
                 <span className="text-sky-300 ">api_key</span>
                 <span className="text-white "> = </span>
-                <span className="text-[#FF7B72] ">"f28ffe7f2e..."</span>
+                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
                 <span className="text-white ">,</span>
               </div>
             </div>
@@ -63,7 +63,7 @@ const CodeTabs: React.FC<CodeTabsProps> = () => {
               <div className="ml-10">
                 <span className="text-sky-300 ">secret_key</span>
                 <span className="text-white "> = </span>
-                <span className="text-[#FF7B72] ">"f28ffe7f2e..."</span>
+                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
                 <span className="text-white ">,</span>
               </div>
             </div>
@@ -76,7 +76,7 @@ const CodeTabs: React.FC<CodeTabsProps> = () => {
               <div className="ml-10">
                 <span className="text-sky-300 ">org_id</span>
                 <span className="text-white "> = </span>
-                <span className="text-[#FF7B72] ">"f28ffe7f2e..."</span>
+                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
                 <span className="text-white ">,</span>
               </div>
             </div>
