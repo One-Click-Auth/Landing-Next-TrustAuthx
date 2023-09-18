@@ -10,8 +10,6 @@ import { VectorRight } from "../components/svgs/VectorRight";
 import { GithubLogo } from "../components/svgs/Github";
 import { TrustAuthXText } from "../components/svgs/TrustAuthXText";
 import { LowCode } from "../components/svgs/low-code";
-import { Framer } from '../components/svgs/Framer';
-import { Customization } from "../components/svgs/Customization";
 
 
 export default function LandingPageCompoent() {
@@ -24,7 +22,7 @@ export default function LandingPageCompoent() {
       <CanvasPart />
       <Timeline />
       {/* <Framer /> */}
-      <Customization />
+      {/* <Customization /> */}
       <Footer />
     </>
   )
