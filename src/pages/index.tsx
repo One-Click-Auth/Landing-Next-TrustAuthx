@@ -90,15 +90,15 @@ function Menu() {
 }
 
 
-function Footer() {
-  return (
-    <div className="flex min-h-screen  flex-col items-center justify-center py-12 ">
-      <PricingPart />
-      <SubscribePart />
-      <CopyrightInfo />
-    </div>
-  );
-}
+// function Footer() {
+//   return (
+//     <div className="flex min-h-screen  flex-col items-center justify-center py-12 ">
+//       <PricingPart />
+//       <SubscribePart />
+//       <CopyrightInfo />
+//     </div>
+//   );
+// }
 
 function PricingPart() {
   return (
