@@ -23,7 +23,7 @@ export default function LandingPageCompoent() {
       <LowCode />
       <CanvasPart />
       <Timeline />
-      <Framer />
+      {/* <Framer /> */}
       <Customization />
     </>
   )
