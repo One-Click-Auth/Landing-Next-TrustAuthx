@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import InteractivePrism from "../components/interactivePrism";
 import { CanvasPart } from './new';
-// import Timeline from "./timeline";
+import Timeline from "./timeline";
 import { TrustAuthXLogo } from "../components/svgs/TrustAuthXLogo";
 import { Vector } from "../components/svgs/Vector";
 import { VectorRight } from "../components/svgs/VectorRight";
@@ -11,7 +11,7 @@ import { GithubLogo } from "../components/svgs/Github";
 import { TrustAuthXText } from "../components/svgs/TrustAuthXText";
 import { LowCode } from "../components/svgs/low-code";
 import { Framer } from '../components/svgs/Framer';
-// import { Customization } from "../components/svgs/Customization";
+import { Customization } from "../components/svgs/Customization";
 
 
 export default function LandingPageCompoent() {
@@ -22,9 +22,9 @@ export default function LandingPageCompoent() {
       <TrustAuthXText />
       <LowCode />
       <CanvasPart />
-      {/* <Timeline /> */}
+      <Timeline />
       <Framer />
-      {/* <Customization /> */}
+      <Customization />
     </>
   )
 }
