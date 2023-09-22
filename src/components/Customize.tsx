@@ -1,7 +1,4 @@
 import React from 'react'
-import { CanvasPart } from '../pages/new'
-import ArrowIcon from './ArrowIcon'
-import AnimatedGradient from './gradients/AnimatedGradient'
 
 export default function Customize() {
 	return (
