@@ -12,10 +12,12 @@ import { TrustAuthXText } from "../components/svgs/TrustAuthXText";
 import { LowCode } from "../components/svgs/low-code";
 import Footer from "../components/Footer";
 import Customize from '../components/customize'
+import Showcase from '../components/Showcase'
 
 export default function LandingPage() {
   return (
     <>
+      <Showcase/>
       <Customize/>
       <Footer />
     </>
