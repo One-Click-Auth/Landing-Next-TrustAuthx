@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
-function authlite() {
+export default function Authlite() {
     return (
         <div
             style={{ background: "radial-gradient(161.01% 103.41% at -1.12% 6.78%, #434343 0%, #000 88.95%, #000 100%)" }}
@@ -46,9 +46,6 @@ function authlite() {
         </div >
     )
 }
-
-export default authlite
-
 
 const PlusSvg = () => {
     return (

@@ -1,22 +1,17 @@
-import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import InteractivePrism from "../components/interactivePrism";
-import { CanvasPart } from './new';
-import Timeline from "./timeline";
 import { TrustAuthXLogo } from "../components/svgs/TrustAuthXLogo";
 import { Vector } from "../components/svgs/Vector";
 import { VectorRight } from "../components/svgs/VectorRight";
 import { GithubLogo } from "../components/svgs/Github";
-import { TrustAuthXText } from "../components/svgs/TrustAuthXText";
-import { LowCode } from "../components/svgs/low-code";
 import Footer from "../components/Footer";
 import Customize from '../components/customize'
 import Showcase from '../components/Showcase'
+import Authlite from '../components/Authlite'
 
 export default function LandingPage() {
   return (
     <>
+      <Authlite/>
       <Showcase/>
       <Customize/>
       <Footer />
