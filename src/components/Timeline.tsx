@@ -3,31 +3,30 @@ import {
   PercentageSVG,
   PercentageSVGThird,
   PercentageSVGSecondTimeline,
-} from "../components/timeline/Components";
-import { TimelineCard } from "../components/timeline/TimelineCard";
-import { Information } from "../components/timeline/Information";
-import Carousel from "../components/timeline/CarouselSlider";
-import ArrowIcon from "../components/ArrowIcon";
-import Image from 'next/image';
+} from "./timeline/Components";
+import { TimelineCard } from "./timeline/TimelineCard";
+import { Information } from "./timeline/Information";
+import Carousel from "./timeline/CarouselSlider";
+import ArrowIcon from "./ArrowIcon";
 
 function Timeline() {
   return (
     <>
       <div className="flex px-12 py-12 2xl:py-0 2xl:pl-44 2xl:pr-[130px]">
         <div className="flex max-w-[160px] flex-col items-center justify-center">
-          <Image src="/timeline/first.svg" alt="" />
+          <img src="/timeline/first.svg" alt="" />
 
-          <Image src="/timeline/8-icon.svg" alt="" />
+          <img src="/timeline/8-icon.svg" alt="" />
 
-          <Image src="/timeline/8.svg" alt="" />
+          <img src="/timeline/8.svg" alt="" />
 
-          <Image src="/timeline/7-icon.svg" alt="" />
+          <img src="/timeline/7-icon.svg" alt="" />
 
-          <Image src="/timeline/7.svg" alt="" />
+          <img src="/timeline/7.svg" alt="" />
 
-          <Image src="/timeline/6-icon.svg" alt="" />
+          <img src="/timeline/6-icon.svg" alt="" />
 
-          <Image src="/timeline/6.svg" alt="" />
+          <img src="/timeline/6.svg" alt="" />
         </div>
 
         <div className="mt-[750px] flex-1">
@@ -163,24 +162,24 @@ function Timeline() {
       <div className="timeline-radial-gradient flex flex-1 px-12 py-12 2xl:py-0 2xl:pl-44 2xl:pr-[130px]">
         <div className="flex max-w-[160px] flex-col items-center justify-center">
           <div className="relative ">
-            <Image src="/timeline/glow.svg" className=" " alt="" />
+            <img src="/timeline/glow.svg" className=" " alt="" />
 
-            <Image
+            <img
               src="/timeline/5-icon.svg"
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               alt=""
             />
           </div>
-          <Image src="/timeline/4.svg" alt="" />
+          <img src="/timeline/4.svg" alt="" />
 
-          <Image src="/timeline/3-icon.svg" alt="" />
+          <img src="/timeline/3-icon.svg" alt="" />
 
-          <Image src="/timeline/3.svg" alt="" />
+          <img src="/timeline/3.svg" alt="" />
 
-          <Image src="/timeline/2-icon.svg" alt="" />
-          <Image src="/timeline/2.svg" alt="" />
-          <Image src="/timeline/1-icon.svg" alt="" />
-          <Image src="/timeline/1.svg" alt="" />
+          <img src="/timeline/2-icon.svg" alt="" />
+          <img src="/timeline/2.svg" alt="" />
+          <img src="/timeline/1-icon.svg" alt="" />
+          <img src="/timeline/1.svg" alt="" />
         </div>
         {/* required
          */}
@@ -332,15 +331,15 @@ function Timeline() {
                 </div>
 
                 <div className="flex flex-col gap-3 pb-6">
-                  <Image src="/timeline/speedCard/1.svg" alt="" />
-                  <Image src="/timeline/speedCard/2.svg" alt="" />
-                  <Image src="/timeline/speedCard/3.svg" alt="" />
-                  <Image src="/timeline/speedCard/4.svg" alt="" />
+                  <img src="/timeline/speedCard/1.svg" alt="" />
+                  <img src="/timeline/speedCard/2.svg" alt="" />
+                  <img src="/timeline/speedCard/3.svg" alt="" />
+                  <img src="/timeline/speedCard/4.svg" alt="" />
                 </div>
               </div>
 
               <div className="shad rounded-2xl bg-black shadow-lg shadow-zinc-800 ">
-                <Image src="/timeline/lastcard.svg" className="" alt="" />
+                <img src="/timeline/lastcard.svg" className="" alt="" />
 
                 <div className=" rounded-b-2xl bg-[#1A1A1A] px-12 py-7">
                   <div className=" w-96 text-lg font-bold leading-loose text-neutral-50">
@@ -364,8 +363,8 @@ function Timeline() {
 
       <div className="flex px-12 2xl:pl-44 2xl:pr-[130px]">
         <div className="flex max-w-[160px] flex-col items-center ">
-          <Image src="/timeline/last-icon.svg" alt="" />
-          <Image src="/timeline/last.svg" alt="" />
+          <img src="/timeline/last-icon.svg" alt="" />
+          <img src="/timeline/last.svg" alt="" />
         </div>
 
         <div className=" mt-40 flex flex-1 flex-col gap-9">
@@ -471,7 +470,7 @@ function GradientCard({
   return (
     <div className="timeline-gradientcard-gradient rounded-2xl p-10">
       <div className="flex items-center justify-between">
-        <Image
+        <img
           src="https://s3-alpha-sig.figma.com/img/9d6d/cfc1/fb8cd40116ca161e463af1ee400a729e?Expires=1694995200&Signature=h1x8zYIEcksM6fh5RDvQ4ECeihTfQdeHloWbzDadukMpZBhws9lPBpMFh-9XIsh2k3CKZCczKPLoIxMJ89vpq8As2DCiADJsSbOXBta1gsOFEXhmuZIO638pHgvaiGW-T-tD4RQEWmWp9Q~rhQYxDM7EuRFbVF6nim-zphAKrdfJXTsqypezfRZonQvppbMt35BOVo81-yGeDBtfmg1FJln3jr-AwlpSa95SZHA4~M4nd-FcwqDG00g5NDx~koYZpLylO-J2UTHAlxnHN6QGkuVfhCmGTvCOb9gAo9Nrp-Hw9Vsgz6gYT8WQYKeIP-3TWBZnTLX5mFgaiCfEks2u4Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
           className="h-16 w-16 rounded-full"
           alt=""
@@ -481,7 +480,7 @@ function GradientCard({
       </div>
 
       <div className="mt-14 flex flex-col gap-4">
-        <Image src={logo} className="max-w-[240px]" alt="" />
+        <img src={logo} className="max-w-[240px]" alt="" />
 
         <div className="   text-5xl font-bold  text-white">{header}</div>
 

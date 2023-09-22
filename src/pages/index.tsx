@@ -1,29 +1,23 @@
-import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import InteractivePrism from "../components/interactivePrism";
-import { CanvasPart } from './new';
-import Timeline from "./timeline";
 import { TrustAuthXLogo } from "../components/svgs/TrustAuthXLogo";
 import { Vector } from "../components/svgs/Vector";
 import { VectorRight } from "../components/svgs/VectorRight";
 import { GithubLogo } from "../components/svgs/Github";
-import { TrustAuthXText } from "../components/svgs/TrustAuthXText";
-import { LowCode } from "../components/svgs/low-code";
 import Footer from "../components/Footer";
+import Customize from '../components/Customize'
+import Showcase from '../components/Showcase'
+import Authlite from '../components/Authlite'
+import Timeline from '../components/Timeline'
+import GradientPlatform from '../components/GradientPlatform'
 
-
-export default function LandingPageCompoent() {
+export default function LandingPage() {
   return (
     <>
-      <Menu />
-      <InteractivePrism bgColor='black' height="1400px" />
-      <TrustAuthXText />
-      <LowCode />
-      <CanvasPart />
+      <GradientPlatform />
       <Timeline />
-      {/* <Framer /> */}
-      {/* <Customization /> */}
+      <Authlite />
+      <Showcase />
+      <Customize />
       <Footer />
     </>
   )
