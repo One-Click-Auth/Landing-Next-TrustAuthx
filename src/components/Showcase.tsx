@@ -9,7 +9,6 @@ import {
   RedirectButton,
   ShowcaseSocialConnectionCard,
 } from "./showcase/Components";
-import Image from 'next/image';
 import CodeTabs from "./showcase/CodeTabs";
 
 function Showcase() {
@@ -54,7 +53,7 @@ function Showcase() {
           className="showcase-1  w-full  "
         >
           <div className="relative  mt-10 flex h-[300px] w-full items-center justify-center bg-transparent ">
-            <Image
+            <img
               src="/showcase/1.png"
               alt=""
               className="absolute  bottom-0 left-0 bg-cover"
@@ -102,7 +101,7 @@ function Showcase() {
             </div>
 
             <div className="relative hidden   h-[205px] w-full items-center justify-center bg-transparent sm:flex ">
-              <Image
+              <img
                 src="/showcase/2.png"
                 alt=""
                 className="absolute  bottom-0 left-0  w-full bg-cover"
@@ -170,12 +169,12 @@ function Showcase() {
                 <p className="underline underline-offset-[12px]">Depl</p>
               </div>
 
-              <Image
+              <img
                 src="/showcase/4.png"
                 alt=""
                 className="absolute -left-10 bottom-0 bg-cover"
               />
-              <Image
+              <img
                 src="/showcase/4-2.png"
                 alt=""
                 className="absolute bottom-0 right-20 bg-cover"
@@ -217,24 +216,24 @@ function Showcase() {
             </div>
 
             {/* things to make the background */}
-            <Image
+            <img
               src="/showcase/code-section/cone.svg"
               className="absolute bottom-[40%] left-0 "
               alt=""
             />
-            <Image
+            <img
               src="/showcase/code-section/circle-1.svg"
               className="absolute bottom-0 left-0 "
               alt=""
             />
 
-            <Image
+            <img
               src="/showcase/code-section/circle-2.svg"
               className="absolute bottom-28 left-20 "
               alt=""
             />
 
-            <Image
+            <img
               src="/showcase/code-section/circle-3.svg"
               className="absolute right-0 top-1/2 -translate-y-1/2 "
               alt=""
@@ -265,7 +264,7 @@ function Showcase() {
                 <div className="hidden items-center gap-14 sm:flex">
                   <p>ValidityDate</p>
                   <p>Logo</p>
-                  <p>Image</p>
+                  <p>img</p>
                 </div>
               </div>
 
@@ -383,7 +382,7 @@ function Showcase() {
               className=" relative -mx-10   hidden   h-[325px] w-full items-center 
             justify-center bg-transparent sm:flex "
             >
-              <Image
+              <img
                 src="/showcase/9.svg"
                 alt=""
                 className="absolute -bottom-8   left-0   w-full max-w-[95%] bg-cover"

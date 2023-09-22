@@ -11,19 +11,12 @@ import { GithubLogo } from "../components/svgs/Github";
 import { TrustAuthXText } from "../components/svgs/TrustAuthXText";
 import { LowCode } from "../components/svgs/low-code";
 import Footer from "../components/Footer";
+import Customize from '../components/customize'
 
-
-export default function LandingPageCompoent() {
+export default function LandingPage() {
   return (
     <>
-      <Menu />
-      <InteractivePrism bgColor='black' height="1400px" />
-      <TrustAuthXText />
-      <LowCode />
-      <CanvasPart />
-      <Timeline />
-      {/* <Framer /> */}
-      {/* <Customization /> */}
+      <Customize/>
       <Footer />
     </>
   )
