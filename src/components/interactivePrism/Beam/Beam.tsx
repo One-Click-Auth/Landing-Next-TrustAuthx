@@ -8,7 +8,7 @@ import { useTexture } from "@react-three/drei";
 import { Reflect } from "./Reflect";
 
 export const Beam = forwardRef(
-  ({ children, position, stride = 4, width = 8, ...props }, fRef) => {
+  ({ children, position, stride = 3, width = 12, ...props }, fRef) => {
     const streaks = useRef(null);
     const glow = useRef(null);
     const reflect = useRef(null);
@@ -88,7 +88,7 @@ export const Beam = forwardRef(
           <planeGeometry />
           <meshBasicMaterial
             map={streakTexture}
-            opacity={1.5}
+            opacity={2.5}
             {...config}
             transparent={false}
           />

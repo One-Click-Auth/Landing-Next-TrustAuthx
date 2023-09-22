@@ -23,8 +23,8 @@ export function lerpV3(value, goal, speed = 0.1) {
 
 export function calculateRefractionAngle(
   incidentAngle,
-  glassIor = 2.5,
-  airIor = 1.000293,
+  glassIor = 5,
+  airIor = 0.300293,
 ) {
   const theta = Math.asin((airIor * Math.sin(incidentAngle)) / glassIor) || 0;
   return theta;
@@ -44,7 +44,7 @@ export default function InteractivePrism({
       <Canvas
         orthographic
         gl={{ antialias: false }}
-        camera={{ position: [0, 0, 20], zoom: 50 }}
+        camera={{ position: [0, 0, 20], zoom: 65 }}
       >
         <color attach="background" args={[bgColor]} />
         <Scene />
@@ -52,9 +52,9 @@ export default function InteractivePrism({
           <Bloom
             mipmapBlur
             levels={9}
-            intensity={1.5}
-            luminanceThreshold={1}
-            luminanceSmoothing={1}
+            intensity={2}
+            luminanceThreshold={1.5}
+            luminanceSmoothing={2}
           />
         </EffectComposer>
       </Canvas>
@@ -76,8 +76,8 @@ function Scene() {
     e.stopPropagation();
     hitPrism(true);
     // Set the intensity really high on first contact.
-    rainbow.current.material.speed = 1;
-    rainbow.current.material.emissiveIntensity = 20;
+    rainbow.current.material.speed = 2.5;
+    rainbow.current.material.emissiveIntensity = 50;
   }, []);
 
   const vec = new THREE.Vector3();
@@ -86,7 +86,7 @@ function Scene() {
     // Extend the line to the prisms center.
     vec.toArray(api.positions, api.number++ * 3);
     // Set flare.
-    flare.current.position.set(position.x, position.y, -0.5);
+    flare.current.position.set(position.x, position.y, -1);
     flare.current.rotation.set(0, 0, -Math.atan2(direction.x, direction.y));
 
     // Calculate refraction angles.
@@ -133,7 +133,7 @@ function Scene() {
     spot.current.intensity = rainbow.current.material.emissiveIntensity;
 
     // Animate ambience.
-    lerp(ambient.current, "intensity", 0, 0.025);
+    lerp(ambient.current, "intensity", 0, 0.25);
   });
 
   return (
@@ -145,30 +145,30 @@ function Scene() {
       <pointLight position={[-10, 0, 0]} intensity={0.05} />
       <spotLight
         ref={spot}
-        intensity={1}
+        intensity={10}
         distance={7}
         angle={1}
         penumbra={1}
         position={[0, 0, 1]}
       />
       {/* Prism + blocks + reflect beam */}
-      <Beam ref={boxreflect} bounce={10} far={20}>
+      <Beam ref={boxreflect} bounce={10} far={20} position={[0, 0, 0]}>
         <Prism
           scale={0.6}
-          position={[0, -0.5, 0]}
           onRayOver={rayOver}
           onRayOut={rayOut}
           onRayMove={rayMove}
         />
       </Beam>
       {/* Rainbow and flares */}
-      <Rainbow ref={rainbow} startRadius={0} endRadius={0.5} fade={0} />
+      <Rainbow ref={rainbow} startRadius={0} endRadius={0.8} fade={0} position={[0, 0, 0]}/>
       <Flare
+        position={[0, 0, 0]}
         ref={flare}
-        visible={isPrismHit}
+        visible={true}
         renderOrder={10}
         scale={1.25}
-        streak={[12.5, 20, 1]}
+        streak={[18.5, 20, 1]}
       />
     </>
   );
