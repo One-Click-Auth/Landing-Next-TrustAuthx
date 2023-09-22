@@ -3,11 +3,11 @@ import {
   PercentageSVG,
   PercentageSVGThird,
   PercentageSVGSecondTimeline,
-} from "../components/timeline/Components";
-import { TimelineCard } from "../components/timeline/TimelineCard";
-import { Information } from "../components/timeline/Information";
-import Carousel from "../components/timeline/CarouselSlider";
-import ArrowIcon from "../components/ArrowIcon";
+} from "./timeline/Components";
+import { TimelineCard } from "./timeline/TimelineCard";
+import { Information } from "./timeline/Information";
+import Carousel from "./timeline/CarouselSlider";
+import ArrowIcon from "./ArrowIcon";
 
 function Timeline() {
   return (

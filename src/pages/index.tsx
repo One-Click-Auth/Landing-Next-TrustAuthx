@@ -7,13 +7,17 @@ import Footer from "../components/Footer";
 import Customize from '../components/customize'
 import Showcase from '../components/Showcase'
 import Authlite from '../components/Authlite'
+import Timeline from '../components/Timeline'
+import GradientPlatform from '../components/GradientPlatform'
 
 export default function LandingPage() {
   return (
     <>
-      <Authlite/>
-      <Showcase/>
-      <Customize/>
+      <GradientPlatform />
+      <Timeline />
+      <Authlite />
+      <Showcase />
+      <Customize />
       <Footer />
     </>
   )
