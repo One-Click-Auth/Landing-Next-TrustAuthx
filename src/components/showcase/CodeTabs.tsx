@@ -1,6 +1,16 @@
 import React, { useState } from "react";
 
-const CodeTabs = ({pyFileName, jsFileName, goFileName, pyCode}: {pyFileName?: string, jsFileName?: string, goFileName?:string, pyCode?:React.ReactNode}) => {
+const CodeTabs = ({
+  pyFileName,
+  jsFileName,
+  goFileName,
+  pyCode,
+}: {
+  pyFileName?: string;
+  jsFileName?: string;
+  goFileName?: string;
+  pyCode?: React.ReactNode;
+}) => {
   const [activeTab, setActiveTab] = useState("python");
 
   const handleTabClick = (tab: string) => {
@@ -12,7 +22,7 @@ const CodeTabs = ({pyFileName, jsFileName, goFileName, pyCode}: {pyFileName?: st
       case "javascript":
         return <div>js</div>;
       case "python":
-        return pyCode || ""
+        return pyCode || "";
       case "go":
         return (
           <div>
@@ -27,41 +37,47 @@ const CodeTabs = ({pyFileName, jsFileName, goFileName, pyCode}: {pyFileName?: st
 
   return (
     <div>
-      <div className="flex pt-2 border-b pr-24 border-b-[#30363D] rounded-t-xl px-2 bg-[#161B23] space-x-2">
-        {pyFileName ? <button
-          className = {`px-4 text-[14px]  flex items-center  gap-7 pr-10   py-2 rounded ${
-            activeTab === 'python'
-            ? 'bg-[#0D1117] border-b-black border  border-[#30363D] text-white'
-            : 'text-[#7D8590] bg-transparent border border-transparent '
-          }`}
-          onClick = {() => handleTabClick('python')}
-        >
-          <PySvg /> {pyFileName}
-        </button> : null}
+      <div className="flex space-x-2 rounded-t-xl border-b border-b-[#30363D] bg-[#161B23] px-2 pr-24 pt-2">
+        {pyFileName ? (
+          <button
+            className={`flex items-center  gap-7 rounded  px-4 py-2   pr-10 text-[14px] ${
+              activeTab === "python"
+                ? "border border-[#30363D] border-b-black  bg-[#0D1117] text-white"
+                : "border border-transparent bg-transparent text-[#7D8590] "
+            }`}
+            onClick={() => handleTabClick("python")}
+          >
+            <PySvg /> {pyFileName}
+          </button>
+        ) : null}
 
-        {jsFileName ? <button
-          className = {`px-4  text-[14px] py-2 gap-2 rounded  flex items-center ${
-            activeTab === 'javascript'
-            ? 'bg-[#0D1117] border-b-black border  border-[#30363D] text-white'
-            : 'text-[#7D8590] bg-transparent border border-transparent'
-          }`}
-          onClick = {() => handleTabClick('javascript')}
-        >
-          <JsSvg />
-          {jsFileName}
-        </button> : null}
+        {jsFileName ? (
+          <button
+            className={`flex  items-center gap-2 rounded px-4  py-2 text-[14px] ${
+              activeTab === "javascript"
+                ? "border border-[#30363D] border-b-black  bg-[#0D1117] text-white"
+                : "border border-transparent bg-transparent text-[#7D8590]"
+            }`}
+            onClick={() => handleTabClick("javascript")}
+          >
+            <JsSvg />
+            {jsFileName}
+          </button>
+        ) : null}
 
-        {goFileName ? <button
-          className = {`px-4 text-[14px]  py-2 gap-2   rounded flex items-center ${
-            activeTab === 'go'
-            ? 'bg-[#0D1117] border-b-black border  border-[#30363D] text-white'
-            : 'text-[#7D8590] bg-transparent border border-transparent'
-          }`}
-          onClick = {() => handleTabClick('go')}
-        >
-          <GoSvg />
-          {goFileName}
-        </button> : null}
+        {goFileName ? (
+          <button
+            className={`flex items-center  gap-2 rounded   px-4 py-2 text-[14px] ${
+              activeTab === "go"
+                ? "border border-[#30363D] border-b-black  bg-[#0D1117] text-white"
+                : "border border-transparent bg-transparent text-[#7D8590]"
+            }`}
+            onClick={() => handleTabClick("go")}
+          >
+            <GoSvg />
+            {goFileName}
+          </button>
+        ) : null}
       </div>
 
       <div className=" bg-[#0D1117] p-4 pb-2">{getCode()}</div>

@@ -4,71 +4,72 @@ import { Vector } from "../components/svgs/Vector";
 import { VectorRight } from "../components/svgs/VectorRight";
 import { GithubLogo } from "../components/svgs/Github";
 import Footer from "../components/Footer";
-import Customize from '../components/Customize'
-import Showcase from '../components/Showcase'
-import Authlite from '../components/Authlite'
-import Timeline from '../components/Timeline'
-import GradientPlatform from '../components/GradientPlatform'
-import LandingHero from '../components/LandingHero'
-import CodeTabs from '../components/showcase/CodeTabs'
-import React from 'react'
+import Customize from "../components/Customize";
+import Showcase from "../components/Showcase";
+import Authlite from "../components/Authlite";
+import Timeline from "../components/Timeline";
+import GradientPlatform from "../components/GradientPlatform";
+import LandingHero from "../components/LandingHero";
+import CodeTabs from "../components/showcase/CodeTabs";
+import React from "react";
 
 export default function LandingPage() {
   return (
     <>
       <LandingHero />
       <div>
-        <h2>
-          See. THE AI in ACTION
-        </h2>
+        <h2>See. THE AI in ACTION</h2>
         <p>
           <span>
-            {'->'} Get your Auth. project perfectly running with as Low-Code as 3 lines .
+            {"->"} Get your Auth. project perfectly running with as Low-Code as
+            3 lines .
           </span>
-          <span>
-            That’s
-          </span>
+          <span>That’s</span>
         </p>
-        <CodeTabs pyFileName="py - cli"
-                  pyCode={<div
-                    className="text-white text-base font-normal"
-                  >
-                    <p>
-                      <span className="text-[#6E7681]  mr-[10px]">1</span>
-                      <span className="text-white  ">pip install</span>
-                      <span className="text-[#FF7B72]  "> trustauthx</span>
-                    </p>
+        <CodeTabs
+          pyFileName="py - cli"
+          pyCode={
+            <div className="text-base font-normal text-white">
+              <p>
+                <span className="mr-[10px]  text-[#6E7681]">1</span>
+                <span className="text-white  ">pip install</span>
+                <span className="text-[#FF7B72]  "> trustauthx</span>
+              </p>
 
-                    <p>
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                2
-              </span>
-                      <span className="text-[#FF7B72]  ">trustauthx</span>
-                      <span className="text-sky-300 "> login </span>
-                      <span className="text-white "> me -k
-                        {"<API KEY> -s <SECRET KEY> -o <ORG ID>"}  </span>
-                    </p>
+              <p>
+                <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                  2
+                </span>
+                <span className="text-[#FF7B72]  ">trustauthx</span>
+                <span className="text-sky-300 "> login </span>
+                <span className="text-white ">
+                  {" "}
+                  me -k
+                  {"<API KEY> -s <SECRET KEY> -o <ORG ID>"}{" "}
+                </span>
+              </p>
 
-                    <p>
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                3
-              </span>
-                      <span className="text-[#FF7B72]  ">trustauthx</span>
-                      <span className="text-sky-300 "> neuroform </span>
-                      <span className="text-white "> fastapi</span>
-                    </p>
+              <p>
+                <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                  3
+                </span>
+                <span className="text-[#FF7B72]  ">trustauthx</span>
+                <span className="text-sky-300 "> neuroform </span>
+                <span className="text-white "> fastapi</span>
+              </p>
 
-                    <p>
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                4
-              </span>
-                      <span className="text-[#FF7B72]  ">trustauthx</span>
-                      <span className="text-sky-300 "> start </span>
-                      <span className="text-white "> fastapi</span>
-                    </p>
-                  </div>}
-                  jsFileName="js - cli"
-                  goFileName="go - cli"
+              <p>
+                <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                  4
+                </span>
+                <span className="text-[#FF7B72]  ">trustauthx</span>
+                <span className="text-sky-300 "> start </span>
+                <span className="text-white "> fastapi</span>
+              </p>
+            </div>
+          }
+          jsFileName="js - cli"
+          goFileName="go - cli"
         />
       </div>
       <GradientPlatform />
@@ -78,353 +79,81 @@ export default function LandingPage() {
       <Customize />
       <Footer />
     </>
-  )
+  );
 }
 
-
 function Menu() {
-
   return (
-    <div className="border-0.5 border-[#DFDFDF] bg-opacity-1 w-full text-[#DFDFDF] h-20 px-14 py-5 bg-black bg-opacity-0 border border-white backdrop-blur-sm justify-center items-start inline-flex absolute top-0 left-0 z-10">
-      <div className="h-12 px-14 justify-between items-center gap-96 flex">
-        <div className="justify-start items-center gap-7 flex">
-          <div className="w-11 h-11 relative">
+    <div className="border-0.5 bg-opacity-1 absolute left-0 top-0 z-10 inline-flex h-20 w-full items-start justify-center border border-[#DFDFDF] border-white bg-black bg-opacity-0 px-14 py-5 text-[#DFDFDF] backdrop-blur-sm">
+      <div className="flex h-12 items-center justify-between gap-96 px-14">
+        <div className="flex items-center justify-start gap-7">
+          <div className="relative h-11 w-11">
             <TrustAuthXLogo />
-            <div className="w-6 h-8 left-[10.48px] top-[7.99px] absolute">
-            </div>
+            <div className="absolute left-[10.48px] top-[7.99px] h-8 w-6"></div>
           </div>
-          <div className="h-6 justify-center items-start gap-7 flex">
-            <div className="w-24 self-stretch justify-center items-center gap-1 inline-flex">
-              <div className="mix-blend-exclusion text-center text-base font-medium leading-normal">Products</div>
-              <div className="w-5 px-1.5 py-2 justify-start items-start inline-flex">
+          <div className="flex h-6 items-start justify-center gap-7">
+            <div className="inline-flex w-24 items-center justify-center gap-1 self-stretch">
+              <div className="text-center text-base font-medium leading-normal mix-blend-exclusion">
+                Products
+              </div>
+              <div className="inline-flex w-5 items-start justify-start px-1.5 py-2">
                 <Vector />
               </div>
             </div>
-            <div className="self-stretch justify-start items-start inline-flex">
-              <div className="mix-blend-exclusion text-base font-medium leading-normal">Customers</div>
+            <div className="inline-flex items-start justify-start self-stretch">
+              <div className="text-base font-medium leading-normal mix-blend-exclusion">
+                Customers
+              </div>
             </div>
-            <div className="self-stretch justify-start items-start inline-flex">
-              <div className="mix-blend-exclusion text-base font-medium leading-normal">Enterprise</div>
+            <div className="inline-flex items-start justify-start self-stretch">
+              <div className="text-base font-medium leading-normal mix-blend-exclusion">
+                Enterprise
+              </div>
             </div>
-            <div className="self-stretch justify-start items-start inline-flex">
-              <div className="mix-blend-exclusion text-base font-medium leading-normal">Pricing</div>
+            <div className="inline-flex items-start justify-start self-stretch">
+              <div className="text-base font-medium leading-normal mix-blend-exclusion">
+                Pricing
+              </div>
             </div>
-            <div className="grow shrink basis-0 self-stretch justify-center items-center gap-1 inline-flex">
-              <div className="mix-blend-exclusion text-center text-base font-medium leading-normal">Resources</div>
-              <div className="w-5 px-1.5 py-2 justify-start items-start inline-flex" />
+            <div className="inline-flex shrink grow basis-0 items-center justify-center gap-1 self-stretch">
+              <div className="text-center text-base font-medium leading-normal mix-blend-exclusion">
+                Resources
+              </div>
+              <div className="inline-flex w-5 items-start justify-start px-1.5 py-2" />
             </div>
-            <div className="self-stretch justify-start items-start inline-flex">
-              <div className="justify-start items-start flex">
-                <div className="mix-blend-exclusion text-base font-medium leading-normal">Contact us</div>
+            <div className="inline-flex items-start justify-start self-stretch">
+              <div className="flex items-start justify-start">
+                <div className="text-base font-medium leading-normal mix-blend-exclusion">
+                  Contact us
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="justify-center items-center gap-11 flex">
-          <div className="justify-start items-center gap-1.5 flex">
+        <div className="flex items-center justify-center gap-11">
+          <div className="flex items-center justify-start gap-1.5">
             <GithubLogo />
-            <div className="mix-blend-exclusion text-base font-semibold leading-none">Github</div>
+            <div className="text-base font-semibold leading-none mix-blend-exclusion">
+              Github
+            </div>
           </div>
-          <div className="py-4 justify-start items-center flex">
-            <div className="mix-blend-exclusion text-base font-semibold leading-none">Docs</div>
+          <div className="flex items-center justify-start py-4">
+            <div className="text-base font-semibold leading-none mix-blend-exclusion">
+              Docs
+            </div>
           </div>
-          <div className="py-4 justify-start items-center flex">
-            <div className="mix-blend-exclusion text-base font-semibold leading-none">Sign in</div>
+          <div className="flex items-center justify-start py-4">
+            <div className="text-base font-semibold leading-none mix-blend-exclusion">
+              Sign in
+            </div>
           </div>
-          <div className="px-5 py-2.5 bg-white rounded-full border border-neutral-800 justify-center items-center gap-1 flex">
-            <div className="mix-blend-exclusion text-center text-white text-base font-semibold leading-normal">Let’s Get Started</div>
-            <div className="w-5 h-5 pr-2 py-1.5 justify-start items-center gap-2 flex" />
+          <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
+            <div className="text-center text-base font-semibold leading-normal text-white mix-blend-exclusion">
+              Let’s Get Started
+            </div>
+            <div className="flex h-5 w-5 items-center justify-start gap-2 py-1.5 pr-2" />
             <VectorRight />
           </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-
-// function Footer() {
-//   return (
-//     <div className="flex min-h-screen  flex-col items-center justify-center py-12 ">
-//       <PricingPart />
-//       <SubscribePart />
-//       <CopyrightInfo />
-//     </div>
-//   );
-// }
-
-function PricingPart() {
-  return (
-    <div className="relative flex w-[850px]  flex-col items-center justify-center">
-      <div className="DivSectionHeader   inline-flex flex-col items-center  justify-start gap-2.5">
-        <div className="gradientbg flex h-7 w-24 items-center justify-center rounded-3xl bg-gradient-to-r text-center">
-          <div className=" text-sm font-medium leading-none text-stone-900 text-opacity-40">
-            Get access
-          </div>
-        </div>
-
-        <div className="flex  flex-col items-center justify-center ">
-          <p className="text-center text-4xl font-medium leading-10 text-black">
-            We like keeping things simple
-            <br />
-            Two plan Two price.
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-16 flex  gap-24">
-        <div className="flex flex-col gap-8">
-          <div className=" flex  items-center gap-5">
-            <div className="flex ">
-              <p className="textgradient  text-6xl font-medium  text-transparent ">
-                $20
-              </p>
-            </div>
-
-            <div className=" text-sm font-normal leading-tight text-black text-opacity-60">
-              /month
-              <br />
-              (billed monthly)
-            </div>
-          </div>
-
-          <ul className="  flex list-disc flex-col    gap-5">
-            <li className="items-start justify-start">
-              For Freelancers & Students{" "}
-            </li>
-
-            <li className=" items-start justify-start">Dynamic Rate Limits </li>
-
-            <li className=" items-start justify-start">
-              Unlimited Active Users{" "}
-            </li>
-
-            <li className="items-start justify-start">
-              Add Ons + Community Support{" "}
-            </li>
-          </ul>
-        </div>
-
-        <div className=" flex items-center gap-12">
-          <div>
-            <div className=" flex  flex-col gap-8 ">
-              <div className="  flex items-center gap-5">
-                <div className=" text-sm font-normal leading-tight text-black text-opacity-60">
-                  /month
-                  <br />
-                  (billed monthly)
-                </div>
-
-                <div className="flex justify-end text-right ">
-                  <div className="textgradient  text-6xl font-medium  text-fuchsia-500">
-                    $40
-                  </div>
-                </div>
-              </div>
-
-              <ul dir="rtl" className=" flex list-disc flex-col     gap-5">
-                <li className="items-start justify-start">
-                  For Freelancers & Students{" "}
-                </li>
-
-                <li className=" items-start justify-start">
-                  Dynamic Rate Limits{" "}
-                </li>
-
-                <li className=" items-start justify-start">
-                  Unlimited Active Users{" "}
-                </li>
-
-                <li className="items-start justify-start">
-                  Add Ons + Community Support{" "}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button className="mt-12 rounded-md bg-black p-3 text-white">
-        Start your 14-day trial
-      </button>
-
-      <Image
-        src={"./svgs/homePageBall.svg"}
-        alt="trustAuthX-ball"
-        width={800}
-        height={800}
-        className="absolute -top-36 -z-20"
-      />
-    </div>
-  );
-}
-
-function SubscribePart() {
-  return (
-    <div className="relative mt-40 h-screen w-full">
-      <Image
-        width={900}
-        height={630}
-        src={"./svgs/HomePageGradient.svg"}
-        className="absolute left-0 top-32  -z-10"
-        alt="trustauthx_gradient"
-      />
-
-      <Image
-        src={"./svgs/Grid.svg"}
-        alt="trustauthx_grid"
-        className="absolute   right-0 top-20 -z-10"
-        width={1100}
-        height={1100}
-      />
-
-      <div className="flex h-full items-center justify-center">
-        <div className="Frame824636 inline-flex  flex-col items-center justify-start gap-2">
-          <Image alt="logo" width={123} height={123} src={"./svgs/logo.svg"} />
-          <div className="  mt-12 text-6xl font-semibold text-black">
-            TrustAuthX
-          </div>
-          <div className=" text-3xl font-normal text-black">
-            Subscribe to our newsletter
-          </div>
-
-          <div className="mt-12 flex  flex-col">
-            <div className=" mb-2 text-black">
-              Get product updates, company news, and more.
-            </div>
-            <div className="flex items-center gap-6">
-              <input
-                type="text"
-                className="h-12 w-[335px] rounded-md border  bg-transparent"
-              />
-              <button className=" w- rounded-md bg-black  p-3 text-white">
-                Start your 14-day trial
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export function CopyrightInfo() {
-  return (
-    <div className="Group12456 mt-10 flex flex-wrap gap-20 lg:gap-60">
-      <div className="flex w-full flex-col items-center justify-center gap-7   lg:w-auto lg:items-start lg:justify-normal">
-        <div className="Frame824639   inline-flex  flex-col items-start justify-start gap-5">
-          <div className="Frame824627 flex flex-col items-start justify-start gap-0.5 self-stretch">
-            <div className="FlitchcoinSupport text-base font-bold text-zinc-800">
-              FlitchCoin Support
-            </div>
-            <div className="SupportFlitchcoinCom text-center text-base font-light tracking-tight text-zinc-800">
-              support@flitchcoin.com
-            </div>
-          </div>
-          <div className="Frame824628 flex flex-col items-start justify-start gap-0.5">
-            <div className="InvestorRelation text-base font-bold text-zinc-800">
-              Investor Relation
-            </div>
-            <div className="InvestFlitchcoinCom text-center text-base font-light tracking-tight text-zinc-800">
-              invest@flitchcoin.com
-            </div>
-          </div>
-        </div>
-
-        <div className="  grid h-24 w-52 grid-cols-4 items-end justify-start gap-2.5">
-          <Image width={44} height={44} src={"./svgs/Youtube.svg"} alt="icon" />
-          <Image
-            width={44}
-            height={44}
-            src={"./svgs/Instagram.svg"}
-            alt="icon"
-          />
-          <Image width={44} height={44} src={"./svgs/Reddit.svg"} alt="icon" />
-          <Image
-            width={44}
-            height={44}
-            src={"./svgs/LinkedIn.svg"}
-            alt="icon"
-          />
-          <Image width={44} height={44} src={"./svgs/Medium.svg"} alt="icon" />
-          <Image width={44} height={44} src={"./svgs/Twitter.svg"} alt="icon" />
-          <Image width={44} height={44} src={"./svgs/Github.svg"} alt="icon" />
-          <Image width={44} height={44} src={"./svgs/Discord.svg"} alt="icon" />
-        </div>
-
-        <div className="2023Trustauthx    w-36 text-base font-normal text-zinc-800">
-          © 2023 Trustauthx.
-        </div>
-      </div>
-
-      <div>
-        <div className="Frame824623   inline-flex flex-wrap  items-start justify-end gap-28">
-          <div className="Frame824626 inline-flex shrink grow basis-0 flex-col items-start justify-start gap-5 self-stretch">
-            <div className="Platform w-40 text-base font-semibold text-black">
-              Platform
-            </div>
-            <div className="AccessManagement text-base font-normal text-black">
-              Access Management{" "}
-            </div>
-            <div className="Partners  text-base font-normal text-black">
-              Partners
-            </div>
-            <div className="Electron  text-base font-normal text-black">
-              Electron
-            </div>
-            <div className="GithubDesktop  text-base font-normal text-black">
-              GitHub Desktop
-            </div>
-          </div>
-
-          <div className="Frame824623 inline-flex shrink grow basis-0 flex-col items-start justify-start gap-5 self-stretch">
-            <div className="Product  text-base font-semibold text-black">
-              Product
-            </div>
-            <div className="Features  text-base font-normal text-black">
-              Features
-            </div>
-            <div className="Security  text-base font-normal text-black">
-              Security
-            </div>
-            <div className="Team  text-base font-normal text-black">Team</div>
-            <div className="Enterprice  text-base font-normal text-black">
-              Enterprice
-            </div>
-          </div>
-
-          <div className="Frame824624 inline-flex shrink grow basis-0 flex-col items-start justify-start gap-5 self-stretch">
-            <div className="Developers  text-base font-semibold text-black">
-              Developers{" "}
-            </div>
-            <div className="Docs  text-base font-normal text-black">Docs</div>
-            <div className="CommunityForum  text-base font-normal text-black">
-              Community Forum
-            </div>
-            <div className="Apis  text-base font-normal text-black">APIs</div>
-            <div className="PremiumSupport  text-base font-normal text-black">
-              Premium Support
-            </div>
-          </div>
-
-          <div className="Frame824625 inline-flex shrink grow basis-0 flex-col items-start justify-start gap-5 self-stretch">
-            <div className="Company w-32 text-base font-semibold text-black">
-              Company
-            </div>
-            <div className="About  text-base font-normal text-black">About</div>
-            <div className="Blog  text-base font-normal text-black">Blog</div>
-            <div className="Careers  text-base font-normal text-black">
-              Careers
-            </div>
-            <div className="TermsOfUse  text-base font-normal text-zinc-800">
-              Terms of Use
-            </div>
-          </div>
-        </div>
-
-        <div className="Frame824630 inline-flex  flex-col items-start justify-start gap-8">
-          <div className="Frame824627 shrink grow basis-0 self-stretch" />
-          <div className="Frame824628" />
         </div>
       </div>
     </div>

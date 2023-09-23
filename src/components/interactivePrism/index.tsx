@@ -161,7 +161,13 @@ function Scene() {
         />
       </Beam>
       {/* Rainbow and flares */}
-      <Rainbow ref={rainbow} startRadius={0} endRadius={0.8} fade={0} position={[0, 0, 0]}/>
+      <Rainbow
+        ref={rainbow}
+        startRadius={0}
+        endRadius={0.8}
+        fade={0}
+        position={[0, 0, 0]}
+      />
       <Flare
         position={[0, 0, 0]}
         ref={flare}

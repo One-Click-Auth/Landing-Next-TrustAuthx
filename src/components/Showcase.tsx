@@ -190,14 +190,14 @@ function Showcase() {
               </div>
             }
             description={
-              <div className="w-[292px] mt-2 h-[38px] text-white text-base font-normal  leading-snug">
+              <div className="mt-2 h-[38px] w-[292px] text-base font-normal leading-snug  text-white">
                 Complete user Token Management solution all in caching servers.
               </div>
             }
             className="  showcase-5 col-span-full w-full lg:col-span-6  "
           >
-            <div className="showcase-3-width z-10 relative gap-3 -mx-10    flex flex-col h-[360px] w-full items-center justify-center bg-transparent ">
-              <div className="bottom-0 absolute -right-1">
+            <div className="showcase-3-width relative z-10 -mx-10 flex    h-[360px] w-full flex-col items-center justify-center gap-3 bg-transparent ">
+              <div className="absolute -right-1 bottom-0">
                 <div className="">
                   <span className="text-[32px] font-medium leading-7 text-white">
                     Never
@@ -211,90 +211,99 @@ function Showcase() {
                   </span>
                 </div>
 
-                <CodeTabs pyFileName="TrustAuthx.py"
-                          pyCode={<div
-                            className="text-white text-base font-normal"
-                          >
-                            <p>
-                              <span className="text-[#6E7681]  mr-[10px]">1</span>
-                              <span className="text-[#FF7B72]">from </span>
-                              <span className="text-white  ">trustauthx.authlite </span>
-                              <span className="text-[#FF7B72]  ">import </span>
-                              <span className="text-white  ">AuthLiteClient</span>
-                            </p>
+                <CodeTabs
+                  pyFileName="TrustAuthx.py"
+                  pyCode={
+                    <div className="text-base font-normal text-white">
+                      <p>
+                        <span className="mr-[10px]  text-[#6E7681]">1</span>
+                        <span className="text-[#FF7B72]">from </span>
+                        <span className="text-white  ">
+                          trustauthx.authlite{" "}
+                        </span>
+                        <span className="text-[#FF7B72]  ">import </span>
+                        <span className="text-white  ">AuthLiteClient</span>
+                      </p>
 
-                            <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-              2
-            </span>
+                      <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                        2
+                      </span>
 
-                            <p>
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                3
-              </span>
-                              <span className="text-sky-300 ">client</span>
-                              <span className="text-white "> = </span>
-                              <span className="text-[#FF7B72] ">AuthLiteClient</span>
-                              <span className="text-white ">(</span>
-                            </p>
+                      <p>
+                        <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                          3
+                        </span>
+                        <span className="text-sky-300 ">client</span>
+                        <span className="text-white "> = </span>
+                        <span className="text-[#FF7B72] ">AuthLiteClient</span>
+                        <span className="text-white ">(</span>
+                      </p>
 
-                            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                4
-              </span>
+                      <div className="flex items-center">
+                        <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                          4
+                        </span>
 
-                              <div className="ml-10">
-                                <span className="text-sky-300 ">api_key</span>
-                                <span className="text-white "> = </span>
-                                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
-                                <span className="text-white ">,</span>
-                              </div>
-                            </div>
+                        <div className="ml-10">
+                          <span className="text-sky-300 ">api_key</span>
+                          <span className="text-white "> = </span>
+                          <span className="text-[#FF7B72] ">
+                            {"f28ffe7f2e..."}
+                          </span>
+                          <span className="text-white ">,</span>
+                        </div>
+                      </div>
 
-                            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                5
-              </span>
+                      <div className="flex items-center">
+                        <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                          5
+                        </span>
 
-                              <div className="ml-10">
-                                <span className="text-sky-300 ">secret_key</span>
-                                <span className="text-white "> = </span>
-                                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
-                                <span className="text-white ">,</span>
-                              </div>
-                            </div>
+                        <div className="ml-10">
+                          <span className="text-sky-300 ">secret_key</span>
+                          <span className="text-white "> = </span>
+                          <span className="text-[#FF7B72] ">
+                            {"f28ffe7f2e..."}
+                          </span>
+                          <span className="text-white ">,</span>
+                        </div>
+                      </div>
 
-                            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                6
-              </span>
+                      <div className="flex items-center">
+                        <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                          6
+                        </span>
 
-                              <div className="ml-10">
-                                <span className="text-sky-300 ">org_id</span>
-                                <span className="text-white "> = </span>
-                                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
-                                <span className="text-white ">,</span>
-                              </div>
-                            </div>
+                        <div className="ml-10">
+                          <span className="text-sky-300 ">org_id</span>
+                          <span className="text-white "> = </span>
+                          <span className="text-[#FF7B72] ">
+                            {"f28ffe7f2e..."}
+                          </span>
+                          <span className="text-white ">,</span>
+                        </div>
+                      </div>
 
-                            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                7
-              </span>
+                      <div className="flex items-center">
+                        <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                          7
+                        </span>
 
-                              <div className="ml-44">)</div>
-                            </div>
+                        <div className="ml-44">)</div>
+                      </div>
 
-                            <p className="">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                8
-              </span>
-                              <span className="text-white  ">def </span>
-                              <span className="text-[#FF7B72]  ">get_auth_</span>
-                              <span className="text-white  ">():</span>
-                            </p>
-                          </div>}
-                          jsFileName="Auth.js"
-                          goFileName="TrustAuthx.go"
+                      <p className="">
+                        <span className="mr-[10px] text-base font-normal text-[#6E7681]">
+                          8
+                        </span>
+                        <span className="text-white  ">def </span>
+                        <span className="text-[#FF7B72]  ">get_auth_</span>
+                        <span className="text-white  ">():</span>
+                      </p>
+                    </div>
+                  }
+                  jsFileName="Auth.js"
+                  goFileName="TrustAuthx.go"
                 />
               </div>
             </div>
