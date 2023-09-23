@@ -1,7 +1,7 @@
-import { TrustAuthXLogo } from "../components/svgs/TrustAuthXLogo";
-import { Vector } from "../components/svgs/Vector";
-import { VectorRight } from "../components/svgs/VectorRight";
-import { GithubLogo } from "../components/svgs/Github";
+import { TrustAuthXLogo } from "../../public/svgs/TrustAuthXLogo";
+import { Vector } from "../../public/svgs/Vector";
+import { VectorRight } from "../../public/svgs/VectorRight";
+import { GithubLogo } from "../../public/svgs/Github";
 import Footer from "../components/Footer";
 import Customize from "../components/Customize";
 import Showcase from "../components/Showcase";
