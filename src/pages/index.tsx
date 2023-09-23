@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { TrustAuthXLogo } from "../components/svgs/TrustAuthXLogo";
 import { Vector } from "../components/svgs/Vector";
 import { VectorRight } from "../components/svgs/VectorRight";
@@ -10,68 +9,14 @@ import Authlite from "../components/Authlite";
 import Timeline from "../components/Timeline";
 import GradientPlatform from "../components/GradientPlatform";
 import LandingHero from "../components/LandingHero";
-import CodeTabs from "../components/showcase/CodeTabs";
 import React from "react";
+import AiInCLI from "../components/AiInCLI";
 
 export default function LandingPage() {
   return (
     <>
       <LandingHero />
-      <div>
-        <h2>See. THE AI in ACTION</h2>
-        <p>
-          <span>
-            {"->"} Get your Auth. project perfectly running with as Low-Code as
-            3 lines .
-          </span>
-          <span>That’s</span>
-        </p>
-        <CodeTabs
-          pyFileName="py - cli"
-          pyCode={
-            <div className="text-base font-normal text-white">
-              <p>
-                <span className="mr-[10px]  text-[#6E7681]">1</span>
-                <span className="text-white  ">pip install</span>
-                <span className="text-[#FF7B72]  "> trustauthx</span>
-              </p>
-
-              <p>
-                <span className="mr-[10px] text-base font-normal text-[#6E7681]">
-                  2
-                </span>
-                <span className="text-[#FF7B72]  ">trustauthx</span>
-                <span className="text-sky-300 "> login </span>
-                <span className="text-white ">
-                  {" "}
-                  me -k
-                  {"<API KEY> -s <SECRET KEY> -o <ORG ID>"}{" "}
-                </span>
-              </p>
-
-              <p>
-                <span className="mr-[10px] text-base font-normal text-[#6E7681]">
-                  3
-                </span>
-                <span className="text-[#FF7B72]  ">trustauthx</span>
-                <span className="text-sky-300 "> neuroform </span>
-                <span className="text-white "> fastapi</span>
-              </p>
-
-              <p>
-                <span className="mr-[10px] text-base font-normal text-[#6E7681]">
-                  4
-                </span>
-                <span className="text-[#FF7B72]  ">trustauthx</span>
-                <span className="text-sky-300 "> start </span>
-                <span className="text-white "> fastapi</span>
-              </p>
-            </div>
-          }
-          jsFileName="js - cli"
-          goFileName="go - cli"
-        />
-      </div>
+      <AiInCLI />
       <GradientPlatform />
       <Timeline />
       <Authlite />
