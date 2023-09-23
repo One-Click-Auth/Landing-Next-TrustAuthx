@@ -9,10 +9,12 @@ import Showcase from '../components/Showcase'
 import Authlite from '../components/Authlite'
 import Timeline from '../components/Timeline'
 import GradientPlatform from '../components/GradientPlatform'
+import LandingHero from '../components/LandingHero'
 
 export default function LandingPage() {
   return (
     <>
+      <LandingHero />
       <GradientPlatform />
       <Timeline />
       <Authlite />
