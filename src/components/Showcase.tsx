@@ -211,7 +211,91 @@ function Showcase() {
                   </span>
                 </div>
 
-                <CodeTabs />
+                <CodeTabs pyFileName="TrustAuthx.py"
+                          pyCode={<div
+                            className="text-white text-base font-normal"
+                          >
+                            <p>
+                              <span className="text-[#6E7681]  mr-[10px]">1</span>
+                              <span className="text-[#FF7B72]">from </span>
+                              <span className="text-white  ">trustauthx.authlite </span>
+                              <span className="text-[#FF7B72]  ">import </span>
+                              <span className="text-white  ">AuthLiteClient</span>
+                            </p>
+
+                            <span className="text-[#6E7681] text-base font-normal mr-[10px]">
+              2
+            </span>
+
+                            <p>
+              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
+                3
+              </span>
+                              <span className="text-sky-300 ">client</span>
+                              <span className="text-white "> = </span>
+                              <span className="text-[#FF7B72] ">AuthLiteClient</span>
+                              <span className="text-white ">(</span>
+                            </p>
+
+                            <div className="flex items-center">
+              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
+                4
+              </span>
+
+                              <div className="ml-10">
+                                <span className="text-sky-300 ">api_key</span>
+                                <span className="text-white "> = </span>
+                                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
+                                <span className="text-white ">,</span>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center">
+              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
+                5
+              </span>
+
+                              <div className="ml-10">
+                                <span className="text-sky-300 ">secret_key</span>
+                                <span className="text-white "> = </span>
+                                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
+                                <span className="text-white ">,</span>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center">
+              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
+                6
+              </span>
+
+                              <div className="ml-10">
+                                <span className="text-sky-300 ">org_id</span>
+                                <span className="text-white "> = </span>
+                                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
+                                <span className="text-white ">,</span>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center">
+              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
+                7
+              </span>
+
+                              <div className="ml-44">)</div>
+                            </div>
+
+                            <p className="">
+              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
+                8
+              </span>
+                              <span className="text-white  ">def </span>
+                              <span className="text-[#FF7B72]  ">get_auth_</span>
+                              <span className="text-white  ">():</span>
+                            </p>
+                          </div>}
+                          jsFileName="Auth.js"
+                          goFileName="TrustAuthx.go"
+                />
               </div>
             </div>
 
