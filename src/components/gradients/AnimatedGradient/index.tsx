@@ -29,7 +29,7 @@ function AnimatedGradient() {
     <canvas
       id="gradient-canvas"
       className="absolute top-1/2  w-screen  -translate-y-1/2 overflow-hidden bg-no-repeat"
-      style={{ height: "50%" }}
+      style={{ height: "70%" }}
     />
   );
 }

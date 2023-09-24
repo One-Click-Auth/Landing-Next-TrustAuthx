@@ -1,5 +1,6 @@
 import InteractivePrism from "./interactivePrism";
-import { LowCode } from "./svgs/low-code";
+import appDemo from "public/images/AppDemo.webp";
+import Image from "next/image";
 
 export default function LandingHero() {
   return (
@@ -48,7 +49,11 @@ export default function LandingHero() {
           </p>
         </button>
       </div>
-      {/*<LowCode />*/}
+      <Image
+        src={appDemo}
+        alt="Preview of TrustAuthX app"
+        className="z-20 -mt-52"
+      />
     </>
   );
 }

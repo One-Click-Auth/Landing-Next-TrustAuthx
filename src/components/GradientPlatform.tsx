@@ -4,8 +4,8 @@ import React from "react";
 
 export default function GradientPlatform() {
   return (
-    <div className="-z-20 m-auto mt-5 w-[97vw] rounded-3xl bg-black py-24   text-gray-200 lg:rounded-[90px]">
-      <div className="flex flex-col  items-center px-4">
+    <div className="-z-20 w-full bg-black py-24 text-gray-200 ">
+      <div className="flex flex-col  items-center">
         <div className="ml-36 flex max-h-[738px]  w-full max-w-[1240px] flex-col  flex-wrap gap-14  rounded-3xl px-4">
           <div className=" text-4xl font-semibold">
             TrustAuthx is the world’s most Easiest and
@@ -13,7 +13,7 @@ export default function GradientPlatform() {
             completely Managed Auth platform
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="mb-14 flex items-center gap-2">
             <button className="flex items-center justify-center gap-2 rounded-full border border-white px-3 py-1">
               Get started <ArrowIcon />
             </button>
@@ -27,7 +27,17 @@ export default function GradientPlatform() {
 
       <div className="relative">
         <div className="flex items-center justify-center px-4">
-          <div className=" relative  z-10 mt-6  h-full max-h-[738px] w-2/3 rounded-3xl  border border-white border-opacity-25 bg-white bg-opacity-5 p-12 shadow-inner">
+          <div
+            className="relative z-10  mt-6 h-full max-h-[738px] w-2/3  rounded-3xl border border-white border-opacity-25 bg-white bg-opacity-5 p-12 shadow-inner"
+            style={{
+              borderRadius: "2.12119rem",
+              border: "1.212px solid rgba(255, 255, 255, 0.25)",
+              background: "rgba(255, 255, 255, 0.10)",
+              boxShadow:
+                "0px 0px 9.69673px 1.21209px rgba(255, 255, 255, 0.20) inset",
+              backdropFilter: "blur(24.153770446777344px)",
+            }}
+          >
             <img src="/page3.png" alt="imagetrustauthx" className="bg-cover" />
           </div>
         </div>
