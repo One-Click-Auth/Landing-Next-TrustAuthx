@@ -3,7 +3,7 @@ import React from "react";
 export default function Customize() {
   return (
     <div className="flex flex-col items-center justify-center gap-28  ">
-      <div className="flex min-h-screen flex-col items-center justify-center px-3  ">
+      <div className="relative flex min-h-screen flex-col items-center justify-center px-3">
         <div className="relative mt-16 flex max-w-screen-lg  flex-col items-center justify-center gap-14 2xl:mt-32 2xl:gap-20 ">
           <div className="border border-[#0099FF] p-4 px-10 2xl:hidden ">
             <p className="text-xs font-bold text-[#5E00FF]">
@@ -108,90 +108,8 @@ export default function Customize() {
             </div>
           </div>
         </div>
-
-        <AbsolutePart />
       </div>
     </div>
-  );
-}
-
-function AbsolutePart() {
-  return (
-    <>
-      <div className="  right-1/2 top-10 hidden  border border-[#0099FF] p-4 px-10 2xl:absolute 2xl:block">
-        <p className="text-xs font-bold text-[#5E00FF]">
-          From Panel to Real Site
-        </p>
-        <p className="font-semibold">Go No-Code at all</p>
-      </div>
-
-      <div className="absolute  left-16 top-5 hidden w-[316px] border border-[#9900FF] p-8 2xl:block">
-        <div className="flex items-center gap-3">
-          {/* replace thsi with shadcn avatar compnent in regular codebase */}
-          <img
-            alt=""
-            src="https://s3-alpha-sig.figma.com/img/da73/1fd7/dc33e93cde3509aa78e24c0e19c74daa?Expires=1694390400&Signature=lTUbdJnWxxAKiJf3qsXeEttE4ZMV5EL~mbpsgtxv353l2ZGhD42sQ30g14TCItAQTrfEijaoua6qUqW1O5N7G6GQVl3DPkbcIuYl7S5T7SRfQT~aXHHsJsqfPDWczZtHylKzxh42sA7gyPhsrYZrvTO9c1iXU~Gb0Xs8N1X4TMv3888I10jV7pmCrXawdTFZSpSdOEgbQe0EhxcSTfkhnDB75TvLshvg~3yaxc6Vx4~vkngv7KZ1zKWqFHjLNIlPuYgi2oZMDPAh5IV7YHkkZXj7N-uVnTgBBsuJBSc0Grv3IZ9mzXe-N-Xg-bjAfcPmcEoGGKPyu64mnz2S3kkSOQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            className="h-[50px] rounded-full bg-cover"
-          />
-
-          <div>
-            <p className="text-lg">Omar Farook</p>
-            <p className="text-lg text-[#555]">@BuildWithOmar</p>
-          </div>
-        </div>
-
-        <p className="mt-6 text-xl">
-          Framer is like @Figma but for designing and publishing real responsive
-          websites. Webflow uses the traditional web builder workflow.
-        </p>
-      </div>
-
-      <div className="absolute bottom-5 right-32 hidden w-[316px] border border-[#0099FF] p-8 2xl:block">
-        <div className="flex items-center gap-3">
-          {/* replace thsi with shadcn avatar compnent in regular codebase */}
-          <img
-            alt=""
-            src="https://s3-alpha-sig.figma.com/img/6e37/c23a/796cbd72327de48bed1e14b67a46f98e?Expires=1694390400&Signature=XAjvLPT0q9h2Ntmw6QZqCU-qJUOFkwdeS61MkTtGScCIord4F1CC1dZ3Ks2qEAWI73m70jZkgcbZ0GJXzhVoTssTg1isxULF2ThmSKRylHblRHnKhWWiyHAScp-OaZZHeTbki0lXHHQbzsGCHEIEJTCXdtCK8sbZCLs28R-XvsRiky5kjHkvWqqwjEBi0HCeDJMfD0kfnn14XH9b1G8S~qx7eJdVfnrw~U8d9jAcMvEe2mnld0Jq5Kr2Y7qi-vJFCc9zPrid1beNPbKg4vY4A1yeUEPtI5mrQTx6CaKS7t8IMj-OyRe-WW12dxz-xq5qzIh-E3GrimHatRIwh37oWw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            className="h-[50px] rounded-full bg-cover"
-          />
-
-          <div>
-            <p className="text-lg">Kevin</p>
-            <p className="text-lg text-[#555]">@kvncnls</p>
-          </div>
-        </div>
-
-        <p className="mt-6 text-xl">
-          It’s like @Figma but you’re actually building the site.
-        </p>
-      </div>
-      <div className="absolute right-16 top-16 hidden w-[316px] border border-[#9900FF] p-8 2xl:block">
-        <div className="flex items-center gap-3">
-          {/* replace thsi with shadcn avatar compnent in regular codebase */}
-          <img
-            alt=""
-            src="https://s3-alpha-sig.figma.com/img/0393/bb53/1342dd46a5307c8fad2d3835d2242ce1?Expires=1694390400&Signature=LoHEzBgRrNzK61xk0Afvq6lXsM81cKSXcaH7RXJH2ZDwZISkawOZJpSqzcpF-13fKQCZTmvsXKnlp9yb681U3y8Zg~VswI5H6ugTyzu37kiFy3ZNJQobRr-iXkh-v7qKKD8VCrb4~8Ui7pXynIKL0OQ8wOpJRdZVjO7FnBNxAp9HjbezLwAGzqZ1C-NJd3h84ubjwxwQG2xAlNJFMLzcz8jwEySf0j1YjDW1xN6VrqtSjo2LD9m5CaC6ZjBfZJK32F1sOlMjL-te8YOSVOMr3w~CaPpRcUPSa6CwvfW5D~M21GgvaOQtTGdPmm1DvZv3r3W0n1w~hPzNf9fHdDwEJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            className="h-[50px] rounded-full bg-cover"
-          />
-
-          <div>
-            <p className="text-lg">Brink</p>
-            <p className="text-lg text-[#555]">@avandenbrink</p>
-          </div>
-        </div>
-
-        <p className="mt-6 text-xl">
-          If you are used to tools like Figma or Sketch, it is pretty easy to
-          get started.
-        </p>
-      </div>
-      <div className="absolute -left-1 top-[60%] hidden w-[316px] border border-[#9900FF] 2xl:block  ">
-        <img
-          alt=""
-          src="https://s3-alpha-sig.figma.com/img/bc99/b9c0/a1b4a8e3119bcd7b0245ab6a195f4dda?Expires=1694390400&Signature=ZkuRetKwxQ~5LzbnmpTOtsQTfWvH98Nsz-C933Jx-BAlARkK9CUhopaQMoar5eTDl1~UjIKvYsutNuJLAkPIhYrqJ26dwFR5hz-fE9NIB9op9Hwheezs76n7B-y7NaarZ4Lhf-cfyETjwGjjstTctbjpfzKGXBW-j5BaULrezzzy3OisT~PNRQeZmfCuC7t~ZlOJUDVp6pv4sQYPZXHQz78FcW5REX-FLM0IZ6YCrCt4G-0VNG3TT3sVOichpM8I4~iEandugIssZxxqnpUBh0j1Ab3ZGWjkUQTGgWL95AWPSmix1Qdxcw9ihMwRV3KpZM1~th3Ze34sM65G3KXLsQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-        />
-      </div>
-    </>
   );
 }
 
@@ -205,7 +123,7 @@ function Pointy() {
       viewBox="0 0 33 88"
       fill="none"
     >
-      <g clip-path="url(#clip0_129_1381)">
+      <g clipPath="url(#clip0_129_1381)">
         <g filter="url(#filter0_d_129_1381)">
           <path
             d="M7.85579 13.9536C6.70079 13.5926 5.61579 14.6776 5.97679 15.8326L12.1958 35.7336C12.5318 36.8096 13.8908 37.1436 14.6878 36.3466L28.3698 22.6646C29.1668 21.8676 28.8328 20.5086 27.7568 20.1726L7.85579 13.9536Z"
@@ -225,9 +143,9 @@ function Pointy() {
           width="50.9023"
           height="52.9033"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
