@@ -7,6 +7,8 @@ import * as THREE from "three";
 import { useRef, useCallback, useState } from "react";
 import { Canvas, useFrame, extend } from "@react-three/fiber";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
+import { PerformanceMonitor, usePerformanceMonitor } from '@react-three/drei';
+import { round } from 'lodash'; // Import the round function
 import { Beam } from "./Beam/Beam";
 import { Rainbow } from "./Rainbow";
 import { Prism } from "./Prism";
@@ -30,6 +32,24 @@ export function calculateRefractionAngle(
   return theta;
 }
 
+function Effects() {
+  const [hasEffects, setHasEffects] = useState(true);
+
+  usePerformanceMonitor({ onChange: ({ factor }) => {
+    if (hasEffects && factor > 0.5) {
+      // Decrease the qualityScale of your effects.
+      effect.qualityScale = round(0.5 + 0.5 * factor, 1);
+    } 
+    // Handle other conditions for declining or inclining quality
+  }});
+
+  return (
+    <EffectComposer>
+      { /* Your post-processing effects here */ }
+    </EffectComposer>
+  );
+}
+
 export default function InteractivePrism({
   bgColor,
   height,
@@ -39,24 +59,24 @@ export default function InteractivePrism({
   height: string;
   width?: string;
 }) {
+  const [dpr, setDpr] = useState(2);
+
   return (
     <div id="hero-prism" style={{ width, height }}>
       <Canvas
+        dpr={dpr}
         orthographic
         gl={{ antialias: false }}
         camera={{ position: [0, 0, 20], zoom: 65 }}
       >
         <color attach="background" args={[bgColor]} />
-        <Scene />
-        <EffectComposer disableNormalPass>
-          <Bloom
-            mipmapBlur
-            levels={9}
-            intensity={2}
-            luminanceThreshold={1.5}
-            luminanceSmoothing={2}
-          />
-        </EffectComposer>
+        <PerformanceMonitor 
+          onDecline={() => setDpr(1)}
+          onIncline={() => setDpr(2)}
+        >
+          <Scene />
+          <Effects />
+        </PerformanceMonitor>
       </Canvas>
     </div>
   );
@@ -72,10 +92,8 @@ function Scene() {
 
   const rayOut = useCallback(() => hitPrism(false), []);
   const rayOver = useCallback((e) => {
-    // Break raycast so the ray stops when it touches the prism.
     e.stopPropagation();
     hitPrism(true);
-    // Set the intensity really high on first contact.
     rainbow.current.material.speed = 2.5;
     rainbow.current.material.emissiveIntensity = 50;
   }, []);
@@ -83,27 +101,20 @@ function Scene() {
   const vec = new THREE.Vector3();
   const rayMove = useCallback(({ api, position, direction, normal }) => {
     if (!normal) return;
-    // Extend the line to the prisms center.
+
     vec.toArray(api.positions, api.number++ * 3);
-    // Set flare.
     flare.current.position.set(position.x, position.y, -1);
     flare.current.rotation.set(0, 0, -Math.atan2(direction.x, direction.y));
 
-    // Calculate refraction angles.
     let angleScreenCenter = Math.atan2(-position.y, -position.x);
     const normalAngle = Math.atan2(normal.y, normal.x);
 
-    // The angle between the ray and the normal.
     const incidentAngle = angleScreenCenter - normalAngle;
-
-    // Calculate the refraction for the incident angle.
     const refractionAngle = calculateRefractionAngle(incidentAngle) * 6;
 
-    // Apply the refraction.
     angleScreenCenter += refractionAngle;
     rainbow.current.rotation.z = angleScreenCenter;
 
-    // Set spot light.
     lerpV3(
       spot.current.target.position,
       [Math.cos(angleScreenCenter), Math.sin(angleScreenCenter), 0],
@@ -113,7 +124,6 @@ function Scene() {
   }, []);
 
   useFrame((state) => {
-    // Tie beam to the mouse.
     boxreflect.current.setRay(
       [
         (state.pointer.x * state.viewport.width) / 2,
@@ -123,7 +133,6 @@ function Scene() {
       [0, 0, 0],
     );
 
-    // Animate rainbow intensity.
     lerp(
       rainbow.current.material,
       "emissiveIntensity",
@@ -132,7 +141,6 @@ function Scene() {
     );
     spot.current.intensity = rainbow.current.material.emissiveIntensity;
 
-    // Animate ambience.
     lerp(ambient.current, "intensity", 0, 0.25);
   });
 
