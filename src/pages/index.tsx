@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-import Customize from "../components/Customize";
+// import Customize from "../components/Customize";
 import Showcase from "../components/Showcase";
 import Authlite from "../components/Authlite";
 import Timeline from "../components/Timeline";
@@ -19,7 +19,7 @@ export default function LandingPage() {
       <Timeline />
       <Authlite />
       <Showcase />
-      <Customize />
+      {/* <Customize /> */}
       <Footer />
     </>
   );

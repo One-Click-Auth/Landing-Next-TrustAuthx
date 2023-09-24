@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function LandingHero() {
   return (
     <>
-      <InteractivePrism bgColor="black" height="80rem" />
+      <InteractivePrism bgColor="black" height="60rem" />
       <h1 className="absolute left-20 top-64 z-10 w-fit p-0 text-left text-7xl text-white mix-blend-exclusion">
         TrustAuthX Light <br />
         for Business, <br />
