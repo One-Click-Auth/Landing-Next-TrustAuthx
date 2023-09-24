@@ -1,9 +1,16 @@
 import React, { useState } from "react";
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 
-interface CodeTabsProps {}
-
-const CodeTabs: React.FC<CodeTabsProps> = () => {
+const CodeTabs = ({
+  pyFileName,
+  jsFileName,
+  goFileName,
+  pyCode,
+}: {
+  pyFileName?: string;
+  jsFileName?: string;
+  goFileName?: string;
+  pyCode?: React.ReactNode;
+}) => {
   const [activeTab, setActiveTab] = useState("python");
 
   const handleTabClick = (tab: string) => {
@@ -15,90 +22,7 @@ const CodeTabs: React.FC<CodeTabsProps> = () => {
       case "javascript":
         return <div>js</div>;
       case "python":
-        return (
-          <div
-            className="text-white text-base font-normal
-"
-          >
-            <p className="">
-              <span className="text-[#6E7681]  mr-[10px]">1</span>
-              <span className="text-[#FF7B72]  ">from </span>
-              <span className="text-white  ">trustauthx.authlite </span>
-              <span className="text-[#FF7B72]  ">import </span>
-              <span className="text-white  ">AuthLiteClient</span>
-            </p>
-
-            <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-              2
-            </span>
-
-            <p className="">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                3
-              </span>
-              <span className="text-sky-300 ">client</span>
-              <span className="text-white "> = </span>
-              <span className="text-[#FF7B72] ">AuthLiteClient</span>
-              <span className="text-white ">(</span>
-            </p>
-
-            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                4
-              </span>
-
-              <div className="ml-10">
-                <span className="text-sky-300 ">api_key</span>
-                <span className="text-white "> = </span>
-                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
-                <span className="text-white ">,</span>
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                5
-              </span>
-
-              <div className="ml-10">
-                <span className="text-sky-300 ">secret_key</span>
-                <span className="text-white "> = </span>
-                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
-                <span className="text-white ">,</span>
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                6
-              </span>
-
-              <div className="ml-10">
-                <span className="text-sky-300 ">org_id</span>
-                <span className="text-white "> = </span>
-                <span className="text-[#FF7B72] ">{"f28ffe7f2e..."}</span>
-                <span className="text-white ">,</span>
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                7
-              </span>
-
-              <div className="ml-44">)</div>
-            </div>
-
-            <p className="">
-              <span className="text-[#6E7681] text-base font-normal mr-[10px]">
-                8
-              </span>
-              <span className="text-white  ">def </span>
-              <span className="text-[#FF7B72]  ">get_auth_</span>
-              <span className="text-white  ">():</span>
-            </p>
-          </div>
-        );
+        return pyCode || "";
       case "go":
         return (
           <div>
@@ -112,40 +36,48 @@ const CodeTabs: React.FC<CodeTabsProps> = () => {
   };
 
   return (
-    <div className=" ">
-      <div className="flex pt-2 border-b pr-24 border-b-[#30363D] rounded-t-xl px-2 bg-[#161B23] space-x-2">
-        <button
-          className={`px-4 text-[14px]  flex items-center  gap-7 pr-10   py-2 rounded ${
-            activeTab === "python"
-              ? "bg-[#0D1117] border-b-black border  border-[#30363D] text-white"
-              : "text-[#7D8590] bg-transparent border border-transparent "
-          }`}
-          onClick={() => handleTabClick("python")}
-        >
-          <PySvg /> TrustAuthx.py
-        </button>
-        <button
-          className={`px-4  text-[14px] py-2 gap-2 rounded  flex items-center ${
-            activeTab === "javascript"
-              ? "bg-[#0D1117] border-b-black border  border-[#30363D] text-white"
-              : "text-[#7D8590] bg-transparent border border-transparent"
-          }`}
-          onClick={() => handleTabClick("javascript")}
-        >
-          <JsSvg />
-          Auth.js
-        </button>
-        <button
-          className={`px-4 text-[14px]  py-2 gap-2   rounded flex items-center ${
-            activeTab === "go"
-              ? "bg-[#0D1117] border-b-black border  border-[#30363D] text-white"
-              : "text-[#7D8590] bg-transparent border border-transparent"
-          }`}
-          onClick={() => handleTabClick("go")}
-        >
-          <GoSvg />
-          TrustAuthx.go
-        </button>
+    <div>
+      <div className="flex space-x-2 rounded-t-xl border-b border-b-[#30363D] bg-[#161B23] px-2 pr-24 pt-2">
+        {pyFileName ? (
+          <button
+            className={`flex items-center  gap-7 rounded  px-4 py-2   pr-10 text-[14px] ${
+              activeTab === "python"
+                ? "border border-[#30363D] border-b-black  bg-[#0D1117] text-white"
+                : "border border-transparent bg-transparent text-[#7D8590] "
+            }`}
+            onClick={() => handleTabClick("python")}
+          >
+            <PySvg /> {pyFileName}
+          </button>
+        ) : null}
+
+        {jsFileName ? (
+          <button
+            className={`flex  items-center gap-2 rounded px-4  py-2 text-[14px] ${
+              activeTab === "javascript"
+                ? "border border-[#30363D] border-b-black  bg-[#0D1117] text-white"
+                : "border border-transparent bg-transparent text-[#7D8590]"
+            }`}
+            onClick={() => handleTabClick("javascript")}
+          >
+            <JsSvg />
+            {jsFileName}
+          </button>
+        ) : null}
+
+        {goFileName ? (
+          <button
+            className={`flex items-center  gap-2 rounded   px-4 py-2 text-[14px] ${
+              activeTab === "go"
+                ? "border border-[#30363D] border-b-black  bg-[#0D1117] text-white"
+                : "border border-transparent bg-transparent text-[#7D8590]"
+            }`}
+            onClick={() => handleTabClick("go")}
+          >
+            <GoSvg />
+            {goFileName}
+          </button>
+        ) : null}
       </div>
 
       <div className=" bg-[#0D1117] p-4 pb-2">{getCode()}</div>

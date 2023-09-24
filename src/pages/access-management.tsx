@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../components/Footer";
-import Image from 'next/image';
 
 function AccessManagement() {
   return (
@@ -30,13 +29,13 @@ function AccessManagement() {
             </div>
 
             <div className="flex-1">
-              <Image src="./images/image1.svg" alt="" />
+              <img src="./images/image1.svg" alt="" />
             </div>
           </div>
 
           <div className=" ud-row row1 flex flex-col  items-center gap-32   md:flex-row">
             <div className="col-md-5 flex flex-[0.5] items-center justify-center">
-              <Image src="./images/image2.svg" alt="" />
+              <img src="./images/image2.svg" alt="" />
             </div>
 
             <div className=" flex-1 ">
@@ -78,13 +77,13 @@ function AccessManagement() {
               </div>
             </div>
             <div className=" col-md-5 flex-1">
-              <Image src="./images/image3.svg" alt="" className="w-100" />
+              <img src="./images/image3.svg" alt="" className="w-100" />
             </div>
           </div>
 
           <div className=" ud-row row1 flex flex-col items-center  gap-32 md:flex-row">
             <div className="col-md-5 flex flex-1 items-center justify-center">
-              <Image src="./images/image4.svg" alt="" className="w-100" />
+              <img src="./images/image4.svg" alt="" className="w-100" />
             </div>
 
             <div className="col-md-6 flex-1">
