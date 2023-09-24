@@ -5,13 +5,13 @@ export default function LandingHero() {
   return (
     <>
       <InteractivePrism bgColor="black" height="80rem" />
-      <h1 className="absolute left-20 top-64 w-fit p-0 text-left text-7xl text-white">
+      <h1 className="absolute left-20 top-64 w-fit p-0 text-left text-7xl text-white mix-blend-exclusion">
         TrustAuthX Light <br />
         for Business, <br />
         Delight for Devs.
       </h1>
       <div className="absolute left-20 top-[32rem] z-10 flex items-center gap-20 text-left text-white">
-        <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] px-5 py-3">
+        <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] px-5 py-3 mix-blend-exclusion">
           Let’s Get Started for Free{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
