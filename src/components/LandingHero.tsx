@@ -49,11 +49,9 @@ export default function LandingHero() {
           </p>
         </button>
       </div>
-      <Image
-        src={appDemo}
-        alt="Preview of TrustAuthX app"
-        className="z-20 -mt-52"
-      />
+      <div className="relative -mt-[25rem]">
+        <Image src={appDemo} alt="Preview of TrustAuthX app" />
+      </div>
     </>
   );
 }
