@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Image from 'next/image';
 
 
 function Systems() {
@@ -25,7 +26,7 @@ function Systems() {
           </div>
 
           <div className=" flex flex-1  justify-end ">
-            <img
+            <Image
               src={"/systemspage.png"}
               className="bg-cover"
               alt="gridphotos"
@@ -33,13 +34,13 @@ function Systems() {
           </div>
         </div>
 
-        <img
+        <Image
           src={"/systemsgradientside.svg"}
           className="absolute left-0 top-12"
           alt="gridphotos"
         />
 
-        <img
+        <Image
           src={"/systemsgradienttop.svg"}
           className="absolute top-0"
           alt="gridphotos"
@@ -169,7 +170,7 @@ function Card({
     border-white border-opacity-25 bg-white bg-opacity-10   
        text-white shadow-inner  "
       >
-        <img src={icon} width={35} height={35} alt="icon" />
+        <Image src={icon} width={35} height={35} alt="icon" />
       </div>
 
       <div className="mb-2">
