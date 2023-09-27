@@ -1,7 +1,6 @@
 import ArrowIcon from "./ArrowIcon";
 import AnimatedGradient from "./gradients/AnimatedGradient";
 import React from "react";
-import Image from 'next/image';
 
 export default function GradientPlatform() {
   return (
@@ -47,7 +46,7 @@ export default function GradientPlatform() {
                   "0px 1.18388px 37.88403px -7.27255px #000, 0px 24.24183px 37.88403px -6.06046px rgba(0, 0, 0, 0.10)",
               }}
             >
-              <Image src="/page3.png" alt="imagetrustauthx" className="p-4" />
+              <img src="/page3.png" alt="imagetrustauthx" className="p-4" />
             </div>
           </div>
         </div>
