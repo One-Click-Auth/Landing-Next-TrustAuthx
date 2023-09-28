@@ -1,8 +1,14 @@
 import ArrowIcon from "./ArrowIcon";
 import AnimatedGradient from "./gradients/AnimatedGradient";
 import React from "react";
+import { useMediaQuery } from "@mantine/hooks";
+import MobileAppDemo from "../../public/images/MobileAppDemo.webp";
+import AppDemo from "../../public/page3.png";
+import Image from "next/image";
 
 export default function GradientPlatform() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <div className="w-full bg-black py-8 text-gray-200 md:py-20 ">
       <div className="flex flex-col items-center">
@@ -41,15 +47,20 @@ export default function GradientPlatform() {
                   "0px 1.18388px 37.88403px -7.27255px #000, 0px 24.24183px 37.88403px -6.06046px rgba(0, 0, 0, 0.10)",
               }}
             >
-              <img
-                src="/page3.png"
-                alt="imagetrustauthx"
-                className="p-2 md:p-4"
-              />
+              {isMobile ? (
+                <Image
+                  src={MobileAppDemo}
+                  alt="App Demo"
+                  className="p-2 md:p-4"
+                />
+              ) : (
+                <Image src={AppDemo} alt="App Demo" className="p-2 md:p-4" />
+              )}
             </div>
           </div>
         </div>
-        <AnimatedGradient />
+
+        {!isMobile ? <AnimatedGradient /> : null}
       </div>
     </div>
   );
