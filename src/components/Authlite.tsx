@@ -12,9 +12,9 @@ export default function Authlite() {
         background:
           "radial-gradient(161.01% 103.41% at -1.12% 6.78%, #434343 0%, #000 88.95%, #000 100%)",
       }}
-      className="m-auto max-w-[1400px] rounded-lg px-8 py-12 text-white"
+      className="m-auto max-w-[1400px] px-4 py-12 text-white md:rounded-lg"
     >
-      <div className="flex items-center gap-6  ">
+      <div className="flex flex-col items-center gap-0 md:flex-row md:gap-6">
         <p className="border-l-4 border-red-600 py-2 pl-3  text-3xl font-semibold">
           Auth-lite
         </p>
@@ -25,7 +25,7 @@ export default function Authlite() {
           alt="connect"
           className="mt-3"
         />
-        <p className="text-xl font-semibold">
+        <p className="text-center text-xl font-semibold">
           Designed, <br /> To save Time
         </p>
       </div>
