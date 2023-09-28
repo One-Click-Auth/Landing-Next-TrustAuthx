@@ -4,11 +4,11 @@
 "use client";
 
 import * as THREE from "three";
-import { useRef, useCallback, useState } from "react";
-import { Canvas, useFrame, extend } from "@react-three/fiber";
-import { Bloom, EffectComposer } from "@react-three/postprocessing";
-import { PerformanceMonitor, usePerformanceMonitor } from '@react-three/drei';
-import { round } from 'lodash'; // Import the round function
+import { useCallback, useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { EffectComposer } from "@react-three/postprocessing";
+import { PerformanceMonitor, usePerformanceMonitor } from "@react-three/drei";
+import { round } from "lodash"; // Import the round function
 import { Beam } from "./Beam/Beam";
 import { Rainbow } from "./Rainbow";
 import { Prism } from "./Prism";
@@ -19,6 +19,7 @@ export function lerp(object, prop, goal, speed = 0.1) {
 }
 
 const vector = new THREE.Vector3();
+
 export function lerpV3(value, goal, speed = 0.1) {
   value.lerp(vector.set(...goal), speed);
 }
@@ -35,18 +36,18 @@ export function calculateRefractionAngle(
 function Effects() {
   const [hasEffects, setHasEffects] = useState(true);
 
-  usePerformanceMonitor({ onChange: ({ factor }) => {
-    if (hasEffects && factor > 0.5) {
-      // Decrease the qualityScale of your effects.
-      effect.qualityScale = round(0.5 + 0.5 * factor, 1);
-    } 
-    // Handle other conditions for declining or inclining quality
-  }});
+  // usePerformanceMonitor({
+  //   onChange: ({ factor }) => {
+  //     if (hasEffects && factor > 0.5) {
+  //       // Decrease the qualityScale of your effects.
+  //       effect.qualityScale = round(0.5 + 0.5 * factor, 1);
+  //     }
+  //     // Handle other conditions for declining or inclining quality
+  //   },
+  // });
 
   return (
-    <EffectComposer>
-      { /* Your post-processing effects here */ }
-    </EffectComposer>
+    <EffectComposer>{/* Your post-processing effects here */}</EffectComposer>
   );
 }
 
@@ -54,10 +55,12 @@ export default function InteractivePrism({
   bgColor,
   height,
   width = "100%",
+  isMobile,
 }: {
   bgColor: string;
   height: string;
   width?: string;
+  isMobile: boolean;
 }) {
   const [dpr, setDpr] = useState(2);
 
@@ -70,11 +73,11 @@ export default function InteractivePrism({
         camera={{ position: [0, 0, 20], zoom: 65 }}
       >
         <color attach="background" args={[bgColor]} />
-        <PerformanceMonitor 
+        <PerformanceMonitor
           onDecline={() => setDpr(1)}
           onIncline={() => setDpr(2)}
         >
-          <Scene />
+          <Scene isMobile={isMobile} />
           <Effects />
         </PerformanceMonitor>
       </Canvas>
@@ -82,7 +85,7 @@ export default function InteractivePrism({
   );
 }
 
-function Scene() {
+function Scene({ isMobile }: { isMobile: boolean }) {
   const [isPrismHit, hitPrism] = useState(false);
   const flare = useRef(null);
   const ambient = useRef(null);
@@ -162,7 +165,7 @@ function Scene() {
       {/* Prism + blocks + reflect beam */}
       <Beam ref={boxreflect} bounce={10} far={20} position={[0, 0, 0]}>
         <Prism
-          scale={0.6}
+          scale={isMobile ? 0.2 : 0.6}
           onRayOver={rayOver}
           onRayOut={rayOut}
           onRayMove={rayMove}

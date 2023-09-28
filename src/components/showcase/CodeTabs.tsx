@@ -20,27 +20,20 @@ const CodeTabs = ({
   const getCode = () => {
     switch (activeTab) {
       case "javascript":
-        return <div>js</div>;
+        return "";
       case "python":
         return pyCode || "";
       case "go":
-        return (
-          <div>
-            func TrustAuthX(){" "}
-            {
-              // Go code
-            }
-          </div>
-        );
+        return "";
     }
   };
 
   return (
-    <div>
-      <div className="flex space-x-2 rounded-t-xl border-b border-b-[#30363D] bg-[#161B23] px-2 pr-24 pt-2">
+    <>
+      <div className="flex space-x-2 rounded-t-xl border-b border-b-[#30363D] bg-[#161B23] md:px-2 md:pr-24 md:pt-2">
         {pyFileName ? (
           <button
-            className={`flex items-center  gap-7 rounded  px-4 py-2   pr-10 text-[14px] ${
+            className={`flex items-center gap-7 rounded px-4 py-2 pr-10 text-[14px] ${
               activeTab === "python"
                 ? "border border-[#30363D] border-b-black  bg-[#0D1117] text-white"
                 : "border border-transparent bg-transparent text-[#7D8590] "
@@ -80,8 +73,8 @@ const CodeTabs = ({
         ) : null}
       </div>
 
-      <div className=" bg-[#0D1117] p-4 pb-2">{getCode()}</div>
-    </div>
+      <div className="bg-[#0D1117] md:p-4 md:pb-2">{getCode()}</div>
+    </>
   );
 };
 

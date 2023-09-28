@@ -8,15 +8,18 @@ import LandingHero from "../components/LandingHero";
 import React from "react";
 import AiInCLI from "../components/AiInCLI";
 import Navbar from "../components/Navbar";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function LandingPage() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <>
       <Navbar />
       <LandingHero />
       <AiInCLI />
       <GradientPlatform />
-      <Timeline />
+      {!isMobile ? <Timeline /> : null}
       <Authlite />
       <Showcase />
       {/* <Customize /> */}

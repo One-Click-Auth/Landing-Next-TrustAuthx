@@ -4,16 +4,16 @@ import React from "react";
 
 export default function GradientPlatform() {
   return (
-    <div className="-z-20 w-full bg-black py-24 text-gray-200 ">
-      <div className="flex flex-col  items-center">
-        <div className="ml-36 flex max-h-[738px]  w-full max-w-[1240px] flex-col  flex-wrap gap-14  rounded-3xl px-4">
-          <div className=" text-4xl font-semibold">
+    <div className="w-full bg-black py-8 text-gray-200 md:py-20 ">
+      <div className="flex flex-col items-center">
+        <div className="flex max-h-[738px] w-full max-w-[1240px] flex-col flex-wrap gap-14 rounded-3xl px-4 md:ml-36">
+          <div className="text-2xl font-semibold md:text-4xl">
             TrustAuthx is the world’s most Easiest and
             <br />
             completely Managed Auth platform
           </div>
 
-          <div className="mb-14 flex items-center gap-2">
+          <div className="mb-8 flex items-center gap-2 md:mb-14">
             <button className="flex items-center justify-center gap-2 rounded-full border border-white px-3 py-1">
               Get started <ArrowIcon />
             </button>
@@ -28,14 +28,9 @@ export default function GradientPlatform() {
       <div className="relative">
         <div className="flex items-center justify-center px-4">
           <div
-            className="relative z-10 mt-6 h-full max-h-[738px]  w-2/3 rounded-3xl border border-white border-opacity-25 bg-white bg-opacity-5 p-8 shadow-inner"
+            className="relative z-10 my-3 h-full max-h-[738px] w-2/3 rounded-[2.1rem] border border-[#ffffff40] border-opacity-25 bg-[#ffffff1a] bg-white bg-opacity-5 p-4 shadow-inner backdrop-blur-[24px] md:my-6 md:p-8"
             style={{
-              borderRadius: "2.12119rem",
-              border: "1.212px solid rgba(255, 255, 255, 0.25)",
-              background: "rgba(255, 255, 255, 0.10)",
-              boxShadow:
-                "0px 0px 9.69673px 1.21209px rgba(255, 255, 255, 0.20) inset",
-              backdropFilter: "blur(24.153770446777344px)",
+              boxShadow: "0px 0px 9.5px 1px #ffffff33 inset",
             }}
           >
             <div
@@ -46,7 +41,11 @@ export default function GradientPlatform() {
                   "0px 1.18388px 37.88403px -7.27255px #000, 0px 24.24183px 37.88403px -6.06046px rgba(0, 0, 0, 0.10)",
               }}
             >
-              <img src="/page3.png" alt="imagetrustauthx" className="p-4" />
+              <img
+                src="/page3.png"
+                alt="imagetrustauthx"
+                className="p-2 md:p-4"
+              />
             </div>
           </div>
         </div>
