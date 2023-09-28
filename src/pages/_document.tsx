@@ -5,13 +5,17 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-BBZJRC7ER3" />
-      <Script id="google-analytics">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'GA_MEASUREMENT_ID');
+
+          gtag('config', 'G-7NXTY5KCKL');
         `}
       </Script>
       <body>
