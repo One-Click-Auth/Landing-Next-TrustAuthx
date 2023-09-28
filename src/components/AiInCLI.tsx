@@ -7,7 +7,7 @@ function AiInCli() {
 
   return (
     <div
-      className="p-2 md:py-14"
+      className="p-4 md:py-14"
       style={{
         background: isMobile
           ? "black"

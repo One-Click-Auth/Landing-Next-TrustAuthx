@@ -10,11 +10,11 @@ export default function LandingHero() {
     <>
       <InteractivePrism
         bgColor="black"
-        height={isMobile ? "80vh" : "60rem"}
+        height={isMobile ? "50vh" : "60rem"}
         isMobile={!!isMobile}
       />
       {/*CTA*/}
-      <h1 className="left-10 top-52 z-10 w-fit p-0 text-left text-4xl text-white mix-blend-exclusion md:absolute md:left-20 md:top-64 md:text-7xl">
+      <h1 className="left-10 top-28 z-10 w-fit p-0 text-left text-4xl text-white mix-blend-exclusion md:absolute md:left-20 md:top-64 md:text-7xl">
         TrustAuthX Light <br />
         for Business, <br />
         Delight for Devs.

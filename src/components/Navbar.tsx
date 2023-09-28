@@ -45,7 +45,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 py-2 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-6">
+      <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-3">
         {/*Internal Links*/}
         <div className="flex items-center gap-7">
           <TrustAuthXLogo />
@@ -73,7 +73,7 @@ function Navbar() {
 
           <DropdownMenu.Portal>
             <DropdownMenu.Content
-              className="DropdownMenuContent z-[1000] flex h-screen w-screen flex-col items-center gap-4 bg-black p-4 font-medium text-white md:hidden"
+              className="DropdownMenuContent z-[1000] -mt-2 flex h-screen w-screen flex-col items-center gap-4 bg-black p-4 font-medium text-white md:hidden"
               sideOffset={5}
             >
               {internalLinks.map((link) => (
