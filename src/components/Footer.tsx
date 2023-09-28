@@ -213,7 +213,7 @@ export function CopyrightInfo() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-28 md:flex-row">
+      <div className="flex flex-col gap-16 md:flex-row md:gap-28">
         <div className="flex flex-col gap-5">
           <div className="Platform w-40 text-base font-semibold text-black">
             Platform

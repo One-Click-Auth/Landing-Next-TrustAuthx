@@ -13,13 +13,16 @@ export default function LandingHero() {
         height={isMobile ? "50vh" : "60rem"}
         isMobile={!!isMobile}
       />
-      {/*CTA*/}
+
+      {/*Hero Heading*/}
       <h1 className="left-10 top-28 z-10 w-fit p-0 text-left text-4xl text-white mix-blend-exclusion md:absolute md:left-20 md:top-64 md:text-7xl">
         TrustAuthX Light <br />
         for Business, <br />
         Delight for Devs.
       </h1>
-      <div className="left-20 top-[32rem] z-10 flex items-center gap-20 text-left text-white md:absolute">
+
+      {/*CTA*/}
+      <div className="left-20 top-[32rem] z-10 mt-6 flex flex-col-reverse items-center gap-10 text-left text-white md:absolute md:mt-0 md:flex-row md:gap-20">
         <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] px-5 py-3 mix-blend-exclusion">
           Let’s Get Started for Free{" "}
           <svg
@@ -53,13 +56,13 @@ export default function LandingHero() {
           </svg>
           <p className="flex flex-col items-start">
             <span className="text-xl text-[#9EFE00]">Watch Demo</span>
-            <span className="text-sm">2 min</span>
+            <span className="text-sm text-black md:text-white">2 min</span>
           </p>
         </button>
       </div>
 
       {/*Low code*/}
-      <div className="-mt-[25rem] mb-[6.7rem] md:relative">
+      <div className="relative md:-mt-[25rem] md:mb-[6.7rem]">
         <Image src={appDemo} alt="Preview of TrustAuthX app" />
         <div className="mt-10 p-4 md:absolute md:bottom-[1rem] md:right-[10rem] md:text-white">
           <svg
