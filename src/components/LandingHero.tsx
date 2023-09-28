@@ -1,17 +1,25 @@
 import InteractivePrism from "./interactivePrism";
 import appDemo from "public/images/AppDemo.webp";
 import Image from "next/image";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function LandingHero() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <>
-      <InteractivePrism bgColor="black" height="60rem" />
-      <h1 className="absolute left-20 top-64 z-10 w-fit p-0 text-left text-7xl text-white mix-blend-exclusion">
+      <InteractivePrism
+        bgColor="black"
+        height={isMobile ? "80vh" : "60rem"}
+        isMobile={!!isMobile}
+      />
+      {/*CTA*/}
+      <h1 className="left-10 top-52 z-10 w-fit p-0 text-left text-4xl text-white mix-blend-exclusion md:absolute md:left-20 md:top-64 md:text-7xl">
         TrustAuthX Light <br />
         for Business, <br />
         Delight for Devs.
       </h1>
-      <div className="absolute left-20 top-[32rem] z-10 flex items-center gap-20 text-left text-white">
+      <div className="left-20 top-[32rem] z-10 flex items-center gap-20 text-left text-white md:absolute">
         <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] px-5 py-3 mix-blend-exclusion">
           Let’s Get Started for Free{" "}
           <svg
@@ -49,9 +57,11 @@ export default function LandingHero() {
           </p>
         </button>
       </div>
-      <div className="relative -mt-[25rem] mb-[6.7rem]">
+
+      {/*Low code*/}
+      <div className="-mt-[25rem] mb-[6.7rem] md:relative">
         <Image src={appDemo} alt="Preview of TrustAuthX app" />
-        <div className="absolute bottom-[1rem] right-[10rem]">
+        <div className="mt-10 p-4 md:absolute md:bottom-[1rem] md:right-[10rem] md:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="2.875rem"
@@ -65,7 +75,7 @@ export default function LandingHero() {
               fill="#9EFE00"
             />
           </svg>
-          <h2 className="text-right text-[3.5rem] font-light">
+          <h2 className="text-right text-3xl font-light md:text-[3.5rem]">
             Low-Code Is The New <br />
             Source Code
           </h2>

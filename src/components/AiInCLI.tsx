@@ -1,24 +1,26 @@
 import React from "react";
 import CodeTabs from "./showcase/CodeTabs";
+import { useMediaQuery } from "@mantine/hooks";
 
 function AiInCli() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <div
-      className="py-14"
+      className="p-2 md:py-14"
       style={{
-        background:
-          "linear-gradient(78deg, #000 49.2%, #0E0E0E 52.62%, rgba(255, 255, 255, 0.00) 52.66%)",
+        background: isMobile
+          ? "black"
+          : "linear-gradient(78deg, #000 49.2%, #0E0E0E 52.62%, rgba(255, 255, 255, 0.00) 52.66%)",
       }}
     >
-      <h2 className="mb-14 ml-[24rem] text-center text-[5rem] font-extralight tracking-widest text-black">
+      <h2 className="mb-10 text-center text-4xl font-extralight tracking-widest text-white md:mb-14 md:ml-[24rem] md:text-[5rem] md:text-black">
         <span className="text-[#9EFE00]">See. </span>
-        <span className="text-white" style={{ mixBlendMode: "difference" }}>
-          THE
-        </span>{" "}
+        <span className="text-white mix-blend-difference">THE</span>{" "}
         <span className="font-bold">AI </span>
         in ACTION
       </h2>
-      <div className="flex items-center justify-center gap-28">
+      <div className="flex flex-wrap items-center justify-center gap-12 md:gap-28">
         <p className="flex flex-col text-[#9DFD00]">
           <span className="text-[1.5rem] font-light">
             <span className="mr-2 text-white">{"-> "}</span>
@@ -31,7 +33,7 @@ function AiInCli() {
         </p>
         <div>
           <CodeTabs
-            pyFileName="py - cli"
+            pyFileName="py (cli)"
             pyCode={
               <div className="text-base font-normal text-white">
                 <p>
@@ -72,8 +74,8 @@ function AiInCli() {
                 </p>
               </div>
             }
-            jsFileName="js - cli"
-            goFileName="go - cli"
+            jsFileName="js (cli)"
+            goFileName="go (cli)"
           />
           <button className="mt-8 flex w-full items-center justify-center gap-2 text-xs">
             <svg

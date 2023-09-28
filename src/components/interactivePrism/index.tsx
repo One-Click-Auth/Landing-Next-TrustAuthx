@@ -55,10 +55,12 @@ export default function InteractivePrism({
   bgColor,
   height,
   width = "100%",
+  isMobile,
 }: {
   bgColor: string;
   height: string;
   width?: string;
+  isMobile: boolean;
 }) {
   const [dpr, setDpr] = useState(2);
 
@@ -75,7 +77,7 @@ export default function InteractivePrism({
           onDecline={() => setDpr(1)}
           onIncline={() => setDpr(2)}
         >
-          <Scene />
+          <Scene isMobile={isMobile} />
           <Effects />
         </PerformanceMonitor>
       </Canvas>
@@ -83,7 +85,7 @@ export default function InteractivePrism({
   );
 }
 
-function Scene() {
+function Scene({ isMobile }: { isMobile: boolean }) {
   const [isPrismHit, hitPrism] = useState(false);
   const flare = useRef(null);
   const ambient = useRef(null);
@@ -163,7 +165,7 @@ function Scene() {
       {/* Prism + blocks + reflect beam */}
       <Beam ref={boxreflect} bounce={10} far={20} position={[0, 0, 0]}>
         <Prism
-          scale={0.6}
+          scale={isMobile ? 0.2 : 0.6}
           onRayOver={rayOver}
           onRayOut={rayOut}
           onRayMove={rayMove}
