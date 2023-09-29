@@ -184,7 +184,7 @@ function Scene({ isMobile }: { isMobile: boolean }) {
         ref={flare}
         visible={true}
         renderOrder={10}
-        scale={1.25}
+        scale={0.75}
         streak={[18.5, 20, 1]}
       />
     </>
