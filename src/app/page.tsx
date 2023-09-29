@@ -16,7 +16,7 @@ export default function LandingPage() {
       <LandingHero />
       <AiInCLI />
       <GradientPlatform />
-      {!isMobile ? <Timeline /> : null}
+{/*       {!isMobile ? <Timeline /> : null} */}
       <Authlite />
       <Showcase />
       {/* <Customize /> */}
