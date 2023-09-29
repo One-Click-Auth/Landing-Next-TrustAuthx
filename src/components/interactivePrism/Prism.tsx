@@ -29,7 +29,7 @@ export function Prism({ onRayOver, onRayOut, onRayMove, ...props }) {
         {/* The visible hi-res prism */}
         <mesh
           position={[0, 0, 0.6]}
-          renderOrder={1}
+          renderOrder={0.1}
           scale={6}
           dispose={null}
           geometry={nodes.Cone.geometry}
