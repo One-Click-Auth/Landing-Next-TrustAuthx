@@ -36,15 +36,15 @@ export function calculateRefractionAngle(
 function Effects() {
   const [hasEffects, setHasEffects] = useState(true);
 
-  // usePerformanceMonitor({
-  //   onChange: ({ factor }) => {
-  //     if (hasEffects && factor > 0.5) {
-  //       // Decrease the qualityScale of your effects.
-  //       effect.qualityScale = round(0.5 + 0.5 * factor, 1);
-  //     }
-  //     // Handle other conditions for declining or inclining quality
-  //   },
-  // });
+  usePerformanceMonitor({
+    onChange: ({ factor }) => {
+      if (hasEffects && factor > 0.5) {
+        // Decrease the qualityScale of your effects.
+        effect.qualityScale = round(0.5 + 0.5 * factor, 1);
+      }
+      // Handle other conditions for declining or inclining quality
+    },
+  });
 
   return (
     <EffectComposer>{/* Your post-processing effects here */}</EffectComposer>
@@ -136,15 +136,24 @@ function Scene({ isMobile }: { isMobile: boolean }) {
       [0, 0, 0],
     );
 
-    lerp(
-      rainbow.current.material,
-      "emissiveIntensity",
-      isPrismHit ? 2.5 : 0,
-      0.1,
-    );
-    spot.current.intensity = rainbow.current.material.emissiveIntensity;
+    // Only update if isPrismHit has changed
+    if (
+      rainbow.current.material.emissiveIntensity !==
+      (isPrismHit ? 2.5 : 0)
+    ) {
+      lerp(
+        rainbow.current.material,
+        "emissiveIntensity",
+        isPrismHit ? 2.5 : 0,
+        0.1,
+      );
+      spot.current.intensity = rainbow.current.material.emissiveIntensity;
+    }
 
-    lerp(ambient.current, "intensity", 0, 0.25);
+    // Only update if ambient intensity is not zero
+    if (ambient.current.intensity !== 0) {
+      lerp(ambient.current, "intensity", 0, 0.25);
+    }
   });
 
   return (

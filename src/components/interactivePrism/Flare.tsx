@@ -23,6 +23,7 @@ export const Flare = forwardRef(
     };
 
     useFrame((state) => {
+      if (visible) {
       ref.current.children.forEach((instance) => {
         instance.position.x =
           (Math[instance.scale.x > 1 ? "sin" : "cos"](
@@ -36,9 +37,12 @@ export const Flare = forwardRef(
           ) *
             instance.scale.x) /
           5;
-      });
+      })};
     });
 
+
+    
+    
     return (
       <group ref={fRef} {...props} visible={visible} dispose={null}>
         <Instances frames={visible ? Infinity : 1}>
@@ -46,13 +50,13 @@ export const Flare = forwardRef(
           <meshBasicMaterial map={dotTexture} {...config} />
           <group ref={ref}>
             <Instance scale={0.5} />
-            <Instance scale={1.25} />
-            <Instance scale={0.75} />
-            <Instance scale={1.5} />
-            <Instance scale={2} position={[0, 0, -0.7]} />
+            <Instance scale={0.5} />
+            <Instance scale={0.5} />
+            <Instance scale={0.5} />
+            <Instance scale={0.5} position={[0, 0, -0.7]} />
           </group>
         </Instances>
-        <mesh scale={1}>
+        <mesh scale={0.5}>
           <planeGeometry />
           <meshBasicMaterial map={glowTexture} {...config} opacity={1} />
         </mesh>
