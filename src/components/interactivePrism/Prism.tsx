@@ -14,7 +14,7 @@ export function Prism({ onRayOver, onRayOut, onRayMove, ...props }) {
       {/* A low-res, invisible representation of the prism that gets hit by the raycaster */}
       <mesh
         visible={false}
-        scale={1.9}
+        scale={5.9}
         rotation={[Math.PI / 2, Math.PI, 0]}
         onRayOver={onRayOver}
         onRayOut={onRayOut}
@@ -25,7 +25,7 @@ export function Prism({ onRayOver, onRayOut, onRayMove, ...props }) {
       {/* The visible hi-res prism */}
       <mesh
         position={[0, 0, 0.6]}
-        renderOrder={10}
+        renderOrder={1}
         scale={6}
         dispose={null}
         geometry={nodes.Cone.geometry}
