@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Showcase from "../components/Showcase";
 import Authlite from "../components/Authlite";
-// import GradientPlatform from "../components/GradientPlatform";
+import GradientPlatform from "../components/GradientPlatform";
 import LandingHero from "../components/LandingHero";
 import AiInCLI from "../components/AiInCLI";
 import Navbar from "../components/Navbar";
@@ -13,9 +13,9 @@ export default function LandingPage() {
   return (
     <>
       <Navbar />
-      <LandingHero />
+{/*       <LandingHero /> */}
       <AiInCLI />
-{/*       <GradientPlatform /> */}
+      <GradientPlatform />
       {/*{!isMobile ? <Timeline /> : null}*/}
       <Authlite />
       <Showcase />
