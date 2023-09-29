@@ -1,3 +1,5 @@
+"use client";
+
 import ArrowIcon from "./ArrowIcon";
 import AnimatedGradient from "./gradients/AnimatedGradient";
 import React from "react";

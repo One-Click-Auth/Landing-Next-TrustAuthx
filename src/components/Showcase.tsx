@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { AccountDropdown } from "./Dropdown";
 import {

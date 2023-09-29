@@ -1,3 +1,5 @@
+"use client";
+
 import InteractivePrism from "./interactivePrism";
 import appDemo from "public/images/AppDemo.webp";
 import Image from "next/image";

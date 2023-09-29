@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import CodeTabs from "./showcase/CodeTabs";
 import { useMediaQuery } from "@mantine/hooks";
