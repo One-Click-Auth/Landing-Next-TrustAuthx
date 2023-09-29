@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { TrustAuthXLogo } from "../../public/svgs/TrustAuthXLogo";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";

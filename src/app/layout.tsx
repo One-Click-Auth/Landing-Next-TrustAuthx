@@ -1,10 +1,14 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
+import React from "react";
+import Script from "next/script";
+import "./globals.css";
 
-export default function Document() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <Html lang="en">
-      <Head />
+    <html lang="en">
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
         strategy="afterInteractive"
@@ -18,10 +22,7 @@ export default function Document() {
           gtag('config', 'G-7NXTY5KCKL');
         `}
       </Script>
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+      <body>{children}</body>
+    </html>
+  );
 }
