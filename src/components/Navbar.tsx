@@ -6,6 +6,7 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { GithubLogo } from "../../public/svgs/Github";
 import { VectorRight } from "../../public/svgs/VectorRight";
+import Link from "next/link";
 
 const internalLinks = [
   { name: "Products" },
@@ -25,17 +26,25 @@ const externalLinks = [
 
 const ExternalLinks = () => (
   <>
+    <Link href="https://github.com/One-Click-Auth/Landing-Next-TrustAuthx" target="_blank">
     <div className="flex items-center justify-start gap-1.5">
       <GithubLogo />
       <div className="font-semibold">Github</div>
     </div>
+    </Link>
+    <Link href="https://docs.trustauthx.com/" target="_blank">
     <div className="font-semibold">Docs</div>
+    </Link>
+    <Link href="https://app.trustauthx.com/" target="_blank">
     <div className="font-semibold">Sign in</div>
+    </Link>
 
     <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
+      <Link href="https://app.trustauthx.com/" target="_blank">
       <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
         Let’s Get Started
       </div>
+      </Link>
       <div className="flex h-5 w-5 items-center justify-start gap-2 py-1.5 pr-2" />
       <VectorRight />
     </div>
