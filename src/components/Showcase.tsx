@@ -13,9 +13,10 @@ import {
 } from "./showcase/Components";
 import CodeTabs from "./showcase/CodeTabs";
 import { useMediaQuery } from "@mantine/hooks";
+import Image from "next/image";
 
 function Showcase() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
     <div className="flex flex-col  items-center justify-center p-6 sm:p-12">
@@ -55,21 +56,22 @@ function Showcase() {
               set static or use as carousel.
             </div>
           }
-          className="showcase-1  w-full  "
+          className="showcase-1  w-full"
         >
           <div className="relative  mt-10 flex h-[300px] w-full items-center justify-center bg-transparent ">
-            <img
+            <Image
               src="/showcase/1.png"
               alt=""
-              className="absolute  bottom-0 left-0 bg-cover"
+              width={1000}
+              height={1000}
+              className="absolute  bottom-0 bg-cover"
             />
 
-            <div className="showcase-1-gradient-bottom absolute bottom-0 left-0 -mx-10  h-24  rounded-b-3xl"></div>
-
-            <div className="z-10 flex flex-col items-center justify-center rounded-2xl bg-white p-5   px-8">
+            <div className="z-10 flex mx-auto flex-col items-center justify-center rounded-2xl bg-white p-5 px-8">
               <button
-                className="showcase-1-btn ml-auto flex
-               w-[125px] items-center gap-2 rounded-lg py-2 pl-3 font-semibold text-white"
+                className="flex items-center justify-center mx-auto showcase-1-btn
+              w-[125px] gap-2 rounded-md py-2 pl-3 font-semibold text-white
+              "
               >
                 <StartWithAiSparkles />
                 Generate
@@ -78,7 +80,7 @@ function Showcase() {
 
               <p>
                 {" "}
-                pile of white rubik cubes in a red room, wes anderson style |
+                <strong>Pile of white rubik cubes in a red room, in anderson style.</strong>
               </p>
             </div>
           </div>

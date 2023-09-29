@@ -12,15 +12,15 @@ export default function LandingPage() {
 
   return (
     <>
-      <Navbar />
-      <LandingHero />
-      <AiInCLI />
-      <GradientPlatform />
+    <Navbar />
+    <LandingHero />
+    <AiInCLI />
+    <GradientPlatform />
 {/*       {!isMobile ? <Timeline /> : null} */}
-      <Authlite />
-      <Showcase />
-      {/* <Customize /> */}
-      <Footer />
+    <Authlite />
+    <Showcase />
+    {/* <Customize /> */}
+    <Footer />
     </>
   );
 }
