@@ -19,7 +19,10 @@ function PricingPart() {
   return (
     <div className="relative flex flex-col  items-center justify-center md:w-[850px]">
       <div className="DivSectionHeader   inline-flex flex-col items-center  justify-start gap-2.5">
-        <div className="gradientbg flex h-7 w-24 items-center justify-center rounded-3xl bg-gradient-to-r text-center">
+        <div
+          className="gradientbg flex h-7 w-24 items-center justify-center rounded-3xl bg-gradient-to-r text-center"
+          id="pricing"
+        >
           <div className=" text-sm font-medium leading-none text-stone-900 text-opacity-40">
             Get access
           </div>
