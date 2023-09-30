@@ -9,12 +9,12 @@ import { VectorRight } from "../../public/svgs/VectorRight";
 import Link from "next/link";
 
 const internalLinks = [
-  { name: "Products" },
-  { name: "Customers" },
-  { name: "Enterprise" },
-  { name: "Pricing" },
-  { name: "Resources" },
-  { name: "Contact us" },
+  { name: "Products", link: "" },
+  { name: "Customers", link: "" },
+  { name: "Enterprise", link: "https://tally.so/r/w2aQEL" },
+  { name: "Pricing", link: "#pricing" },
+  { name: "Resources", link: "https://docs.trustauthx.com/" },
+  { name: "Contact us", link: "https://tally.so/r/wMNB8p" },
 ];
 
 const externalLinks = [
@@ -26,24 +26,27 @@ const externalLinks = [
 
 const ExternalLinks = () => (
   <>
-    <Link href="https://github.com/One-Click-Auth/Landing-Next-TrustAuthx" target="_blank">
-    <div className="flex items-center justify-start gap-1.5">
-      <GithubLogo />
-      <div className="font-semibold">Github</div>
-    </div>
+    <Link
+      href="https://github.com/One-Click-Auth/Landing-Next-TrustAuthx"
+      target="_blank"
+    >
+      <div className="flex items-center justify-start gap-1.5">
+        <GithubLogo />
+        <div className="font-semibold">Github</div>
+      </div>
     </Link>
     <Link href="https://docs.trustauthx.com/" target="_blank">
-    <div className="font-semibold">Docs</div>
+      <div className="font-semibold">Docs</div>
     </Link>
     <Link href="https://app.trustauthx.com/" target="_blank">
-    <div className="font-semibold">Sign in</div>
+      <div className="font-semibold">Sign in</div>
     </Link>
 
     <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
       <Link href="https://app.trustauthx.com/" target="_blank">
-      <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
-        Let’s Get Started
-      </div>
+        <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
+          Let’s Get Started
+        </div>
       </Link>
       <div className="flex h-5 w-5 items-center justify-start gap-2 py-1.5 pr-2" />
       <VectorRight />
@@ -62,9 +65,14 @@ function Navbar() {
           <TrustAuthXLogo />
           <div className="hidden items-start justify-center gap-7 md:flex md:flex-wrap">
             {internalLinks.map((link) => (
-              <div key={link.name} className="font-medium mix-blend-exclusion">
+              <Link
+                target={link.name === "Pricing" ? "" : "_blank"}
+                href={link.link}
+                key={link.name}
+                className="font-medium mix-blend-exclusion"
+              >
                 {link.name}
-              </div>
+              </Link>
             ))}
           </div>
         </div>
