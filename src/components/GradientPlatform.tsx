@@ -21,7 +21,7 @@ export default function GradientPlatform() {
             completely Managed Auth platform
           </div>
 
-          <div className="mb-8 flex items-center gap-2 md:mb-14">
+          <div className="mb-8 flex items-center justify-center gap-2 md:mb-14 md:justify-start">
             <button className="flex items-center justify-center gap-2 rounded-full border border-white px-3 py-1">
               Get started <ArrowIcon />
             </button>
