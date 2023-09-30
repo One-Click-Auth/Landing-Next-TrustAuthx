@@ -66,7 +66,7 @@ export default function LandingHero() {
       {/*Low code*/}
       <div className="relative md:-mt-[25rem] md:mb-[6.7rem]">
         <Image src={appDemo} alt="Preview of TrustAuthX app" />
-        <div className="mt-10 p-4 md:absolute md:bottom-[1rem] md:right-[10rem] md:text-white">
+        <div className="mt-10 p-4 md:absolute md:bottom-[1rem] md:right-[10rem]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="2.875rem"
@@ -80,7 +80,7 @@ export default function LandingHero() {
               fill="#9EFE00"
             />
           </svg>
-          <h2 className="text-right text-3xl font-light md:text-[3.5rem]">
+          <h2 className="text-right text-3xl font-light md:text-[3.5rem] md:leading-[50px]">
             Low-Code Is The New <br />
             Source Code
           </h2>
