@@ -13,6 +13,7 @@ import { Beam } from "./Beam/Beam";
 import { Rainbow } from "./Rainbow";
 import { Prism } from "./Prism";
 import { Flare } from "./Flare";
+import { useInView } from 'react-intersection-observer';
 
 export function lerp(object, prop, goal, speed = 0.1) {
   object[prop] = THREE.MathUtils.lerp(object[prop], goal, speed);
@@ -63,24 +64,28 @@ export default function InteractivePrism({
   isMobile: boolean;
 }) {
   const [dpr, setDpr] = useState(2);
-
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Change to true if you want to render only once
+  });
   return (
-    <div id="hero-prism" style={{ width, height }}>
-      <Canvas
-        dpr={dpr}
-        orthographic
-        gl={{ antialias: false }}
-        camera={{ position: [0, 0, 20], zoom: 65 }}
-      >
-        <color attach="background" args={[bgColor]} />
-        <PerformanceMonitor
-          onDecline={() => setDpr(1)}
-          onIncline={() => setDpr(2)}
+    <div id="hero-prism" style={{ width, height }} ref={ref}>
+      {inView && (
+        <Canvas
+          dpr={dpr}
+          orthographic
+          gl={{ antialias: false }}
+          camera={{ position: [0, 0, 20], zoom: 65 }}
         >
-          <Scene isMobile={isMobile} />
-          <Effects />
-        </PerformanceMonitor>
-      </Canvas>
+          <color attach="background" args={[bgColor]} />
+          <PerformanceMonitor
+            onDecline={() => setDpr(1)}
+            onIncline={() => setDpr(2)}
+          >
+            <Scene isMobile={isMobile} />
+            <Effects />
+          </PerformanceMonitor>
+        </Canvas>
+      )}
     </div>
   );
 }
