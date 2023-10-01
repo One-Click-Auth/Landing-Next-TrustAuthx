@@ -120,7 +120,7 @@ export const Rainbow = forwardRef(
     const material = useRef(null);
     const { width, height } = useThree((state) => state.viewport);
     // calculate the maximum length the rainbow has to have to reach all screen corners
-    const length = (Math.hypot(width, height) + 0.5)/1.2; // add 1.5 to due motion of the rainbow
+    const length = (Math.hypot(width, height) + 0.5)/1; // add 1.5 to due motion of the rainbow
     useFrame((state, delta) => {
       // Only update if material.current.speed is not zero
       if (material.current.speed !== 0) {
