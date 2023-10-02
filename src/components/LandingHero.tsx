@@ -25,7 +25,7 @@ export default function LandingHero() {
 
       {/*CTA*/}
       <div className="left-20 top-[32rem] z-10 mt-6 flex flex-col-reverse items-center gap-10 text-left text-white md:absolute md:mt-0 md:flex-row md:gap-20">
-        <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] px-5 py-3 mix-blend-exclusion">
+        <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] bg-black fill-black px-5 py-3 mix-blend-exclusion">
           Let’s Get Started for Free{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function LandingHero() {
             />
           </svg>
         </button>
-        <button className="flex items-center gap-6">
+        <button className="flex items-center gap-6 rounded-full text-gray-400 mix-blend-exclusion">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="59"
@@ -57,8 +57,10 @@ export default function LandingHero() {
             />
           </svg>
           <p className="flex flex-col items-start">
-            <span className="text-xl text-[#9EFE00]">Watch Demo</span>
-            <span className="text-sm text-black md:text-white">2 min</span>
+            <span className="text-xl text-[#9EFE00] mix-blend-exclusion">
+              Watch Demo
+            </span>
+            <span className="text-sm">2 min</span>
           </p>
         </button>
       </div>
