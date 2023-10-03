@@ -32,7 +32,7 @@ class MiniGl {
   constructor(canvas, width, height, debug = false) {
     const _miniGl = this,
       debug_output =
-        -1 !== document.location.search.toLowerCase().indexOf("debug=webgl");
+        document.location.search.toLowerCase().indexOf("debug=webgl") !== -1;
     (_miniGl.canvas = canvas),
       (_miniGl.gl = _miniGl.canvas.getContext("webgl", {
         antialias: true,
@@ -132,11 +132,11 @@ class MiniGl {
                 ? Object.entries(uniforms).forEach(([name, uniform]) => {
                     material.attachUniforms(name, uniform);
                   })
-                : "array" == uniforms.type
+                : uniforms.type == "array"
                 ? uniforms.value.forEach((uniform, i) =>
                     material.attachUniforms(`${name}[${i}]`, uniform),
                   )
-                : "struct" == uniforms.type
+                : uniforms.type == "struct"
                 ? Object.entries(uniforms.value).forEach(([uniform, i]) =>
                     material.attachUniforms(`${name}.${uniform}`, i),
                   )
@@ -175,10 +175,10 @@ class MiniGl {
               void 0 !== this.value &&
                 context[`uniform${this.typeFn}`](
                   value,
-                  0 === this.typeFn.indexOf("Matrix")
+                  this.typeFn.indexOf("Matrix") === 0
                     ? this.transpose
                     : this.value,
-                  0 === this.typeFn.indexOf("Matrix") ? this.value : null,
+                  this.typeFn.indexOf("Matrix") === 0 ? this.value : null,
                 );
             }
 
@@ -188,7 +188,7 @@ class MiniGl {
             getDeclaration(name, type, length) {
               const uniform = this;
               if (uniform.excludeFrom !== type) {
-                if ("array" === uniform.type)
+                if (uniform.type === "array")
                   return (
                     uniform?.value[0]?.getDeclaration(
                       name,
@@ -196,7 +196,7 @@ class MiniGl {
                       uniform.value.length,
                     ) + `\nconst int ${name}_length = ${uniform.value.length};`
                   );
-                if ("struct" === uniform.type) {
+                if (uniform.type === "struct") {
                   let name_no_prefix = name.replace("u_", "");
                   return (
                     (name_no_prefix =
@@ -598,7 +598,7 @@ export class Gradient {
           (this.mesh.material.uniforms.u_time.value = this.t),
             this.minigl.render();
         }
-        if (0 !== this.last && this.isStatic)
+        if (this.last !== 0 && this.isStatic)
           return this.minigl.render(), void this.disconnect();
         /*this.isIntersecting && */
         (this.conf.playing || this.isMouseDown) &&
@@ -683,7 +683,7 @@ export class Gradient {
         value: 5,
       }),
       u_darken_top: new this.minigl.Uniform({
-        value: "" === this.el.dataset.jsDarkenTop ? 1 : 0,
+        value: this.el.dataset.jsDarkenTop === "" ? 1 : 0,
       }),
       u_active_colors: new this.minigl.Uniform({
         value: this.activeColors,
@@ -811,7 +811,7 @@ export class Gradient {
   }
 
   toggleColor(index) {
-    this.activeColors[index] = 0 === this.activeColors[index] ? 1 : 0;
+    this.activeColors[index] = this.activeColors[index] === 0 ? 1 : 0;
   }
 
   showGradientLegend() {
@@ -840,10 +840,10 @@ export class Gradient {
   waitForCssVars() {
     if (
       this.computedCanvasStyle &&
-      -1 !==
-        this.computedCanvasStyle
+      this.computedCanvasStyle
           .getPropertyValue("--gradient-color-1")
-          .indexOf("#")
+          .indexOf("#") !==
+        -1
     )
       this.init(), this.addIsLoadedClass();
     else {
@@ -875,7 +875,7 @@ export class Gradient {
           .trim();
         //Check if shorthand hex value was used and double the length so the conversion in normalizeColor
         // will work.
-        if (4 === hex.length) {
+        if (hex.length === 4) {
           const hexTemp = hex
             .substr(1)
             .split("")
