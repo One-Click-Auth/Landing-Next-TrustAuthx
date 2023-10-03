@@ -5,9 +5,9 @@
 
 version: 2
 updates:
-  - package-ecosystem: "bundler" # See documentation for possible values
+  - package-ecosystem: "bundler"
     # Raise pull requests to update vendored dependencies that are checked in to the repository
     vendor: true
-    directory: "/" # Location of package manifests
+    directory: "/"
     schedule:
       interval: "weekly"
