@@ -17,7 +17,7 @@ export default function LandingHero() {
       />
 
       {/*Hero Heading*/}
-      <h1 className="left-10 top-28 z-10 w-fit p-0 text-left text-4xl font-extrabold text-white mix-blend-exclusion md:absolute md:left-20 md:top-64 md:text-7xl">
+      <h1 className="absolute left-10 top-28 z-10 w-fit p-0 text-left text-4xl font-extrabold text-white mix-blend-exclusion md:left-20 md:top-64 md:text-7xl">
         TrustAuthX <br />
         Low-Code Auth <br />
         Infra for the Web.
