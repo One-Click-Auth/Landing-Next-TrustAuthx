@@ -13,7 +13,6 @@ const internalLinks = [
   { name: "Customers", link: "" },
   { name: "Enterprise", link: "https://tally.so/r/w2aQEL" },
   { name: "Pricing", link: "#pricing" },
-  { name: "Resources", link: "https://docs.trustauthx.com/" },
   { name: "Contact us", link: "https://tally.so/r/wMNB8p" },
 ];
 
@@ -39,11 +38,11 @@ const ExternalLinks = () => (
       <div className="font-semibold">Docs</div>
     </Link>
     <Link href="https://app.trustauthx.com/" target="_blank">
-      <div className="font-semibold">Sign in</div>
+      <div className="font-semibold">Sign In</div>
     </Link>
 
     <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
-      <Link href="https://app.trustauthx.com/" target="_blank">
+      <Link href="https://app.trustauthx.com" target="_blank">
         <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
           Let’s Get Started
         </div>
@@ -55,8 +54,6 @@ const ExternalLinks = () => (
 );
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
       <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-3">
@@ -97,25 +94,44 @@ function Navbar() {
             >
               {internalLinks.map((link) => (
                 <DropdownMenu.Item className="DropdownMenuItem" key={link.name}>
-                  {link.name}
+                  <Link
+                    target={link.name === "Pricing" ? "" : "_blank"}
+                    href={link.link}
+                    key={link.name}
+                    className="font-medium mix-blend-exclusion"
+                  >
+                    {link.name}
+                  </Link>
                 </DropdownMenu.Item>
               ))}
 
               <DropdownMenu.Separator className="DropdownMenuSeparator" />
 
-              <DropdownMenu.Item className="DropdownMenuItem flex gap-3">
-                <GithubLogo />
-                GitHub
+              <DropdownMenu.Item className="DropdownMenuItem">
+                <Link
+                  href="https://github.com/One-Click-Auth/Landing-Next-TrustAuthx"
+                  target="_blank"
+                  className="flex gap-3"
+                >
+                  <GithubLogo />
+                  GitHub
+                </Link>
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropdownMenuItem">
-                Docs
+                <Link href="https://docs.trustauthx.com/" target="_blank">
+                  Docs
+                </Link>
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropdownMenuItem">
-                SignIn
+                <Link href="https://app.trustauthx.com/" target="_blank">
+                  Sign In
+                </Link>
               </DropdownMenu.Item>
               <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
                 <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
-                  Let’s Get Started
+                  <Link href="https://app.trustauthx.com" target="_blank">
+                    Let’s Get Started
+                  </Link>
                 </div>
                 <div className="flex h-5 w-5 items-center justify-start gap-2 py-1.5 pr-2" />
                 <VectorRight />
