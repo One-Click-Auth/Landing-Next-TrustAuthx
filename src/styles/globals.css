@@ -292,17 +292,3 @@
   --gradient-color-4: #fff;
   z-index: 0;
 }
-
-h1 {
-  font-family: sohne-var, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 4rem;
-  color: #343434;
-  position: absolute;
-  padding: 2rem;
-  top: 0;
-  z-index: 100;
-  text-align: center;
-  width: 100%;
-  mix-blend-mode: difference;
-}

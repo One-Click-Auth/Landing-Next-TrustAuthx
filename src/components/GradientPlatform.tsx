@@ -16,7 +16,7 @@ export default function GradientPlatform() {
       <div className="flex flex-col items-center">
         <div className="flex max-h-[738px] w-full max-w-[1240px] flex-col flex-wrap gap-14 rounded-3xl px-4 md:ml-36">
           <div className="text-2xl font-semibold md:text-4xl">
-            TrustAuthx is the world’s most Easiest and
+            TrustAuthx is the world’s Easiest and
             <br />
             completely Managed Auth platform
           </div>
