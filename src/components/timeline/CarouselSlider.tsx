@@ -34,7 +34,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
         <div
           className="card-container"
           style={{
-            //@ts-expect-error
+            //@ts-expect-error: TypeScript may not recognize these custom properties
             "--active": i === active ? 1 : 0,
             "--offset": (active - i) / 5,
             "--direction": Math.sign(active - i),
