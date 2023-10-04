@@ -34,7 +34,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
         <div
           className="card-container"
           style={{
-            //@ts-ignore
+            //@ts-expect-error
             "--active": i === active ? 1 : 0,
             "--offset": (active - i) / 5,
             "--direction": Math.sign(active - i),
