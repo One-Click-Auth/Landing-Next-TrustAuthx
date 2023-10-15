@@ -12,7 +12,7 @@ export default function LandingHero() {
     <>
       <InteractivePrism
         bgColor="black"
-        height={isMobile ? "50vh" : "60rem"}
+        height={isMobile ? "50vh" : "40rem"}
         isMobile={!!isMobile}
       />
 
