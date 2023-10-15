@@ -141,8 +141,7 @@
 
   .showcase-4 {
     background: linear-gradient(47deg, #0e2bfd 0%, #0cf 100%);
-    box-shadow:
-      0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
       0px 2.28853px 11.4427px -1.66667px rgba(0, 0, 0, 0.1),
       0px 0.60219px 3.01094px -0.83333px rgba(0, 0, 0, 0.1);
   }
@@ -165,8 +164,7 @@
 
   .showcase-9 {
     background: linear-gradient(302deg, #00f6ff 0%, #2b00ff 100%);
-    box-shadow:
-      0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
       0px 2.28853px 11.4427px -1.66667px rgba(0, 0, 0, 0.1),
       0px 0.60219px 3.01094px -0.83333px rgba(0, 0, 0, 0.1);
   }
@@ -180,16 +178,14 @@
   }
 
   .showcase-6-shadow {
-    box-shadow:
-      0px 10px 50px -3.75px rgba(0, 0, 0, 0.01),
+    box-shadow: 0px 10px 50px -3.75px rgba(0, 0, 0, 0.01),
       0px 2.28853px 11.4427px -2.5px rgba(0, 0, 0, 0.03),
       0px 0.60219px 3.01094px -1.25px rgba(0, 0, 0, 0.04);
   }
 
   .showcase-7 {
     background: linear-gradient(133deg, #00aeff 0%, #00ff6e 100%);
-    box-shadow:
-      0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
       0px 2.28853px 11.4427px -1.66667px rgba(0, 0, 0, 0.1),
       0px 0.60219px 3.01094px -0.83333px rgba(0, 0, 0, 0.1);
   }
@@ -200,16 +196,14 @@
       #c499e6 0%,
       rgba(255, 255, 255, 0.4) 100%
     );
-    box-shadow:
-      0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
       0px 2.28853px 11.4427px -1.66667px rgba(0, 0, 0, 0.1),
       0px 0.60219px 3.01094px -0.83333px rgba(0, 0, 0, 0.1);
   }
 
   .showcase-3 {
     background: linear-gradient(233deg, #faffc6 -19.83%, #e00 84.46%);
-    box-shadow:
-      0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
       0px 2.28853px 11.4427px -1.66667px rgba(0, 0, 0, 0.1),
       0px 0.60219px 3.01094px -0.83333px rgba(0, 0, 0, 0.1);
   }
@@ -219,8 +213,7 @@
     background: linear-gradient(238deg, #60f 0%, #f700ff 100%);
 
     background-size: cover;
-    box-shadow:
-      0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
       0px 2.28853px 11.4427px -1.66667px rgba(0, 0, 0, 0.1),
       0px 0.60219px 3.01094px -0.83333px rgba(0, 0, 0, 0.1);
   }

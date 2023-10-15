@@ -56,7 +56,7 @@ const ExternalLinks = () => (
 function Navbar() {
   return (
     <>
-      <div className="  flex w-full justify-between  bg-[#000000]  px-14 text-white   md:py-[18px]">
+      <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-3">
         {/*Internal Links*/}
         <div className="flex items-center gap-7">
           <TrustAuthXLogo />
@@ -66,7 +66,7 @@ function Navbar() {
                 target={link.name === "Pricing" ? "" : "_blank"}
                 href={link.link}
                 key={link.name}
-                className="font-medium "
+                className="font-medium mix-blend-exclusion"
               >
                 {link.name}
               </Link>
