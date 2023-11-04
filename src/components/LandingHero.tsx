@@ -1,9 +1,10 @@
 "use client";
 
-import InteractivePrism from "./interactivePrism";
-import appDemo from "public/images/AppDemo.webp";
-import Image from "next/image";
 import { useMediaQuery } from "@mantine/hooks";
+import Image from "next/image";
+import Link from "next/link";
+import appDemo from "public/images/AppDemo.webp";
+import InteractivePrism from "./interactivePrism";
 
 export default function LandingHero() {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -25,24 +26,26 @@ export default function LandingHero() {
 
       {/*CTA*/}
       <div className="left-20 top-[32rem] z-10 mt-6 flex flex-col-reverse items-center gap-10 text-left text-white md:absolute md:mt-0 md:flex-row md:gap-20">
-        <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] bg-black fill-black px-5 py-3 mix-blend-exclusion">
-          Let’s Get Started for Free{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="7"
-            height="13"
-            viewBox="0 0 7 13"
-            fill="none"
-          >
-            <path
-              d="M1.07031 11.6711L5.53902 7.20241C5.60516 7.13644 5.65764 7.05806 5.69344 6.97178C5.72925 6.88549 5.74768 6.79299 5.74768 6.69957C5.74768 6.60616 5.72925 6.51365 5.69344 6.42737C5.65764 6.34108 5.60516 6.26271 5.53902 6.19674L1.07031 1.72803"
-              stroke="#F35815"
-              strokeWidth="2.13066"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
+        <Link href="https://app.trustauthx.com/">
+          <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] bg-black fill-black px-5 py-3 mix-blend-exclusion">
+            Let’s Get Started for Free{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="7"
+              height="13"
+              viewBox="0 0 7 13"
+              fill="none"
+            >
+              <path
+                d="M1.07031 11.6711L5.53902 7.20241C5.60516 7.13644 5.65764 7.05806 5.69344 6.97178C5.72925 6.88549 5.74768 6.79299 5.74768 6.69957C5.74768 6.60616 5.72925 6.51365 5.69344 6.42737C5.65764 6.34108 5.60516 6.26271 5.53902 6.19674L1.07031 1.72803"
+                stroke="#F35815"
+                strokeWidth="2.13066"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </Link>
         <button className="flex items-center gap-6 rounded-full text-gray-400 mix-blend-exclusion">
           <svg
             xmlns="http://www.w3.org/2000/svg"
