@@ -2,6 +2,7 @@ import Image from "next/image";
 import HomePageGradient from "../../public/svgs/HomePageGradient.svg";
 import Grid from "../../public/svgs/Grid.svg";
 import Logo from "../../public/svgs/Logo.svg";
+import Ball from "@/public/images/ball.webp";
 
 export default function Footer() {
   return (
@@ -17,8 +18,8 @@ export default function Footer() {
 
 function PricingPart() {
   return (
-    <div className="relative flex flex-col  items-center justify-center md:w-[850px]">
-      <div className="DivSectionHeader   inline-flex flex-col items-center  justify-start gap-2.5">
+    <div className="relative flex flex-col items-center  justify-center bg-transparent md:w-[850px]">
+      <div className=" inline-flex flex-col items-center  justify-start gap-2.5">
         <div
           className="gradientbg flex h-7 w-24 items-center justify-center rounded-3xl bg-gradient-to-r text-center"
           id="pricing"
@@ -52,7 +53,7 @@ function PricingPart() {
           </div>
 
           <ul className="  flex list-disc flex-col    gap-5">
-            <li className="items-start justify-start">
+            <li className="items-start justify-start font-semibold">
               For Freelancers & Students{" "}
             </li>
 
@@ -86,12 +87,12 @@ function PricingPart() {
               </div>
 
               <ul dir="rtl" className=" flex list-disc flex-col gap-5">
-                <li className="items-start justify-start">
-                  For Freelancers & Students{" "}
+                <li className="items-start justify-start font-semibold">
+                  For Business that needs Scaling{" "}
                 </li>
 
                 <li className=" items-start justify-start">
-                  Dynamic Rate Limits{" "}
+                  Higher Limits & Faster Loading{" "}
                 </li>
 
                 <li className=" items-start justify-start">
@@ -110,13 +111,12 @@ function PricingPart() {
       <button className="mt-12 rounded-md bg-black p-3 text-white">
         Start your 14-day trial
       </button>
-
       <Image
-        src={"./svgs/homePageBall.svg"}
+        src={Ball}
         alt="trustAuthX-ball"
         width={800}
         height={800}
-        className="-top-36 -z-20 hidden md:absolute md:block"
+        className="-z-20 mt-[36rem] hidden  mix-blend-exclusion md:absolute md:block"
       />
     </div>
   );

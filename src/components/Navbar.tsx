@@ -41,13 +41,13 @@ const ExternalLinks = () => (
       <div className="font-semibold">Sign In</div>
     </Link>
 
-    <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
+    <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-3.5 py-1.5 text-sm">
       <Link href="https://app.trustauthx.com" target="_blank">
         <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
           Let’s Get Started
         </div>
       </Link>
-      <div className="flex h-5 w-5 items-center justify-start gap-2 py-1.5 pr-2" />
+      <div className="flex h-5 w-5  items-center justify-start gap-2 py-1 pr-2" />
       <VectorRight />
     </div>
   </>
@@ -56,11 +56,11 @@ const ExternalLinks = () => (
 function Navbar() {
   return (
     <>
-      <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-3">
+      <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-2">
         {/*Internal Links*/}
-        <div className="flex items-center gap-7">
+        <div className="flex items-center gap-5">
           <TrustAuthXLogo />
-          <div className="hidden items-start justify-center gap-7 md:flex md:flex-wrap">
+          <div className="hidden items-start justify-center gap-4 md:flex md:flex-wrap">
             {internalLinks.map((link) => (
               <Link
                 target={link.name === "Pricing" ? "" : "_blank"}
@@ -75,7 +75,7 @@ function Navbar() {
         </div>
 
         {/*External Links*/}
-        <div className="hidden items-center justify-center gap-11 md:flex md:flex-wrap">
+        <div className="hidden items-center justify-center gap-4 md:flex md:flex-wrap">
           <ExternalLinks />
         </div>
 

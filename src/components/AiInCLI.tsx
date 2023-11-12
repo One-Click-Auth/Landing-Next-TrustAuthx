@@ -9,19 +9,20 @@ function AiInCli() {
 
   return (
     <div
-      className="p-4 md:py-14"
+      className="p-4 md:px-32 md:py-14"
       style={{
         background: isMobile
           ? "black"
-          : "linear-gradient(78deg, #000 49.2%, #0E0E0E 52.62%, rgba(255, 255, 255, 0.00) 52.66%)",
+          : "linear-gradient(65deg, #000 49.2%, #0E0E0E 52.62%, rgba(255, 255, 255, 0.00) 52.66%)",
       }}
     >
-      <h2 className="mb-10 flex flex-wrap justify-center gap-3 text-center text-4xl font-extralight tracking-widest text-white mix-blend-difference md:mb-14 md:gap-y-10 md:text-[5rem]">
+      <h2 className="mb-10 flex flex-wrap justify-center gap-3 pl-60 text-center text-4xl font-extralight tracking-widest text-white mix-blend-difference md:mb-14 md:flex-nowrap md:gap-y-10 md:text-[5rem]">
         <span className="h-full text-[#9EFE00]">See. </span>
         <span>THE</span> <span className="font-bold">AI </span>
-        <span>in ACTION</span>
+        <span>in </span>
+        <span>Action</span>
       </h2>
-      <div className="flex flex-wrap items-center justify-center gap-12 md:gap-28">
+      <div className="flex flex-wrap items-center justify-between gap-12 md:flex-nowrap md:gap-16">
         <p className="flex flex-col text-[#9DFD00]">
           <span className="text-[1.5rem] font-light">
             <span className="mr-2 text-white">{"-> "}</span>
@@ -78,7 +79,7 @@ function AiInCli() {
             jsFileName="js (cli)"
             goFileName="go (cli)"
           />
-          <button className="mt-8 flex w-full items-center justify-center gap-2 text-xs text-white lg:text-black">
+          <button className="mt-4 flex w-full items-center justify-center gap-2 text-xs text-white lg:text-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="19"
