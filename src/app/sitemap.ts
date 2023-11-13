@@ -5,13 +5,13 @@ return [
     {
     url: 'https://www.trustauthx.com',
     lastModified: new Date(),
-    changeFrequency: 'monthly',//we can do yearly also depends
+    changeFrequency: 'weekly',//we can do yearly also depends
     priority: 1.0,
     },
     {
     url: 'https://www.trustauthx.com/systems',
     lastModified: new Date(),
-    changeFrequency: 'monthly',
+    changeFrequency: 'weekly',
     priority: 0.6,
     },
     {
