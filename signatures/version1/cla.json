@@ -1,3 +1,12 @@
 {
-   "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "me-imfhd",
+      "id": 114667178,
+      "comment_id": 1807855307,
+      "created_at": "2023-11-13T10:10:41Z",
+      "repoId": 691622090,
+      "pullRequestNo": 45
+    }
+  ]
 }
