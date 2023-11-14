@@ -16,16 +16,15 @@ export default function LandingHero() {
         height={isMobile ? "50vh" : "60rem"}
         isMobile={!!isMobile}
       />
-
       {/*Hero Heading*/}
-      <h1 className="absolute left-10 top-28 z-10 w-fit p-0 text-left text-4xl font-extrabold text-white mix-blend-exclusion md:left-20 md:top-64 md:text-7xl">
+      <h1 className="absolute left-10 top-28 z-10 w-fit p-0 text-left text-4xl font-extrabold text-white mix-blend-exclusion md:left-20 md:top-56 md:text-7xl">
         TrustAuthX <br />
         Low-Code Auth <br />
         Infra for the Web.
       </h1>
 
       {/*CTA*/}
-      <div className="left-20 top-[32rem] z-10 mt-6 flex flex-col-reverse items-center gap-10 text-left text-white md:absolute md:mt-0 md:flex-row md:gap-20">
+      <div className="left-20 top-[30rem] z-10 mt-6 flex flex-col-reverse items-center gap-10 text-left text-white md:absolute md:mt-0 md:flex-row md:gap-20">
         <Link href="https://app.trustauthx.com/">
           <button className="z-10 flex items-center gap-3 rounded-full border-2 border-[#F35815] bg-black fill-black px-5 py-3 mix-blend-exclusion">
             Let’s Get Started for Free{" "}

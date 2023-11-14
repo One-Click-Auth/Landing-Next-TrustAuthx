@@ -108,7 +108,7 @@ const isMobile = useMediaQuery("(max-width: 768px)");
             </div>
 
             <div className="relative hidden   h-[205px] w-full items-center justify-center bg-transparent sm:flex ">
-              <img
+              <Image
                 src="/showcase/2.png"
                 alt=""
                 className="absolute  bottom-0 left-0  w-full bg-cover"
@@ -176,12 +176,12 @@ const isMobile = useMediaQuery("(max-width: 768px)");
                 <p className="underline underline-offset-[12px]">Depl</p>
               </div>
 
-              <img
+              <Image
                 src="/showcase/4.png"
                 alt=""
                 className="absolute -left-10 bottom-0 bg-cover"
               />
-              <img
+              <Image
                 src="/showcase/4-2.png"
                 alt=""
                 className="absolute bottom-0 right-20 bg-cover"
@@ -320,24 +320,24 @@ const isMobile = useMediaQuery("(max-width: 768px)");
             </div>
 
             {/* things to make the background */}
-            <img
+            <Image
               src="/showcase/code-section/cone.svg"
               className="absolute bottom-[40%] left-0 "
               alt=""
             />
-            <img
+            <Image
               src="/showcase/code-section/circle-1.svg"
               className="absolute bottom-0 left-0 "
               alt=""
             />
 
-            <img
+            <Image
               src="/showcase/code-section/circle-2.svg"
               className="absolute bottom-28 left-20 "
               alt=""
             />
 
-            <img
+            <Image
               src="/showcase/code-section/circle-3.svg"
               className="absolute right-0 top-1/2 -translate-y-1/2 "
               alt=""
@@ -486,7 +486,7 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               className=" relative -mx-10   hidden   h-[325px] w-full items-center 
             justify-center bg-transparent sm:flex "
             >
-              <img
+              <Image
                 src="/showcase/9.svg"
                 alt=""
                 className="absolute -bottom-8   left-0   w-full max-w-[95%] bg-cover"
