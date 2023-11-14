@@ -6,6 +6,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, LogOut, PersonStanding } from "lucide-react";
+import Image from "next/image";
 import * as React from "react";
 
 export function AccountDropdown() {
@@ -14,7 +15,7 @@ export function AccountDropdown() {
     <div>
       <div className=" showcase-9-dropdown-shadow mt-2 w-96 max-w-[80vw] cursor-pointer overflow-hidden rounded-2xl bg-white py-6">
         <div className="sticky top-0 flex items-center gap-1 bg-white px-6 pb-4">
-          <img
+          <Image
             src="https://github.com/shadcn.png"
             className="h-10 w-10 rounded-full"
             alt="@shadcn"
