@@ -4,18 +4,12 @@ import { useMediaQuery } from "@mantine/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import appDemo from "public/images/AppDemo.webp";
-import InteractivePrism from "./interactivePrism";
 
 export default function LandingHero() {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
     <>
-      <InteractivePrism
-        bgColor="black"
-        height={isMobile ? "50vh" : "60rem"}
-        isMobile={!!isMobile}
-      />
       {/*Hero Heading*/}
       <h1 className="absolute left-10 top-28 z-10 w-fit p-0 text-left text-4xl font-extrabold text-white mix-blend-exclusion md:left-20 md:top-56 md:text-7xl">
         TrustAuthX <br />
