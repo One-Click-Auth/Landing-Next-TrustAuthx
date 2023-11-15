@@ -1,17 +1,21 @@
 import React from "react";
 import Script from "next/script";
 import "../styles/globals.css";
-
+import type  {Metadata} from "next";
 import { Inter } from "next/font/google";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import type { Metadata } from "next";
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
+
+export const metadata:Metadata = {
+  title:"TrustAuthX",
+  description: 'TrustAuthX is a Low Code Authentication as a Service Platform for developers/businesses worldwide.',
+}
 
 export default function RootLayout({
   children,
@@ -21,8 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <meta name="title" content="TrustAuthX"/>
-        <meta name="description" content="TrustAuthX is a Low Code Authentication as a Service Platform for developers/businesses worldwide."/>
+        <title>{`${metadata.title}`}</title>
+        <meta name="description" content={`${metadata.description}`} />.
         <link rel="icon" href="./favicon.ico" />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
