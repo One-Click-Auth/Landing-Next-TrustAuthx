@@ -24,13 +24,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const title = metadata.title ;
-  const description = metadata.description;
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <meta name="title" content={`${title}`}/>
-        <meta name="description" content={`${description}`} />
+        <meta name="title" content={`${metadata.title}`}/>
+        <meta name="description" content={`${metadata.description}`} />
         <link rel="icon" href="./favicon.ico" />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
