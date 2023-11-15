@@ -13,12 +13,6 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title:"TrustAuthX",
-  description:"TrustAuthX is a Low Code Authentication as a Service Platform for developers/businesses worldwide.",
-}
-
-
 export default function RootLayout({
   children,
 }: {
@@ -27,8 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <meta name="title" content={`${metadata.title}`}/>
-        <meta name="description" content={`${metadata.description}`} />
+        <meta name="title" content="TrustAuthX"/>
+        <meta name="description" content="TrustAuthX is a Low Code Authentication as a Service Platform for developers/businesses worldwide."/>
         <link rel="icon" href="./favicon.ico" />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
