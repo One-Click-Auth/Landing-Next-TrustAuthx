@@ -108,7 +108,7 @@ const isMobile = useMediaQuery("(max-width: 768px)");
             </div>
 
             <div className="relative hidden   h-[205px] w-full items-center justify-center bg-transparent sm:flex ">
-              <Image
+              <img
                 src="/showcase/2.png"
                 alt=""
                 width={1000}
@@ -178,14 +178,14 @@ const isMobile = useMediaQuery("(max-width: 768px)");
                 <p className="underline underline-offset-[12px]">Depl</p>
               </div>
 
-              <Image
+              <img
                 src="/showcase/4.png"
                 alt=""
                 width={1000}
                 height={1000}
                 className="absolute -left-10 bottom-0 bg-cover"
               />
-              <Image
+              <img
                 src="/showcase/4-2.png"
                 alt=""
                 width={1000}
@@ -326,14 +326,14 @@ const isMobile = useMediaQuery("(max-width: 768px)");
             </div>
 
             {/* things to make the background */}
-            <Image
+            <img
               src="/showcase/code-section/cone.svg"
               className="absolute bottom-[40%] left-0 "
               alt=""
               width={1000}
               height={1000}
             />
-            <Image
+            <img
               src="/showcase/code-section/circle-1.svg"
               className="absolute bottom-0 left-0 "
               alt=""
@@ -341,7 +341,7 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               height={1000}
             />
 
-            <Image
+            <img
               src="/showcase/code-section/circle-2.svg"
               className="absolute bottom-28 left-20 "
               alt=""
@@ -349,7 +349,7 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               height={1000}
             />
 
-            <Image
+            <img
               src="/showcase/code-section/circle-3.svg"
               className="absolute right-0 top-1/2 -translate-y-1/2 "
               alt=""
@@ -500,7 +500,7 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               className=" relative -mx-10   hidden   h-[325px] w-full items-center 
             justify-center bg-transparent sm:flex "
             >
-              <Image
+              <img
                 src="/showcase/9.svg"
                 alt=""
                 width={1000}

@@ -68,7 +68,7 @@ export default function InteractivePrism({
     triggerOnce: false, // Change to true if you want to render only once
   });
   return (
-    <div id="hero-prism" className="h-[58rem]" ref={ref}>
+    <div id="hero-prism" style={{ width, height }} ref={ref}>
       {inView && (
         <Canvas
           dpr={dpr}

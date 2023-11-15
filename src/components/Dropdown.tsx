@@ -6,7 +6,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, LogOut, PersonStanding } from "lucide-react";
-import Image from "next/image";
 import * as React from "react";
 
 export function AccountDropdown() {

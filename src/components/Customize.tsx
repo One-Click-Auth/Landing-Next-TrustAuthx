@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 export default function Customize() {
@@ -49,7 +48,7 @@ export default function Customize() {
             <div className="  left-16 top-5  w-[316px] border border-[#9900FF] p-8 2xl:hidden">
               <div className="flex items-center gap-3">
                 {/* replace thsi with shadcn avatar compnent in regular codebase */}
-                <Image
+                <img
                   alt=""
                   src="https://s3-alpha-sig.figma.com/img/da73/1fd7/dc33e93cde3509aa78e24c0e19c74daa?Expires=1694390400&Signature=lTUbdJnWxxAKiJf3qsXeEttE4ZMV5EL~mbpsgtxv353l2ZGhD42sQ30g14TCItAQTrfEijaoua6qUqW1O5N7G6GQVl3DPkbcIuYl7S5T7SRfQT~aXHHsJsqfPDWczZtHylKzxh42sA7gyPhsrYZrvTO9c1iXU~Gb0Xs8N1X4TMv3888I10jV7pmCrXawdTFZSpSdOEgbQe0EhxcSTfkhnDB75TvLshvg~3yaxc6Vx4~vkngv7KZ1zKWqFHjLNIlPuYgi2oZMDPAh5IV7YHkkZXj7N-uVnTgBBsuJBSc0Grv3IZ9mzXe-N-Xg-bjAfcPmcEoGGKPyu64mnz2S3kkSOQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                   className="h-[50px] rounded-full bg-cover"
@@ -71,7 +70,7 @@ export default function Customize() {
             <div className=" bottom-5  right-32  w-[316px] border border-[#0099FF] p-8 2xl:hidden">
               <div className="flex items-center gap-3">
                 {/* replace thsi with shadcn avatar compnent in regular codebase */}
-                <Image
+                <img
                   alt=""
                   src="https://s3-alpha-sig.figma.com/img/6e37/c23a/796cbd72327de48bed1e14b67a46f98e?Expires=1694390400&Signature=XAjvLPT0q9h2Ntmw6QZqCU-qJUOFkwdeS61MkTtGScCIord4F1CC1dZ3Ks2qEAWI73m70jZkgcbZ0GJXzhVoTssTg1isxULF2ThmSKRylHblRHnKhWWiyHAScp-OaZZHeTbki0lXHHQbzsGCHEIEJTCXdtCK8sbZCLs28R-XvsRiky5kjHkvWqqwjEBi0HCeDJMfD0kfnn14XH9b1G8S~qx7eJdVfnrw~U8d9jAcMvEe2mnld0Jq5Kr2Y7qi-vJFCc9zPrid1beNPbKg4vY4A1yeUEPtI5mrQTx6CaKS7t8IMj-OyRe-WW12dxz-xq5qzIh-E3GrimHatRIwh37oWw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                   className="h-[50px] rounded-full bg-cover"
@@ -91,7 +90,7 @@ export default function Customize() {
             <div className=" right-16 top-16  w-[316px] border border-[#9900FF] p-8 2xl:hidden">
               <div className="flex items-center gap-3">
                 {/* replace thsi with shadcn avatar compnent in regular codebase */}
-                <Image
+                <img
                   alt=""
                   src="https://s3-alpha-sig.figma.com/img/0393/bb53/1342dd46a5307c8fad2d3835d2242ce1?Expires=1694390400&Signature=LoHEzBgRrNzK61xk0Afvq6lXsM81cKSXcaH7RXJH2ZDwZISkawOZJpSqzcpF-13fKQCZTmvsXKnlp9yb681U3y8Zg~VswI5H6ugTyzu37kiFy3ZNJQobRr-iXkh-v7qKKD8VCrb4~8Ui7pXynIKL0OQ8wOpJRdZVjO7FnBNxAp9HjbezLwAGzqZ1C-NJd3h84ubjwxwQG2xAlNJFMLzcz8jwEySf0j1YjDW1xN6VrqtSjo2LD9m5CaC6ZjBfZJK32F1sOlMjL-te8YOSVOMr3w~CaPpRcUPSa6CwvfW5D~M21GgvaOQtTGdPmm1DvZv3r3W0n1w~hPzNf9fHdDwEJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                   className="h-[50px] rounded-full bg-cover"
