@@ -16,7 +16,7 @@ function AiInCli() {
           : "linear-gradient(65deg, #000 49.2%, #0E0E0E 52.62%, rgba(255, 255, 255, 0.00) 52.66%)",
       }}
     >
-      <h2 className="mb-10 flex flex-wrap justify-center gap-3 pl-60 text-center text-4xl font-extralight tracking-widest text-white mix-blend-difference md:mb-14 md:flex-nowrap md:gap-y-10 md:text-[5rem]">
+      <h2 className="mb-10 flex flex-wrap justify-center gap-3 md:pl-60 text-center text-4xl font-extralight tracking-widest text-white mix-blend-difference md:mb-14 md:flex-nowrap md:gap-y-10 md:text-[5rem]">
         <span className="h-full text-[#9EFE00]">See. </span>
         <span>THE</span> <span className="font-bold">AI </span>
         <span>in </span>
