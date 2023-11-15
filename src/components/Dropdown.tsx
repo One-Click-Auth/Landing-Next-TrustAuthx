@@ -15,10 +15,10 @@ export function AccountDropdown() {
     <div>
       <div className=" showcase-9-dropdown-shadow mt-2 w-96 max-w-[80vw] cursor-pointer overflow-hidden rounded-2xl bg-white py-6">
         <div className="sticky top-0 flex items-center gap-1 bg-white px-6 pb-4">
-          <Image
+          <img
             src="https://github.com/shadcn.png"
-            className="h-10 w-10 rounded-full"
             alt="@shadcn"
+            className="h-10 w-10 rounded-full"
           />
 
           <div className="ml-2">
@@ -168,7 +168,7 @@ function TrustAuthXLogo() {
           gradientTransform="translate(30.9017 29.8005) rotate(-90.0445) scale(29.9638)"
         >
           <stop offset="0.220303" />
-          <stop offset="0.995966" stopOpacity ="0" />
+          <stop offset="0.995966" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>

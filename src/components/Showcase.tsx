@@ -111,6 +111,8 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               <Image
                 src="/showcase/2.png"
                 alt=""
+                width={1000}
+                height={1000}
                 className="absolute  bottom-0 left-0  w-full bg-cover"
               />
             </div>
@@ -179,11 +181,15 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               <Image
                 src="/showcase/4.png"
                 alt=""
+                width={1000}
+                height={1000}
                 className="absolute -left-10 bottom-0 bg-cover"
               />
               <Image
                 src="/showcase/4-2.png"
                 alt=""
+                width={1000}
+                height={1000}
                 className="absolute bottom-0 right-20 bg-cover"
               />
             </div>
@@ -324,23 +330,31 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               src="/showcase/code-section/cone.svg"
               className="absolute bottom-[40%] left-0 "
               alt=""
+              width={1000}
+              height={1000}
             />
             <Image
               src="/showcase/code-section/circle-1.svg"
               className="absolute bottom-0 left-0 "
               alt=""
+              width={1000}
+              height={1000}
             />
 
             <Image
               src="/showcase/code-section/circle-2.svg"
               className="absolute bottom-28 left-20 "
               alt=""
+              width={1000}
+              height={1000}
             />
 
             <Image
               src="/showcase/code-section/circle-3.svg"
               className="absolute right-0 top-1/2 -translate-y-1/2 "
               alt=""
+              width={1000}
+              height={1000}
             />
           </ShowcaseCard>
         </div>
@@ -489,6 +503,8 @@ const isMobile = useMediaQuery("(max-width: 768px)");
               <Image
                 src="/showcase/9.svg"
                 alt=""
+                width={1000}
+                height={1000}
                 className="absolute -bottom-8   left-0   w-full max-w-[95%] bg-cover"
               />
             </div>
