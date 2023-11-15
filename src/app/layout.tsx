@@ -25,9 +25,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <head>
         <link rel="icon" href="./favicon.ico" />
-      </head>
+      <head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
         strategy="afterInteractive"
@@ -41,6 +40,7 @@ export default function RootLayout({
           gtag('config', 'G-7NXTY5KCKL');
         `}
       </Script>
+      </head>
       <body>
         <Navbar />
         {children}
