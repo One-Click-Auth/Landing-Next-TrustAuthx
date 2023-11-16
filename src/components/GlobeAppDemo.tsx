@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GlobeAppDemo() {
   return (
-    <div className="text-black md:mt-20">
+    <div className="text-black md:mt-14">
       <div>
         <img src={"/images/AppDemo.webp"} alt="Preview of TrustAuthX app" />
       </div>

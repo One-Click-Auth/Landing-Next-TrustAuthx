@@ -1,9 +1,6 @@
 import ArrowIcon from "./ArrowIcon";
 import AnimatedGradient from "./gradients/AnimatedGradient";
 import React from "react";
-import { useMediaQuery } from "@mantine/hooks";
-
-import Image from "next/image";
 import { GradientPlatformImage } from "./GradientPlatformImage";
 
 export default function GradientPlatform() {
@@ -39,7 +36,7 @@ export default function GradientPlatform() {
             <GradientPlatformImage />
           </div>
         </div>
-        <div className="md:hidden">
+        <div className="hidden md:block">
           <AnimatedGradient />{" "}
         </div>
       </div>

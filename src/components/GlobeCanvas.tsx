@@ -37,11 +37,11 @@ export function GlobeCanvas({ children }: PropsWithChildren) {
         devicePixelRatio: 2,
         width: width * 2,
         height: width,
-        scale: 0.9,
+        scale: 0.85,
         phi: 0,
         theta: 0.2,
         dark: 1.1,
-        offset: [2100.66, 1800.0],
+        offset: [2100.66, 2400.0],
         diffuse: 3,
         mapSamples: 16000,
         mapBrightness: 1.8,
@@ -82,7 +82,7 @@ export function GlobeCanvas({ children }: PropsWithChildren) {
     >
       {children}
       <div
-        className="absolute bg-black text-white md:top-[-30rem] "
+        className="absolute bg-black text-white md:top-[-43rem] "
         style={{
           width: "100%",
           aspectRatio: 1,
