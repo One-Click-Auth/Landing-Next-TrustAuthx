@@ -41,7 +41,7 @@ export function Landing() {
                 TrusthAuthx: Low-Code Auth Infra for the web{" "}
                 <span className="text-[#9EFE00]">_</span>
               </div>
-              <div className="my-3 text-sm flex flex-col gap-8 md:w-[45%]  md:pl-16 ">
+              <div className="my-3 text-[1rem] flex flex-col gap-8 md:w-[45%]  md:pl-16 ">
                 <p className="text-zinc-300">
                   {"Appwrite's"} open-source platform lets you add Auth, DBs,
                   Functions and Storage to your product and build any
@@ -71,7 +71,7 @@ export function Landing() {
                 </Link>
               </div>
             </div>
-            <button className="flex items-center gap-2 rounded-full text-gray-400 mix-blend-exclusion md:gap-4">
+            <button className="flex md:-mt-14 items-center gap-2 rounded-full text-gray-400 mix-blend-exclusion md:gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="46"
