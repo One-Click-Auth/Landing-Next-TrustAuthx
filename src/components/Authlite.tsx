@@ -54,7 +54,7 @@ export default function Authlite() {
                 buttonVariants({
                   variant: "default",
                   className:
-                    "mt-4 border  hover:text-white border-neutral-800 bg-white font-semibold text-black  sm:ml-6 sm:mt-0 sm:rounded-full",
+                    "mt-4 border  border-neutral-800 bg-white font-semibold text-black hover:text-white  sm:ml-6 sm:rounded-full md:m-0",
                 }),
               )}
             >
@@ -69,7 +69,7 @@ export default function Authlite() {
                 buttonVariants({
                   variant: "default",
                   className:
-                    "mt-4 border hover:text-white border-neutral-800 bg-white font-semibold text-black  sm:ml-6 sm:mt-0 sm:rounded-full",
+                    "mt-4 border border-neutral-800 bg-white font-semibold text-black hover:text-white  sm:ml-6 sm:mt-0 sm:rounded-full",
                 }),
               )}
             >
