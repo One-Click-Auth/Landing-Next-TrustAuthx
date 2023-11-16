@@ -13,26 +13,6 @@ export default function GradientPlatform() {
 
   return (
     <div className="w-full bg-black py-8 text-gray-200 md:py-20 ">
-      <div className="flex flex-col items-center">
-        <div className="flex max-h-[738px] w-full max-w-[1240px] flex-col flex-wrap gap-14 rounded-3xl px-4 md:ml-36">
-          <div className="text-2xl font-semibold md:text-4xl">
-            TrustAuthx is the world’s Easiest and
-            <br />
-            completely Managed Auth platform
-          </div>
-
-          <div className="mb-8 flex items-center justify-center gap-2 md:mb-14 md:justify-start">
-            <button className="flex items-center justify-center gap-2 rounded-full border border-white px-3 py-1">
-              Get started <ArrowIcon />
-            </button>
-
-            <button className="flex items-center justify-center gap-2 rounded-full  border-white px-3 py-1">
-              Schedule a demo <ArrowIcon />
-            </button>
-          </div>
-        </div>
-      </div>
-
       <div className="relative">
         <div className="flex items-center justify-center px-4">
           <div
