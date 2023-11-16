@@ -1,9 +1,3 @@
-"use client";
-import React from "react";
-import { Globe } from "./Landing";
-import { Landing } from "./NoGlobeLanding";
-
-
 // export default function LandingHero() {
 //   const isMobile = useMediaQuery("(max-width: 768px)");
 
