@@ -50,9 +50,11 @@ export default function Authlite() {
             <Link
               href="/"
               className={cn(
+                "hover:bg-transparent",
                 buttonVariants({
-                  variant: "outline",
-                  className: "sm:rounded-full",
+                  variant: "default",
+                  className:
+                    "mt-4 border  hover:text-white border-neutral-800 bg-white font-semibold text-black  sm:ml-6 sm:mt-0 sm:rounded-full",
                 }),
               )}
             >
@@ -63,10 +65,11 @@ export default function Authlite() {
             <Link
               href="/"
               className={cn(
+                "hover:bg-transparent",
                 buttonVariants({
                   variant: "default",
                   className:
-                    "mt-4 bg-white font-semibold text-black sm:ml-6 sm:mt-0 sm:rounded-full",
+                    "mt-4 border hover:text-white border-neutral-800 bg-white font-semibold text-black  sm:ml-6 sm:mt-0 sm:rounded-full",
                 }),
               )}
             >
