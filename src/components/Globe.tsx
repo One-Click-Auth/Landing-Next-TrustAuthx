@@ -1,13 +1,11 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import createGlobe from "cobe";
 import { useSpring } from "react-spring";
+import { useInView } from "react-intersection-observer";
 import Link from "next/link";
-import appDemo from "@/public/images/AppDemo.webp";
-import { Button } from "@/components/ui/button";
 
 export function Globe() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-
   const [{ r }, api] = useSpring(() => ({
     r: 0,
     config: {
@@ -17,15 +15,23 @@ export function Globe() {
       precision: 0.001,
     },
   }));
+
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+
   useEffect(() => {
     let phi = 0;
     let width = 0;
+
     const size = Math.min(window.innerHeight, window.innerWidth, 800);
     const onResize = () =>
       canvasRef.current && (width = canvasRef.current.offsetWidth);
+
     window.addEventListener("resize", onResize);
     onResize();
-    if (canvasRef.current) {
+
+    if (inView && canvasRef.current) {
       const globe = createGlobe(canvasRef.current, {
         devicePixelRatio: 2,
         width: width * 2,
@@ -53,14 +59,17 @@ export function Globe() {
           state.height = width * 2;
         },
       });
+
       setTimeout(() => {
         if (canvasRef.current) {
           canvasRef.current.style.opacity = "1";
         }
       });
+
       return () => globe.destroy();
     }
-  }, []);
+  }, [inView]);
+
   return (
     <div
       className="bg-white text-white md:mb-80 mb-[36rem]"
