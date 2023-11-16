@@ -1,23 +1,22 @@
-import React, { Suspense, useEffect, useRef } from "react";
-import createGlobe from "cobe";
-import { useSpring } from "react-spring";
+import React from "react";
 import Link from "next/link";
-import appDemo from "@/public/images/AppDemo.webp";
-import { Button } from "@/components/ui/button";
+import { GlobeCanvas } from "./GlobeCanvas";
+import GlobeAppDemo from "./GlobeAppDemo";
 
 export function Landing() {
   return (
-    <>
-      <section className="flex items-center bg-black py-12 text-white pt-28 md:pt-44 ">
-        <div className="container mx-auto flex flex-col items-center md:px-36 ">
-          <div>
-            <div className="md:px-2">
-              <button
-                //   variant={"primary"}
-                className="my-3 flex h-6 items-center  gap-1 rounded-xl border border-[#F35815] bg-black px-2 text-[0.85rem]"
-              >
-                {/* logo */}
-                <div>Check our new update</div>
+    <GlobeCanvas>
+      <div className="absolute top-16 z-[900] md:top-20  ">
+        <div className="flex flex-col gap-6 p-8 md:gap-10 md:p-20">
+          <h1 className="text-left text-2xl font-extrabold leading-none text-white mix-blend-exclusion md:text-[4.3rem]">
+            TrustAuthX <br />
+            Low-Code Auth <br />
+            Infra for the Web.{" "}
+          </h1>
+          <div className="flex cursor-pointer flex-col gap-2 md:flex-row md:gap-16  md:text-sm">
+            <Link href="https://app.trustauthx.com/">
+              <button className="z-10 flex w-max cursor-pointer items-center gap-3 rounded-full border-2 border-[#F35815] bg-black fill-black px-2  py-1 text-xs font-semibold mix-blend-exclusion md:px-5 md:py-3 md:text-base">
+                Let’s Get Started for Free{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="7"
@@ -28,50 +27,15 @@ export function Landing() {
                 >
                   <path
                     d="M1.07031 11.6711L5.53902 7.20241C5.60516 7.13644 5.65764 7.05806 5.69344 6.97178C5.72925 6.88549 5.74768 6.79299 5.74768 6.69957C5.74768 6.60616 5.72925 6.51365 5.69344 6.42737C5.65764 6.34108 5.60516 6.26271 5.53902 6.19674L1.07031 1.72803"
-                    stroke="#fff"
+                    stroke="#F35815"
                     strokeWidth="2.13066"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                 </svg>
               </button>
-            </div>
-            <div className="flex flex-wrap justify-between md:flex-nowrap">
-              <div className="text-4xl  font-semibold md:w-[55%] md:text-[3.275rem] md:leading-[4rem] tracking-[-0.04rem] md:tracking-tight ">
-                TrusthAuthx: Low-Code Auth Infra for the web{" "}
-                <span className="text-[#9EFE00]">_</span>
-              </div>
-              <div className="my-3 text-[1rem] flex flex-col gap-8 md:w-[45%]  md:pl-16 ">
-                <p className="text-zinc-300">
-                  {"Appwrite's"} open-source platform lets you add Auth, DBs,
-                  Functions and Storage to your product and build any
-                  application at any scale, own your data, and use your
-                  preferred coding languages and tools.
-                </p>
-                <Link href="https://app.trustauthx.com/">
-                  <button className="z-10 flex w-max cursor-pointer  items-center gap-3 rounded-full border-2 border-[#F35815] bg-black fill-black px-2  py-1 text-xs font-semibold mix-blend-exclusion md:px-5 md:py-3 md:text-base">
-                    Let’s Get Started for Free{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="7"
-                      height="13"
-                      viewBox="0 0 7 13"
-                      fill="none"
-                      className="w-7"
-                    >
-                      <path
-                        d="M1.07031 11.6711L5.53902 7.20241C5.60516 7.13644 5.65764 7.05806 5.69344 6.97178C5.72925 6.88549 5.74768 6.79299 5.74768 6.69957C5.74768 6.60616 5.72925 6.51365 5.69344 6.42737C5.65764 6.34108 5.60516 6.26271 5.53902 6.19674L1.07031 1.72803"
-                        stroke="#fff"
-                        strokeWidth="2.13066"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <button className="flex md:-mt-14 items-center gap-2 rounded-full text-gray-400 mix-blend-exclusion md:gap-4">
+            </Link>
+            <button className="flex items-center gap-2 rounded-full text-gray-400 mix-blend-exclusion md:gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="46"
@@ -94,7 +58,8 @@ export function Landing() {
             </button>
           </div>
         </div>
-      </section>
-    </>
+        <GlobeAppDemo />
+      </div>
+    </GlobeCanvas>
   );
 }
