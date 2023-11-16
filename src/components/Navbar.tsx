@@ -41,7 +41,7 @@ const ExternalLinks = () => (
       <div className="font-semibold">Sign In</div>
     </Link>
 
-    <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-3.5 py-1.5 text-sm">
+    <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-3.5 py-1.5 text-sm hover:border-[#696C70] hover:bg-transparent">
       <Link href="https://app.trustauthx.com" target="_blank">
         <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
           Let’s Get Started
@@ -56,7 +56,7 @@ const ExternalLinks = () => (
 function Navbar() {
   return (
     <>
-      <div className="text-sm fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-2">
+      <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-sm text-white mix-blend-luminosity backdrop-blur-[75px] md:py-2">
         {/*Internal Links*/}
         <div className="flex items-center gap-5">
           <TrustAuthXLogo />
