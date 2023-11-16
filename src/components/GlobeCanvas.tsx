@@ -41,7 +41,7 @@ export function GlobeCanvas({ children }: PropsWithChildren) {
         phi: 0,
         theta: 0.2,
         dark: 1.1,
-        offset: [2100.66, 2400.0],
+        offset: [2100.66, 2600.0],
         diffuse: 3,
         mapSamples: 16000,
         mapBrightness: 1.8,
