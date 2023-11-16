@@ -77,6 +77,7 @@ export function Globe() {
         width: "100%",
         aspectRatio: 1,
       }}
+      ref={ref}
     >
       <div className="absolute top-16 md:top-20 z-[900]  ">
         <div className="flex flex-col gap-6 md:gap-10 p-8 md:p-20">
