@@ -19,7 +19,6 @@ export function GlobeCanvas({ children }: PropsWithChildren) {
 
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold:0.75,
   });
 
   useEffect(() => {
@@ -61,6 +60,7 @@ export function GlobeCanvas({ children }: PropsWithChildren) {
           state.height = width * 2;
         },
       });
+
       setTimeout(() => {
         if (canvasRef.current) {
           canvasRef.current.style.opacity = "1";
@@ -94,7 +94,7 @@ export function GlobeCanvas({ children }: PropsWithChildren) {
           style={{
             width: "100%",
             height: "100%",
-            cursor: "grab",
+            // cursor: "grab",
             contain: "layout paint size",
             opacity: 0,
             transition: "opacity 1s ease",
