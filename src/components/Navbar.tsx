@@ -56,7 +56,7 @@ const ExternalLinks = () => (
 function Navbar() {
   return (
     <>
-      <div className="fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-2">
+      <div className="text-sm fixed z-[1000] flex w-full justify-between border-b-[0.5px] border-[#696C70] bg-[#00000068] px-6 text-white mix-blend-luminosity backdrop-blur-[75px] md:py-2">
         {/*Internal Links*/}
         <div className="flex items-center gap-5">
           <TrustAuthXLogo />
