@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Globe } from "./Globe";
-import { Landing } from "./Landing";
+import { Globe } from "./Landing";
+import { Landing } from "./NoGlobeLanding";
 
 
 // export default function LandingHero() {
