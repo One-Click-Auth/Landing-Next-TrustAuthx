@@ -6,7 +6,7 @@ import GlobeAppDemo from "./GlobeAppDemo";
 export function Landing() {
   return (
     <GlobeCanvas>
-      <div className="absolute top-16 z-[900] md:top-20  ">
+      <div className=" absolute top-16 z-[900] md:top-20  ">
         <div className="flex flex-col gap-6 p-8 md:gap-10 md:p-20">
           <h1 className="text-left text-2xl font-extrabold leading-none text-white mix-blend-exclusion md:text-[4.3rem]">
             TrustAuthX <br />
