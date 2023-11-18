@@ -32,8 +32,8 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.trustauthx.com/"></meta>
         <meta property="og:description" content="TrustAuthx The Low-Code Auth Infra for the Web" />
-        <meta property="og:image" content="https://openauthx.s3.ap-south-1.amazonaws.com/Group+39570+(2).jpg" />
-        <meta name="twitter:image" content="https://openauthx.s3.ap-south-1.amazonaws.com/Group+39570+(2).jpg" />
+        <meta property="og:image" content="https://openauthx.s3.ap-south-1.amazonaws.com/Group+39570+(3).jpg" />
+        <meta name="twitter:image" content="https://openauthx.s3.ap-south-1.amazonaws.com/Group+39570+(3).jpg" />
         <link rel="icon" href="./favicon.ico" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
