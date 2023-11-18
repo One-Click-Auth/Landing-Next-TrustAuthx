@@ -28,6 +28,12 @@ export default function RootLayout({
       <head>
         <title>{`${metadata.title}`}</title>
         <meta name="description" content={`${metadata.description}`} />
+        <meta property="og:title" content="Trustauthx" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.trustauthx.com/"></meta>
+        <meta property="og:description" content="TrustAuthx The Low-Code Auth Infra for the Web" />
+        <meta property="og:image" content="https://openauthx.s3.ap-south-1.amazonaws.com/Group+39570+(2).jpg" />
+        <meta name="twitter:image" content="https://openauthx.s3.ap-south-1.amazonaws.com/Group+39570+(2).jpg" />
         <link rel="icon" href="./favicon.ico" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7NXTY5KCKL"
@@ -42,6 +48,15 @@ export default function RootLayout({
           gtag('config', 'G-7NXTY5KCKL');
         `}
         </Script>
+        <script type="text/javascript">
+        {`
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "jsifxapvgj");
+        `}
+        </script>
       </head>
       <body>
         <div className="flex min-h-screen flex-col ">
