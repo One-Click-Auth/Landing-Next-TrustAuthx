@@ -71,7 +71,7 @@ return [
             {
                 url: 'https://www.linkedin.com/company/trustauthx',
                 lastModified: new Date(),
-                changeFrequency: 'weekly',
+                changeFrequency: 'daily',
                 priority: 0.6,
                 },
 ]
