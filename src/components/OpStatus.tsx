@@ -23,10 +23,10 @@ export function OpStatus() {
     <div className="flex cursor-pointer items-center gap-2 rounded-full px-2.5 py-1.5  text-xs font-medium backdrop-blur-[75px] md:text-sm">
       {isOn ? (
         <div
-          className=" h-2.5 w-2.5 rounded-full bg-[#008000] animate-pulse"
+          className=" h-2.5 w-2.5 rounded-full bg-[#9EFF00] animate-pulse"
           style={{
             boxShadow:
-              "0 0 10px #008000, 0 0 20px #008000, 0 0 30px #008000, 0 0 40px #008000",
+              "0 0 10px ##9EFF00, 0 0 20px ##9EFF00, 0 0 30px ##9EFF00, 0 0 40px ##9EFF00",
           }}
         ></div>
       ) : (
