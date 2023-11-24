@@ -108,9 +108,11 @@ function PricingPart() {
         </div>
       </div>
 
+      <a href="https://app.trustauthx.com" target="_blank">
       <button className="mt-12 rounded-md bg-black p-3 text-white">
-        Start your 14-day trial
+        Start your 30-day trial
       </button>
+      </a>
       <Image
         src={Ball}
         alt="trustAuthX-ball"
@@ -174,10 +176,10 @@ export function CopyrightInfo() {
         <div className="Frame824639   inline-flex  flex-col items-start justify-start gap-5">
           <div className="Frame824627 flex flex-col items-start justify-start gap-0.5 self-stretch">
             <div className="FlitchcoinSupport text-base font-bold text-zinc-800">
-              FlitchCoin Support
+              Trustauthx Support
             </div>
             <div className="SupportFlitchcoinCom text-center text-base font-light tracking-tight text-zinc-800">
-              support@flitchcoin.com
+              pr@contact.Trustauthx.com
             </div>
           </div>
           <div className="Frame824628 flex flex-col items-start justify-start gap-0.5">
@@ -185,7 +187,7 @@ export function CopyrightInfo() {
               Investor Relation
             </div>
             <div className="InvestFlitchcoinCom text-center text-base font-light tracking-tight text-zinc-800">
-              invest@flitchcoin.com
+              pr@trustauthx.com
             </div>
           </div>
         </div>
