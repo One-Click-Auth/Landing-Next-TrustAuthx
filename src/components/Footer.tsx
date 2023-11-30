@@ -3,6 +3,7 @@ import HomePageGradient from "../../public/svgs/HomePageGradient.svg";
 import Grid from "../../public/svgs/Grid.svg";
 import Logo from "../../public/svgs/Logo.svg";
 import Ball from "@/public/images/ball.webp";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -178,17 +179,21 @@ export function CopyrightInfo() {
             <div className="FlitchcoinSupport text-base font-bold text-zinc-800">
               Trustauthx Support
             </div>
+            <Link href="mailto:pr@contact.Trustauthx.com" target="_blank">
             <div className="SupportFlitchcoinCom text-center text-base font-light tracking-tight text-zinc-800">
               pr@contact.Trustauthx.com
             </div>
+            </Link>
           </div>
           <div className="Frame824628 flex flex-col items-start justify-start gap-0.5">
             <div className="InvestorRelation text-base font-bold text-zinc-800">
               Investor Relation
             </div>
+            <Link href="mailto:pr@trustauthx.com" target="_blank">
             <div className="InvestFlitchcoinCom text-center text-base font-light tracking-tight text-zinc-800">
               pr@trustauthx.com
             </div>
+            </Link>
           </div>
         </div>
 
@@ -201,16 +206,22 @@ export function CopyrightInfo() {
             alt="icon"
           />
           <Image width={44} height={44} src={"./svgs/Reddit.svg"} alt="icon" />
+          <Link href="https://www.linkedin.com/company/97859395/admin/feed/posts/" target="_blank">
           <Image
             width={44}
             height={44}
             src={"./svgs/LinkedIn.svg"}
             alt="icon"
           />
+          </Link>
           <Image width={44} height={44} src={"./svgs/Medium.svg"} alt="icon" />
           <Image width={44} height={44} src={"./svgs/Twitter.svg"} alt="icon" />
+          <Link href="https://github.com/One-Click-Auth" target="_blank">
           <Image width={44} height={44} src={"./svgs/Github.svg"} alt="icon" />
+          </Link>
+          <Link href="https://discord.gg/Z364dzP6" target="_blank">
           <Image width={44} height={44} src={"./svgs/Discord.svg"} alt="icon" />
+          </Link>
         </div>
 
         <div className="2023Trustauthx  text-base font-normal text-zinc-800">
@@ -219,7 +230,8 @@ export function CopyrightInfo() {
       </div>
 
       <div className="flex flex-col gap-16 md:flex-row md:gap-28">
-        <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5">
+        {/* 
           <div className="Platform w-40 text-base font-semibold text-black">
             Platform
           </div>
@@ -229,30 +241,45 @@ export function CopyrightInfo() {
           <div className="text-base font-normal text-black">Partners</div>
           <div className="text-base font-normal text-black">Electron</div>
           <div className="text-base font-normal text-black">GitHub Desktop</div>
-        </div>
-
-        <div className="flex flex-col gap-5">
+        */}
+        </div> 
+        
+        {/* 
           <div className="text-base font-semibold text-black">Product</div>
+          <Link href="#features">
           <div className="text-base font-normal text-black">Features</div>
-          <div className="text-base font-normal text-black">Security</div>
-          <div className="text-base font-normal text-black">Team</div>
-          <div className="text-base font-normal text-black">Enterprice</div>
-        </div>
+          </Link>
+          <Link href = "https://tally.so/r/w2aQEL" target = "_blank">
+          <div className="text-base font-normal text-black">Enterprise</div>
+          </Link>
+        </div> */}
 
         <div className="flex flex-col gap-5">
           <div className="text-base font-semibold text-black">Developers</div>
+          <Link href="https://docs.trustauthx.com/" target="_blank">
           <div className="text-base font-normal text-black">Docs</div>
+          </Link>
+          <Link href="https://discord.gg/Z364dzP6" target="_blank">
           <div className="w-fit text-base font-normal">Community Forum</div>
+          </Link>
+          <Link href="https://docs.trustauthx.com/" target="_blank">
           <div className="text-base font-normal text-black">APIs</div>
+          </Link>
+          <Link href="https://tally.so/r/w2aQEL" target="_blank">
           <div className="text-base font-normal text-black">
             Premium Support
           </div>
+          </Link>
         </div>
 
         <div className="flex flex-col gap-5">
           <div className="text-base font-semibold text-black">Company</div>
+          <Link href="https://docs.trustauthx.com/about" target="_blank">
           <div className="text-base font-normal text-black">About</div>
+          </Link>
+          <Link href="https://www.linkedin.com/feed/update/urn:li:activity:7132446662085464064" target="_blank">
           <div className="text-base font-normal text-black">Blog</div>
+          </Link>
           <div className="text-base font-normal text-black">Careers</div>
           <div className="text-base font-normal text-zinc-800">
             Terms of Use

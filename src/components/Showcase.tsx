@@ -19,7 +19,7 @@ function Showcase() {
 const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
-    <div className="flex flex-col  items-center justify-center p-6 sm:p-12">
+    <div className="flex flex-col  items-center justify-center p-6 sm:p-12 " id = "features">
       <div className="space-between flex max-w-[1110px] flex-col items-center gap-12 lg:flex-row xl:gap-48">
         <div className="flex flex-col gap-6">
           <p className="text-3xl md:text-5xl ">

@@ -10,7 +10,7 @@ import Link from "next/link";
 import { OpStatus } from "./OpStatus";
 
 const internalLinks = [
-  { name: "Products", link: "" },
+  { name: "Products", link: "#product" },
   { name: "Customers", link: "" },
   { name: "Enterprise", link: "https://tally.so/r/w2aQEL" },
   { name: "Pricing", link: "#pricing" },
@@ -64,7 +64,7 @@ function Navbar() {
           <div className="hidden items-start justify-center gap-4 md:flex md:flex-wrap">
             {internalLinks.map((link) => (
               <Link
-                target={link.name === "Pricing" ? "" : "_blank"}
+                target={link.name === "Pricing" ? "" : ""}
                 href={link.link}
                 key={link.name}
                 className="font-medium mix-blend-exclusion"
