@@ -199,7 +199,7 @@ export function CopyrightInfo() {
         </div>
 
         <div className="  grid h-24 w-52 grid-cols-4 items-end justify-start gap-2.5">
-          <Image width={44} height={44} src={"./svgs/Youtube.svg"} alt="icon" />
+          <Image width={44} height={44} src={"./svgs/YouTube.svg"} alt="icon" />
           <Image
             width={44}
             height={44}
