@@ -157,7 +157,8 @@ function SubscribePart() {
             <div className="flex flex-col items-center gap-6 md:flex-row">
               <input
                 type="text"
-                className="h-12 rounded-md border border-black bg-transparent md:w-[335px]"
+                className="h-12 rounded-md border border-black bg-transparent md:w-[335px] pl-4"
+                placeholder="Email Address"
               />
               <button className=" w- rounded-md bg-black  p-3 text-white">
                 Start your 14-day trial
