@@ -157,7 +157,8 @@ function SubscribePart() {
             <div className="flex flex-col items-center gap-6 md:flex-row">
               <input
                 type="text"
-                className="h-12 rounded-md border border-black bg-transparent md:w-[335px]"
+                className="h-12 rounded-md border border-black bg-transparent md:w-[335px] pl-4"
+                placeholder="Email Address"
               />
               <button className=" w- rounded-md bg-black  p-3 text-white">
                 Start your 14-day trial
@@ -198,7 +199,7 @@ export function CopyrightInfo() {
         </div>
 
         <div className="  grid h-24 w-52 grid-cols-4 items-end justify-start gap-2.5">
-          <Image width={44} height={44} src={"./svgs/Youtube.svg"} alt="icon" />
+          <Image width={44} height={44} src={"./svgs/YouTube.svg"} alt="icon" />
           <Image
             width={44}
             height={44}
