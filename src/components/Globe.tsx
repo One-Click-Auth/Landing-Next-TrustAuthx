@@ -108,6 +108,7 @@ export function Globe() {
                 </svg>
               </button>
             </Link>
+            <Link href="https://www.youtube.com/watch?v=0R0lbvvS5Cg" target="_blank">
             <button className="flex items-center gap-2 md:gap-4 rounded-full text-gray-400 mix-blend-exclusion">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,6 +130,7 @@ export function Globe() {
                 <span className="text-xs md:text-base">2 min</span>
               </p>
             </button>
+            </Link>
           </div>
         </div>
         <div className="text-black md:mt-20">
