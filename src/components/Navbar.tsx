@@ -74,7 +74,9 @@ function Navbar() {
             ))}
           </div>
         </div>
+        <Link href = "https://trustauthx.betteruptime.com/" target="_blank">
         <OpStatus />
+        </Link>
         {/*External Links*/}
         <div className="hidden items-center justify-center gap-4 md:flex md:flex-wrap">
           <ExternalLinks />
