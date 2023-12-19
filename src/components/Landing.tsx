@@ -35,6 +35,7 @@ export function Landing() {
                 </svg>
               </button>
             </Link>
+            <Link href = "https://youtu.be/0R0lbvvS5Cg" target="_blank">
             <button className="flex items-center gap-2 rounded-full text-gray-400 mix-blend-exclusion md:gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +57,7 @@ export function Landing() {
                 <span className="text-xs md:text-base">2 min</span>
               </p>
             </button>
+            </Link>
           </div>
         </div>
         <GlobeAppDemo />
