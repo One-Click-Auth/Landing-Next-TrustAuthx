@@ -21,6 +21,7 @@ export default function LandingPage() {
       <Authlite />
       <Showcase />
       {/* <Customize /> */}
+      <Footer />
     </>
   );
 }
