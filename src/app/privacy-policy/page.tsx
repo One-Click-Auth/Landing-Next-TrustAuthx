@@ -23,7 +23,7 @@ TrustAuthX follows a standard procedure of using log files. These files log visi
 
 Cookies and Web Beacons
 
-Like any other website, TrustAuthX uses cookies. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited.
+Like any other website, TrustAuthX uses cookies. These cookies are used to store information including visitors preferences, and the pages on the website that the visitor accessed or visited.
 
 Third Party Privacy Policies
 

@@ -20,10 +20,10 @@ const tnc = () => (
     </ul>
 
     <h2>Your Content</h2>
-    <p>In these Website Standard Terms and Conditions, "Your Content" shall mean any audio, video text, images or other material you choose to display on this Website.</p>
+    <p>In these Website Standard Terms and Conditions, Your Content shall mean any audio, video text, images or other material you choose to display on this Website.</p>
 
     <h2>No warranties</h2>
-    <p>This Website is provided "as is," with all faults, and TrustAuthX express no representations or warranties, of any kind related to this Website or the materials contained on this Website.</p>
+    <p>This Website is provided as is, with all faults, and TrustAuthX express no representations or warranties, of any kind related to this Website or the materials contained on this Website.</p>
 
     <h2>Governing Law & Jurisdiction</h2>
     <p>These Terms will be governed by and interpreted in accordance with the laws of the United Kingdom, and you submit to the non-exclusive jurisdiction of the courts located in London, UK for the resolution of any disputes.
