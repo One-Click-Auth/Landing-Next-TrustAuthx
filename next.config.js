@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'openauthx.s3.ap-south-1.amazonaws.com',
+        hostname: 'openauthx.s3.ap-south-1.amazonaws.com'
       }
     ]
   },
