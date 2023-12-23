@@ -9,6 +9,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'github.com',
         pathname: '/shadcn.png'
+      },
+      {
+        protocol: 'https',
+        hostname: 'openauthx.s3.ap-south-1.amazonaws.com',
       }
     ]
   },
