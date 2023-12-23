@@ -6,7 +6,7 @@ const BlogsPage = ({
     children:React.ReactNode
 }) => {
     return ( 
-        <div className="bg-black text-white min-h-screen max-w-7xl mx-auto overflow-hidden">
+        <div className="bg-black text-white min-h-screen mx-auto overflow-x-hidden overflow-y-hidden">
             {children}
             <FooterPage/>
         </div>
