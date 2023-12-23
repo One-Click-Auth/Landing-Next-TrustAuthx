@@ -278,7 +278,7 @@ export function CopyrightInfo() {
           <Link href="https://docs.trustauthx.com/about" target="_blank">
           <div className="text-base font-normal text-black">About</div>
           </Link>
-          <Link href="https://www.linkedin.com/feed/update/urn:li:activity:7132446662085464064" target="_blank">
+          <Link href="https://www.trustauthx.com/blogs" target="_blank">
           <div className="text-base font-normal text-black">Blog</div>
           </Link>
           <div className="text-base font-normal text-black">Careers</div>
