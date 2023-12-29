@@ -59,6 +59,9 @@ export function Landing() {
             </button>
             </Link>
           </div>
+          <a className="items-center justify-center lg:ml-4" href="https://www.producthunt.com/posts/trustauthx?utm_source=badge-featured&utm_medium=badge&utm_source=badge-trustauthx" target="_blank">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=432015&theme=light" alt="TrustAuthX - AI Based, Low-Code Auth as a Service for Businesses/Devs | Product Hunt" style={{ width: '250px', height: '54px' }} width="250" height="54" />
+          </a>
         </div>
         <GlobeAppDemo />
       </div>
